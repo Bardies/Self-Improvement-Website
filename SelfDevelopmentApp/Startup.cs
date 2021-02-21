@@ -5,7 +5,7 @@ using Microsoft.EntityFrameworkCore;
 using Microsoft.Extensions.Configuration;
 using Microsoft.Extensions.DependencyInjection;
 using Microsoft.Extensions.Hosting;
-using Self_Improvement.Models;
+using SelfDevelopmentApp.Models;
 using SelfDevelopmentApp.Services;
 using System;
 using System.Collections.Generic;
@@ -32,6 +32,8 @@ namespace SelfDevelopmentApp
 
             services.AddScoped<IToDoListRepository, ToDoListRepoService>();
             services.AddScoped<IToDoItemRepository, ToDoItemRepoService>();
+            services.AddScoped<IArticleRepository, ArticleRepoService>();
+            services.AddScoped<ITopicRepository, TopicRepoService>();
         services.AddDbContext<AppDbContext>((options) =>
             options.UseSqlServer(configuration.GetConnectionString("stConn"))
             );

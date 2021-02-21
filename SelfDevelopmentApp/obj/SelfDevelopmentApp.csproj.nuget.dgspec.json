@@ -1,20 +1,20 @@
 {
   "format": 1,
   "restore": {
-    "D:\\ITI\\ASPMVC\\ProjectTrial\\SelfDevelopmentApp\\SelfDevelopmentApp\\SelfDevelopmentApp.csproj": {}
+    "H:\\ITI\\PD\\ASP_MVC\\Project\\Project repo\\Self-Improvement-Website\\SelfDevelopmentApp\\SelfDevelopmentApp.csproj": {}
   },
   "projects": {
-    "D:\\ITI\\ASPMVC\\ProjectTrial\\SelfDevelopmentApp\\SelfDevelopmentApp\\SelfDevelopmentApp.csproj": {
+    "H:\\ITI\\PD\\ASP_MVC\\Project\\Project repo\\Self-Improvement-Website\\SelfDevelopmentApp\\SelfDevelopmentApp.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "D:\\ITI\\ASPMVC\\ProjectTrial\\SelfDevelopmentApp\\SelfDevelopmentApp\\SelfDevelopmentApp.csproj",
+        "projectUniqueName": "H:\\ITI\\PD\\ASP_MVC\\Project\\Project repo\\Self-Improvement-Website\\SelfDevelopmentApp\\SelfDevelopmentApp.csproj",
         "projectName": "SelfDevelopmentApp",
-        "projectPath": "D:\\ITI\\ASPMVC\\ProjectTrial\\SelfDevelopmentApp\\SelfDevelopmentApp\\SelfDevelopmentApp.csproj",
-        "packagesPath": "C:\\Users\\dell\\.nuget\\packages\\",
-        "outputPath": "D:\\ITI\\ASPMVC\\ProjectTrial\\SelfDevelopmentApp\\SelfDevelopmentApp\\obj\\",
+        "projectPath": "H:\\ITI\\PD\\ASP_MVC\\Project\\Project repo\\Self-Improvement-Website\\SelfDevelopmentApp\\SelfDevelopmentApp.csproj",
+        "packagesPath": "C:\\Users\\nadda\\.nuget\\packages\\",
+        "outputPath": "H:\\ITI\\PD\\ASP_MVC\\Project\\Project repo\\Self-Improvement-Website\\SelfDevelopmentApp\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
-          "C:\\Users\\dell\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Users\\nadda\\AppData\\Roaming\\NuGet\\NuGet.Config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [
@@ -53,6 +53,10 @@
               "suppressParent": "All",
               "target": "Package",
               "version": "[5.0.3, )"
+            },
+            "Microsoft.VisualStudio.Web.CodeGeneration.Design": {
+              "target": "Package",
+              "version": "[5.0.2, )"
             }
           },
           "imports": [
@@ -73,7 +77,7 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\5.0.102\\RuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\5.0.101\\RuntimeIdentifierGraph.json"
         }
       }
     }

@@ -1,12 +1,11 @@
 ﻿using Microsoft.EntityFrameworkCore;
-
 using SelfDevelopmentApp.Models;
 using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Threading.Tasks;
 
-namespace Self_Improvement.Models
+namespace SelfDevelopmentApp.Models
 {
     public class AppDbContext: DbContext
     {
