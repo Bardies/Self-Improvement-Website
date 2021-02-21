@@ -25,7 +25,7 @@ namespace Self_Improvement.Models
                         .IsRequired(false);
             base.OnModelCreating(modelBuilder);
         
-    }
+        }
 
         public DbSet<Article> Articles { get; set; }
 
