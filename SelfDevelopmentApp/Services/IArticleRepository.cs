@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace SelfDevelopmentApp.Services
 {
-    interface IArticleRepository
+    public interface IArticleRepository
     {
         public List<Article> AllArticles();   /// Index => List All
 
@@ -14,7 +14,7 @@ namespace SelfDevelopmentApp.Services
 
         public List<Article> GetArticlesByTopic(Topic topic);   /// get articles by topic name
 
-        public Article GetArticleByID(int id);  /// Details
+        public Article GetArticleByID(int? id);  /// Details
 
         public void InsertArticle(Article article);  /// Create
 

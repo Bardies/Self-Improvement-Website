@@ -38,6 +38,11 @@ namespace SelfDevelopmentApp.Services
             return AppDbContext.Topics.FirstOrDefault(t => t.ID == id);
         }
 
+        public Topic GetTopicByName(string name)
+        {
+            return AppDbContext.Topics.FirstOrDefault(t => t.Name == name);
+        }
+
         public void InsertTopic(Topic topic)
         {
             AppDbContext.Topics.Add(topic);

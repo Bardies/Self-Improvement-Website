@@ -1335,7 +1335,7 @@ section {
 .blog .entry .entry-img {
   max-height: 440px;
   margin: -30px -30px 20px -30px;
-  overflow: hidden;
+  overflow:hidden;
 }
 
 .blog .entry .entry-title {
@@ -1393,15 +1393,18 @@ section {
   -moz-text-align-last: right;
   text-align-last: right;
 }
+.entry-content{
+    white-space:pre-line;
+}
 
 .blog .entry .entry-content .read-more a {
-  display: inline-block;
-  background: #e43c5c;
-  color: #fff;
-  padding: 6px 20px;
-  transition: 0.3s;
-  font-size: 14px;
-  border-radius: 4px;
+    display: inline-block;
+    background: #e43c5c;
+    color: #fff;
+    padding: 6px 20px;
+    transition: 0.3s;
+    font-size: 14px;
+    border-radius: 4px;
 }
 
 .blog .entry .entry-content .read-more a:hover {
@@ -1980,4 +1983,24 @@ section {
   background: #d01d3f;
   color: #fff;
   text-decoration: none;
+}
+
+#articleTitle{
+    margin-top: 10%;
+    margin-bottom:5px;
+    margin-left:2%;
+    margin-right:2%;
+    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-size:20pt;
+    font-weight:600;
+}
+#articleAuthor{
+    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-size: 15pt;
+    font-weight:400;
+}
+.articleText{
+    width:100%;
+    overflow:auto;
+    height:inherit;
 }

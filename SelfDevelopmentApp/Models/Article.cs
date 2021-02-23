@@ -24,10 +24,12 @@ namespace SelfDevelopmentApp.Models
 
 
         [Required(ErrorMessage = "Article content is required")]
+        [DataType(DataType.MultilineText)]
         public byte[] Text { get; set; }
 
         
         [Required(ErrorMessage ="Article image is required")]
+        [DataType(DataType.Upload)]
         public byte[] Image { get; set; }
 
         
