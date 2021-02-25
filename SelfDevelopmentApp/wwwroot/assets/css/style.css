@@ -14,13 +14,13 @@ body {
 }
 
 a {
-  color: #e43c5c;
-  text-decoration: none;
+    color: #e43c5c;
+    text-decoration: none;
 }
 
-a:hover {
-  color: #ea6981;
-  text-decoration: none;
+a:hover, .pageBtn {
+    color: #ea6981;
+    text-decoration: none;
 }
 
 h1, h2, h3, h4, h5, h6 {
@@ -1697,12 +1697,46 @@ section {
 .blog .sidebar .sidebar-item {
   margin-bottom: 30px;
 }
+button.sideTopicButtons {
+    /*color: red;*/
+    /*    opacity: 1;
+    bottom: 0;
+    top: -30px;
+    right: 15px;
+    color: #f7c2cc;
+    position: absolute;
+    right: 50px;
+    font-size: 24px;
+    top: calc(50% - 18px);
+    color: white;
+    transition: ease-in-out 0.3s;
+    color: #fff;
+    font-size: 14px;
+    margin-bottom: 0;
+    font-size: 18px;
+    color: #fff;
+    font-weight: 600;
+    opacity: 0;
+    position: absolute;
+    left: 15px;
+    right: 15px;
+    bottom: -50px;
+    z-index: 3;
+    transition: all ease-in-out 0.3s;
+    background: #e43c5c;
+    padding: 15px 20px;
+    position: relative;
+    top: 0;
+    transition: all 0.6s cubic-bezier(0.645, 0.045, 0.355, 1);
+    margin-bottom: 30px;
+    overflow: hidden;*/
+}
 
 .blog .sidebar .search-form form {
-  background: #fff;
-  border: 1px solid #ddd;
-  padding: 3px 10px;
-  position: relative;
+    background: #fff;
+    border: 1px solid #ddd;
+    padding: 3px 10px;
+    position: relative;
 }
 
 .blog .sidebar .search-form form input[type="text"] {

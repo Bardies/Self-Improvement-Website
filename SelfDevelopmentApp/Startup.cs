@@ -1,5 +1,6 @@
 using Microsoft.AspNetCore.Builder;
 using Microsoft.AspNetCore.Hosting;
+using Microsoft.AspNetCore.Http;
 using Microsoft.AspNetCore.HttpsPolicy;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.Extensions.Configuration;
@@ -34,7 +35,18 @@ namespace SelfDevelopmentApp
             services.AddScoped<IToDoItemRepository, ToDoItemRepoService>();
             services.AddScoped<IArticleRepository, ArticleRepoService>();
             services.AddScoped<ITopicRepository, TopicRepoService>();
-        services.AddDbContext<AppDbContext>((options) =>
+            //services.AddScoped<IHttpContextAccessor,HttpContextAccessor>();
+            //services.ConfigureApplicationCookie(options =>
+            //{
+            //    // Cookie settings
+            //    options.Cookie.HttpOnly = true;
+            //    options.ExpireTimeSpan = TimeSpan.FromMinutes(5);
+
+            //    //options.LoginPath = "/Identity/Account/Login";
+            //    //options.AccessDeniedPath = "/Identity/Account/AccessDenied";
+            //    options.SlidingExpiration = true;
+            //});
+            services.AddDbContext<AppDbContext>((options) =>
             options.UseSqlServer(configuration.GetConnectionString("stConn"))
             );
             services.AddControllersWithViews();
@@ -59,6 +71,8 @@ namespace SelfDevelopmentApp
             app.UseRouting();
 
             app.UseAuthorization();
+
+            //app.UseCookiePolicy();
 
             app.UseEndpoints(endpoints =>
             {

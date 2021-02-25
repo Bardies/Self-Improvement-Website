@@ -6,34 +6,77 @@ using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Threading.Tasks;
+using Microsoft.AspNetCore.Http;
+using Newtonsoft.Json;
 
 namespace SelfDevelopmentApp.Controllers
 {
     public class ArticlesController : Controller
     {
+
         private readonly IArticleRepository articleRepository;
         private readonly ITopicRepository topicRepository;
-
-        public ArticlesController(IArticleRepository _articleRepository , ITopicRepository _topicRepository)
+        //private readonly IHttpContextAccessor httpContextAccessor;
+        static List<Article> selectedArticles;
+        public ArticlesController(IArticleRepository _articleRepository , ITopicRepository _topicRepository/*, IHttpContextAccessor _httpContextAccessor*/)
         {
             articleRepository = _articleRepository;
             topicRepository = _topicRepository;
+            //httpContextAccessor = _httpContextAccessor;
+            //CookieOptions cookieOptions = new CookieOptions();
+            //HttpContext.Response.Cookies.Append(
+            //         "name", "value", cookieOptions);
+
         }
         // GET: ArticlesController
         public ActionResult Index()
         {
-            return View(articleRepository.AllArticles());
+            selectedArticles = null;
+            List<Article> articles = articleRepository.AllArticles();
+            ViewBag.NumOfItems = articles.Count;
+            ViewBag.Topics = topicRepository.AllTopics();
+            ViewBag.pageNum = 1;
+            return View(articles);
         }
 
         [HttpPost]
         [ValidateAntiForgeryToken]
         public ActionResult Index(IFormCollection collection)
         {
-            Topic topic = topicRepository.GetTopicByName(collection["name"]);
-            if(topic!=null)
-                return View(articleRepository.GetArticlesByTopic(topic));
-            return View();
+            ViewBag.Topics = topicRepository.AllTopics();
+            
+            if (int.TryParse(collection["name"], out int num))
+            {
+                List<Article> articles;
+                if (selectedArticles != null && selectedArticles.Count!=0)
+                    articles = selectedArticles;
+               
+                else
+                    articles = articleRepository.AllArticles();
+                
+                ViewBag.NumOfItems = articles.Count;
+                ViewBag.pageNum = num;
+                return View(articles);
+            }
+            else
+            {
+                ViewBag.pageNum = 1;
+                List<Article> articles = articleRepository.GetArticlesByTitle(collection["name"]);
+
+                Topic topic = topicRepository.GetTopicByName(collection["name"]);
+                if (topic != null)
+                    articles.AddRange(articleRepository.GetArticlesByTopic(topic));
+
+                if (articles != null && articles.Count > 0)
+                {
+                    ViewBag.NumOfItems = articles.Count;
+                    selectedArticles = articles;
+                    return View(articles);
+                }
+                return View();
+            }
         }
+
 
         // GET: ArticlesController/Details/5
         public ActionResult Details(int? id)
@@ -43,6 +86,7 @@ namespace SelfDevelopmentApp.Controllers
             {
                 return NotFound();
             }
+            ViewBag.RelatedArticles = articleRepository.GetArticlesByTopic(article.Topic);
             return View(article);
         }
 

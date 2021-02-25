@@ -1,34 +1,30 @@
 ﻿@model IEnumerable<SelfDevelopmentApp.Models.Article>
 @using System.IO;
 @using System.Text;
-@*@{
-        var base64 = Convert.ToBase64String(Model.Image);
-        var imgsrc = string.Format("data:image/jpg;base64,{0}", base64);
-        var str = "";
-        //string filePath = string.Format("data:text/txt;base64,{0}", base64);
-        using (MemoryStream stream = new MemoryStream((byte[])Model.Text, false))
-        using (StreamReader reader = new StreamReader(stream, Encoding.Default, true))
-        {
-            str += reader.ReadToEnd();
-        }
-    }*@
-
-
-
-
+@using Microsoft.AspNetCore.Http;
 @{
     Layout = "_blog";
 }
 
+@{
+    var ModleSize = ViewBag.NumOfItems;
+    var topics = ViewBag.Topics;
+    int pageNum = ViewBag.pageNum;
+    //CookieOptions cookieOptions = new CookieOptions();
+    //HttpContext.Response.Cookies.Append(
+    //         "name", "value", cookieOptions);
+}
+
  ======= Breadcrumbs =======
 <section id="breadcrumbs" class="breadcrumbs">
+
     <div class="container">
 
         <ol>
             <li><a asp-area="" asp-controller="Home" asp-action="Index">Home</a></li>
-            <li>Blog</li>
+            <li><a asp-area="" asp-controller="Articles" asp-action="Index">Articles</a></li>
         </ol>
-        <h2>Blog</h2>
+        <h2>Articles</h2>
 
     </div>
 </section><!-- End Breadcrumbs -->
@@ -38,12 +34,30 @@
 
         <div class="row">
 
-            <div class="col-lg-8 entries">
+            <div class="col-lg-8 entries" id="articlesList">
 
+                @if (Model == null)
+                {
+                    <article class="entry">
 
+                        <div class="entry-img">
+                            <img src='~/assets/img/search/NoResultFound.jpg' alt="" class="img-fluid">
+                        </div>
+                    </article>
 
-                @foreach (var item in Model)
-                 {
+                    <div style="text-align:center">
+
+                        <h2 class="entry-title">
+                            No matched articles found
+                        </h2>
+                    </div>
+
+                }
+
+                else
+                {
+                    @foreach (var item in Model.ToList().Skip((pageNum - 1) * 4).TakeWhile(m => m.Title != null).Take(4))
+                    {
 
 
                         var base64 = Convert.ToBase64String(item.Image);
@@ -59,42 +73,68 @@
 
                         <article class="entry">
 
-                        <div class="entry-img">
-                            <img src='@imgsrc' alt="" class="img-fluid">
-                        </div>
-
-                        <h2 class="entry-title">
-                            <a asp-area="" asp-controller="Articles" asp-action="Details" asp-route-id="@item.ID">@item.Title  |  @item.Topic.Name</a>
-                        </h2>
-
-                        <div class="entry-meta">
-                            <ul>
-                                <li class="d-flex align-items-center"><i class="bi bi-person"></i>@item.Author</li>
-                            </ul>
-                        </div>
-
-                        <div class="entry-content">
-                            <p>
-                                @displayedTxt
-                            </p>
-                            <div class="read-more">
-                                <a asp-area="" asp-controller="Articles" asp-action="Details" asp-route-id="@item.ID">Read More</a>
+                            <div class="entry-img">
+                                <img src='@imgsrc' alt="" class="img-fluid">
                             </div>
-                        </div>
 
-                    </article><!-- End blog entry -->
+                            <h2 class="entry-title">
+                                <a asp-area="" asp-controller="Articles" asp-action="Details" asp-route-id="@item.ID">@item.Title  |  @item.Topic.Name</a>
+                            </h2>
+
+                            <div class="entry-meta">
+                                <ul>
+                                    <li class="d-flex align-items-center"><i class="bi bi-person"></i>@item.Author</li>
+                                </ul>
+                            </div>
+
+                            <div class="entry-content">
+                                <p>
+                                    @displayedTxt
+                                </p>
+                                <div class="read-more">
+                                    <a asp-area="" asp-controller="Articles" asp-action="Details" asp-route-id="@item.ID">Read More</a>
+                                </div>
+                            </div>
+
+                        </article><!-- End blog entry -->
 
 
+                    }
+
+                    <div class="blog-pagination">
+                        <ul class="justify-content-center">
+                            <li>
+                                <form action="" method="post">
+                                    <input type="hidden" name="name" value="1" />
+                                    <button type="submit" style=" color: #fff; background-color: #e43c53; border:none; width: 40px; height:38px">1</button>
+                                </form>
+                            </li>
+                            @if (ModleSize > 4)
+                            {
+                                int numOfPage;
+                                if ((ModleSize - 4) % 4 == 0)
+                                {
+                                    numOfPage = (ModleSize - 4) / 4;
+                                }
+                                else
+                                {
+                                    numOfPage = ((ModleSize - 4) / 4) + 1;
+                                }
+
+                                for (int i = 0; i < numOfPage; i++)
+                                {
+                                    <li>
+                                        <form action="" method="post" >
+                                            <input type="hidden" name="name" value="@(i+2)" />
+                                            <button type="submit" style=" color: #fff; background-color: #e43c53; border:none; width: 40px; height:38px">@(i+2)</button>
+                                        </form>
+                                        @*<a href="#breadcrumbs">@(i+2)</a>*@
+                                    </li>
+                                }
+                            }
+                        </ul>
+                    </div>
                 }
-
-                <div class="blog-pagination">
-                    <ul class="justify-content-center">
-                        <li><a href="#">1</a></li>
-                        <li class="active"><a href="#">2</a></li>
-                        <li><a href="#">3</a></li>
-                    </ul>
-                </div>
-
             </div><!-- End blog entries list -->
 
             <div class="col-lg-4">
@@ -109,68 +149,22 @@
                         </form>
                     </div><!-- End sidebar search formn-->
 
-                    <h3 class="sidebar-title">Categories</h3>
+                    <h3 class="sidebar-title">Topics</h3>
                     <div class="sidebar-item categories">
                         <ul>
-                            <li><a href="#">General <span>(25)</span></a></li>
-                            <li><a href="#">Lifestyle <span>(12)</span></a></li>
-                            <li><a href="#">Travel <span>(5)</span></a></li>
-                            <li><a href="#">Design <span>(22)</span></a></li>
-                            <li><a href="#">Creative <span>(8)</span></a></li>
-                            <li><a href="#">Educaion <span>(14)</span></a></li>
+
+                            @foreach (var topic in topics)
+                            {
+                                <li>
+                                    <form action="" method="post">
+                                        <input type="hidden" name="name" value="@topic.Name">
+                                        <button type="submit" style=" background:#e43c53 ; color: #fff; padding: 6px 15px; transition: 0.3s; font-size: 14px; border:1px solid #e43c5c; border-radius:12px ;font-size:12pt; font-family:'Arial Rounded MT'; font-weight:400; ">@topic.Name</button>
+                                    </form>
+                                </li>
+                            }
+
                         </ul>
                     </div><!-- End sidebar categories-->
-                    <!--<h3 class="sidebar-title">Recent Posts</h3>
-                    <div class="sidebar-item recent-posts">
-                        <div class="post-item clearfix">
-                            <img src="~/assets/img/blog/blog-recent-1.jpg" alt="">
-                            <h4><a asp-area="" asp-controller="Home" asp-action="BlogSingle">Nihil blanditiis at in nihil autem</a></h4>
-                            <time datetime="2020-01-01">Jan 1, 2020</time>
-                        </div>
-
-                        <div class="post-item clearfix">
-                            <img src="~/assets/img/blog/blog-recent-2.jpg" alt="">
-                            <h4><a asp-area="" asp-controller="Home" asp-action="BlogSingle">Quidem autem et impedit</a></h4>
-                            <time datetime="2020-01-01">Jan 1, 2020</time>
-                        </div>
-
-                        <div class="post-item clearfix">
-                            <img src="~/assets/img/blog/blog-recent-3.jpg" alt="">
-                            <h4><a asp-area="" asp-controller="Home" asp-action="BlogSingle">Id quia et et ut maxime similique occaecati ut</a></h4>
-                            <time datetime="2020-01-01">Jan 1, 2020</time>
-                        </div>
-
-                        <div class="post-item clearfix">
-                            <img src="~/assets/img/blog/blog-recent-4.jpg" alt="">
-                            <h4><a asp-area="" asp-controller="Home" asp-action="BlogSingle">Laborum corporis quo dara net para</a></h4>
-                            <time datetime="2020-01-01">Jan 1, 2020</time>
-                        </div>
-
-                        <div class="post-item clearfix">
-                            <img src="~/assets/img/blog/blog-recent-5.jpg" alt="">
-                            <h4><a asp-area="" asp-controller="Home" asp-action="BlogSingle">Et dolores corrupti quae illo quod dolor</a></h4>
-                            <time datetime="2020-01-01">Jan 1, 2020</time>
-                        </div>
-
-                    </div>-->
-                    <!-- End sidebar recent posts-->
-
-                    <h3 class="sidebar-title">Tags</h3>
-                    <div class="sidebar-item tags">
-                        <ul>
-                            <li><a href="#">App</a></li>
-                            <li><a href="#">IT</a></li>
-                            <li><a href="#">Business</a></li>
-                            <li><a href="#">Mac</a></li>
-                            <li><a href="#">Design</a></li>
-                            <li><a href="#">Office</a></li>
-                            <li><a href="#">Creative</a></li>
-                            <li><a href="#">Studio</a></li>
-                            <li><a href="#">Smart</a></li>
-                            <li><a href="#">Tips</a></li>
-                            <li><a href="#">Marketing</a></li>
-                        </ul>
-                    </div><!-- End sidebar tags-->
 
                 </div><!-- End sidebar -->
 
@@ -192,62 +186,3 @@
 
 <!-- Template Main JS File -->
 <script src="~/assets/js/main.js"></script>
-
-
-
-
-
-@*<h1>Index</h1>
-
-    <p>
-        <a asp-action="Create">Create New</a>
-    </p>
-    <table class="table">
-        <thead>
-            <tr>
-                <th>
-                    @Html.DisplayNameFor(model => model.Title)
-                </th>
-                <th>
-                    @Html.DisplayNameFor(model => model.Author)
-                </th>
-                <th>
-                    @Html.DisplayNameFor(model => model.Text)
-                </th>
-                <th>
-                    @Html.DisplayNameFor(model => model.Image)
-                </th>
-                <th>
-                    @Html.DisplayNameFor(model => model.Topic)
-                </th>
-                <th></th>
-            </tr>
-        </thead>
-        <tbody>
-            @foreach (var item in Model)
-            {
-                <tr>
-                    <td>
-                        @Html.DisplayFor(modelItem => item.Title)
-                    </td>
-                    <td>
-                        @Html.DisplayFor(modelItem => item.Author)
-                    </td>
-                    <td>
-                        @Html.DisplayFor(modelItem => item.Text)
-                    </td>
-                    <td>
-                        @Html.DisplayFor(modelItem => item.Image)
-                    </td>
-                    <td>
-                        @Html.DisplayFor(modelItem => item.Topic.Name)
-                    </td>
-                    <td>
-                        <a asp-action="Edit" asp-route-id="@item.ID">Edit</a> |
-                        <a asp-action="Details" asp-route-id="@item.ID">Details</a> |
-                        <a asp-action="Delete" asp-route-id="@item.ID">Delete</a>
-                    </td>
-                </tr>
-            }
-        </tbody>
-    </table>*@

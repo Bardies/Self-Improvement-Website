@@ -4,6 +4,9 @@
 @{
     Layout = "_blog";
     ViewData["Title"] = "Details";
+
+    IEnumerable<SelfDevelopmentApp.Models.Article> RelatedArticles = ViewBag.RelatedArticles;
+
     var base64 = Convert.ToBase64String(Model.Image);
     var imgsrc = string.Format("data:image/jpg;base64,{0}", base64);
     var articleText = "";
@@ -65,24 +68,29 @@
 
                     <h3 class="sidebar-title">Search</h3>
                     <div class="sidebar-item search-form">
-                        <form action="">
-                            <input type="text">
+                        @using (Html.BeginForm("Index", "Articles", FormMethod.Post))
+                        {
+                            <input type="text" name="name" required>
                             <button type="submit"><i class="bi bi-search"></i></button>
-                        </form>
+                        }
                     </div><!-- End sidebar search formn-->
 
-                    <h3 class="sidebar-title">Categories</h3>
+                    @if (RelatedArticles.ToList().Count > 1)
+                    {
+                    <h3 class="sidebar-title">Related articles</h3>
                     <div class="sidebar-item categories">
                         <ul>
-                            <li><a href="#">General <span>(25)</span></a></li>
-                            <li><a href="#">Lifestyle <span>(12)</span></a></li>
-                            <li><a href="#">Travel <span>(5)</span></a></li>
-                            <li><a href="#">Design <span>(22)</span></a></li>
-                            <li><a href="#">Creative <span>(8)</span></a></li>
-                            <li><a href="#">Educaion <span>(14)</span></a></li>
+                            @foreach (var item in RelatedArticles.ToList().TakeWhile(a => a.Title != null).Take(4))
+                            {
+                                if (item.ID != Model.ID)
+                                {
+                                <li><a asp-area="" asp-controller="Articles" asp-action="Details" asp-route-id="@item.ID">@item.Title</a></li>
+                                }
+                            }
+
                         </ul>
                     </div><!-- End sidebar categories-->
-
+                    }
                     <!--<h3 class="sidebar-title">Recent Posts</h3>
                     <div class="sidebar-item recent-posts">
                         <div class="post-item clearfix">
@@ -117,7 +125,7 @@
 
                     </div>--><!-- End sidebar recent posts-->
 
-                    <h3 class="sidebar-title">Tags</h3>
+                    <!--<h3 class="sidebar-title">Tags</h3>
                     <div class="sidebar-item tags">
                         <ul>
                             <li><a href="#">App</a></li>
@@ -132,7 +140,7 @@
                             <li><a href="#">Tips</a></li>
                             <li><a href="#">Marketing</a></li>
                         </ul>
-                    </div><!-- End sidebar tags-->
+                    </div>--><!-- End sidebar tags-->
 
                 </div><!-- End sidebar -->
 
