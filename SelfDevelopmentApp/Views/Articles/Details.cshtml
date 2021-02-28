@@ -79,13 +79,11 @@
                     {
                     <h3 class="sidebar-title">Related articles</h3>
                     <div class="sidebar-item categories">
-                        <ul>
-                            @foreach (var item in RelatedArticles.ToList().TakeWhile(a => a.Title != null).Take(4))
+                        <ul style="list-style-type: circle;">
+                            @foreach (var item in RelatedArticles.ToList().Where(a => a.ID != Model.ID).TakeWhile(a => a.Title != null).Take(4))
                             {
-                                if (item.ID != Model.ID)
-                                {
                                 <li><a asp-area="" asp-controller="Articles" asp-action="Details" asp-route-id="@item.ID">@item.Title</a></li>
-                                }
+
                             }
 
                         </ul>

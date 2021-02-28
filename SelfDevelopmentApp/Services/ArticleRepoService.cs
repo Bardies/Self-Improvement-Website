@@ -9,7 +9,7 @@ namespace SelfDevelopmentApp.Services
 {
     public class ArticleRepoService : IArticleRepository
     {
-        public AppDbContext AppDbContext { get; }
+        private AppDbContext AppDbContext { get; }
         public ArticleRepoService(AppDbContext appDbContext)
         {
             AppDbContext = appDbContext;

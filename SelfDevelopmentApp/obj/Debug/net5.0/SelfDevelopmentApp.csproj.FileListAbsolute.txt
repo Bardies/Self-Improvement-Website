@@ -248,4 +248,7 @@ H:\ITI\PD\ASP_MVC\Project\Project repo\Self-Improvement-Website\SelfDevelopmentA
 H:\ITI\PD\ASP_MVC\Project\Project repo\Self-Improvement-Website\SelfDevelopmentApp\obj\Debug\net5.0\Razor\Views\Articles\Edit.cshtml.g.cs
 H:\ITI\PD\ASP_MVC\Project\Project repo\Self-Improvement-Website\SelfDevelopmentApp\obj\Debug\net5.0\Razor\Views\Articles\Index.cshtml.g.cs
 H:\ITI\PD\ASP_MVC\Project\Project repo\Self-Improvement-Website\SelfDevelopmentApp\obj\Debug\net5.0\SelfDevelopmentApp.csproj.ResolveComReference.cache
+H:\ITI\PD\ASP_MVC\Project\Project repo\Self-Improvement-Website\SelfDevelopmentApp\bin\Debug\net5.0\MailKit.dll
+H:\ITI\PD\ASP_MVC\Project\Project repo\Self-Improvement-Website\SelfDevelopmentApp\bin\Debug\net5.0\MimeKit.dll
+H:\ITI\PD\ASP_MVC\Project\Project repo\Self-Improvement-Website\SelfDevelopmentApp\bin\Debug\net5.0\BouncyCastle.Crypto.dll
 H:\ITI\PD\ASP_MVC\Project\Project repo\Self-Improvement-Website\SelfDevelopmentApp\obj\Debug\net5.0\SelfDevelopmentApp.csprojAssemblyReference.cache
