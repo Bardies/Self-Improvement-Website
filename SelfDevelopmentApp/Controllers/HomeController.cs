@@ -76,12 +76,9 @@ namespace SelfDevelopmentApp.Controllers
             FileStream stream = new FileStream(
                 filePath, FileMode.Open, FileAccess.Read);
             BinaryReader reader = new BinaryReader(stream);
-
             byte[] photo = reader.ReadBytes((int)stream.Length);
-
             reader.Close();
             stream.Close();
-
             return photo;
         }
         public IActionResult Privacy()
