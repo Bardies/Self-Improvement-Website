@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace SelfDevelopmentApp.Services
 {
-    interface IArticleRepository
+    public interface IArticleRepository
     {
         public List<Article> AllArticles();   /// Index => List All
 

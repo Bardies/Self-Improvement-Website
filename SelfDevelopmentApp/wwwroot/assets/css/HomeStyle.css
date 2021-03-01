@@ -1,0 +1,176 @@
+﻿/*---------------------Index view------------------------*/
+#hero {
+    background: url("../img/Home/BG_3.png") top center no-repeat fixed;
+}
+#hero:before {
+    background: rgba(0, 0, 0, 0.3);
+}
+/*---------------------Navbar------------------------*/
+#header{
+    border-bottom:1px solid black;
+}
+/*First Section needs margin-top*/
+/*---------------------To do List & Habit Tracker Section------------------------*/
+#trackers {
+    margin-top: 67px;
+}
+/*Todo List & Habit Tracker*/
+.trackers .container .content .col-lg-6 {
+    background-color: lightblue;
+    width: 40%;
+    min-height: 300px;
+    margin: 10px auto;
+    /*background-size: contain;*/
+    background-size: 30%;
+    border: dashed 2px black;
+    /*position: relative;*/
+    /*min-height: 200px;
+    width: 40%;
+    margin: 10px auto;
+    padding: 10px;*/
+    transition: all .2s ease-in-out;
+}
+
+.trackers .container .content .col-lg-6:hover {
+    transform: scale(1.05);
+}
+
+.trackers .container .content #hTracker {
+    background: url("../img/Home/habit_tracker2.png") center center;
+}
+
+.trackers .container .content #todolist {
+    background: url("../img/Home/to-do-list.png") top center;
+}
+
+.section-title h2 {
+    font-size: 24px;
+    /*letter-spacing: 1px;*/
+    font-weight: 700;
+    padding: 8px 20px;
+    line-height: 1;
+    margin: 0;
+    background: #fdeff2;
+    /*color: #e43c5c;*/
+    display: inline-block;
+    /*text-transform: uppercase;*/
+    border-radius: 5px;
+}
+
+.trackers .content p:last-child {
+    margin-bottom: 0;
+}
+
+.trackers .content .btn-learn-more {
+    font-family: "Nunito", sans-serif;
+    font-weight: 600;
+    font-size: 14px;
+    letter-spacing: 1px;
+    display: inline-block;
+    padding: 12px 32px;
+    border-radius: 50px;
+    transition: 0.3s;
+    line-height: 1;
+    color: #e43c5c;
+    -webkit-animation-delay: 0.8s;
+    animation-delay: 0.8s;
+    margin-top: 6px;
+    border: 2px solid #e43c5c;
+}
+
+.trackers .content .btn-learn-more:hover {
+    background: #e43c5c;
+    color: #fff;
+    text-decoration: none;
+}
+
+/*---------------------Article Cards------------------------*/
+.card .card-img-top {
+    height: 250px;
+}
+
+.card-body {
+    padding: 1rem 1.7rem;
+}
+.card-title {
+    margin-top: 0.5rem;
+}
+.badge {
+    display: inline-block;
+    display: inline-flex;
+    align-items: center;
+    font-size: 80%;
+    font-weight: 600;
+    line-height: 1;
+    text-align: center;
+    white-space: nowrap;
+    vertical-align: baseline;
+    background: rgba(38,50,56,.04);
+    border: 1px solid rgba(38,50,56,.12);
+    color: rgba(38,50,56,.54);
+    fill: rgba(38,50,56,.54);
+    padding: .35em .8em;
+    border-radius: 10rem;
+    transition: all .2s ease-in-out;
+}
+
+.card-author {
+    font-size: 14px;
+    display: block;
+    white-space: nowrap;
+}
+
+.card-date {
+    font-size: 12px;
+    color: #8a9194;
+    transition: all .2s ease-in-out;
+}
+
+/*********************************************/
+.services {
+    margin-top: 67px;
+}
+.services h2 {
+    color: darkblue;
+    font-size: 42px;
+    text-align:center;
+    margin-bottom:25px;
+}
+
+.services h4 {
+    display: inline-block;
+    font-size: 32px;
+    color: black;
+    width: auto;
+    font-weight: bold;
+    border-bottom: 1px solid teal;
+}
+.services img {
+    max-width: 100%;
+    height: 350px;
+    border-radius: 15px;
+}
+
+.services .txt{
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-content: center;
+    flex-direction: column;
+    font-size: 24px;
+    padding: 5px;
+    /*border: 2px solid black;
+    border-radius:10px;*/
+}
+.services .highlight {
+    background-color: lightblue;
+    font-weight: bolder;
+}
+
+.services p:first-child {
+    margin-bottom: 0.5rem;
+}
+
+.services image {
+    text-align: center;
+}
