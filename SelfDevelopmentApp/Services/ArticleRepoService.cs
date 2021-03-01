@@ -9,7 +9,7 @@ namespace SelfDevelopmentApp.Services
 {
     public class ArticleRepoService : IArticleRepository
     {
-        public AppDbContext AppDbContext { get; }
+        private AppDbContext AppDbContext { get; }
         public ArticleRepoService(AppDbContext appDbContext)
         {
             AppDbContext = appDbContext;
@@ -18,7 +18,6 @@ namespace SelfDevelopmentApp.Services
         {
             return AppDbContext.Articles.Include(a => a.Topic).ToList();
         }
-
 
         public void DeleteArticle(int id)
         {
@@ -38,12 +37,7 @@ namespace SelfDevelopmentApp.Services
 
         public List<Article> GetArticlesByTitle(string title)
         {
-            return AppDbContext.Articles.Where(a => a.Title == title).ToList();
-        }
-
-        public Article GetArticleById(int id)
-        {
-            return AppDbContext.Articles.FirstOrDefault(a => a.ID == id);
+            return AppDbContext.Articles.Where(a => a.Title == title).Include(t => t.Topic).ToList();
         }
 
         public void InsertArticle(Article article)
@@ -54,12 +48,17 @@ namespace SelfDevelopmentApp.Services
 
         public List<Article> GetArticlesByTopic(Topic topic)
         {
-            return AppDbContext.Articles.Where(a => a.Topic.ID == topic.ID).ToList();
+            return AppDbContext.Articles.Include(t =>t.Topic).Where(a => a.Topic.ID == topic.ID).ToList();
         }
 
-        public Article GetArticleByID(int id)
+        public Article GetArticleByID(int? id)
         {
-            return AppDbContext.Articles.FirstOrDefault(a => a.ID == id);
+            if (id == null)
+            {
+                return null;
+            }
+
+            return AppDbContext.Articles.Include(t => t.Topic).FirstOrDefault(a => a.ID == id);
         }
     }
 }

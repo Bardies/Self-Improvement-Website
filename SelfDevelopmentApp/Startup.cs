@@ -1,16 +1,12 @@
 using Microsoft.AspNetCore.Builder;
 using Microsoft.AspNetCore.Hosting;
-using Microsoft.AspNetCore.HttpsPolicy;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.Extensions.Configuration;
 using Microsoft.Extensions.DependencyInjection;
 using Microsoft.Extensions.Hosting;
 using SelfDevelopmentApp.Models;
 using SelfDevelopmentApp.Services;
-using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Threading.Tasks;
+using SelfDevelopmentApp.Utilities;
 
 namespace SelfDevelopmentApp
 {
@@ -22,8 +18,6 @@ namespace SelfDevelopmentApp
         {
             this.configuration = configuration;
         }
-
-        public IConfiguration Configuration { get; }
        
 
         // This method gets called by the runtime. Use this method to add services to the container.
@@ -34,11 +28,16 @@ namespace SelfDevelopmentApp
             services.AddScoped<IToDoItemRepository, ToDoItemRepoService>();
             services.AddScoped<IArticleRepository, ArticleRepoService>();
             services.AddScoped<ITopicRepository, TopicRepoService>();
-        services.AddDbContext<AppDbContext>((options) =>
+            services.AddScoped<IUserRepository, UserRepoService>();
+            services.Configure<EmailConfig>(configuration.GetSection("Email"));
+            services.AddTransient<IEmailRepository, EmailRepoService>();
+            services.AddDbContext<AppDbContext>((options) =>
             options.UseSqlServer(configuration.GetConnectionString("stConn"))
             );
             services.AddControllersWithViews();
         }
+
+
 
         // This method gets called by the runtime. Use this method to configure the HTTP request pipeline.
         public void Configure(IApplicationBuilder app, IWebHostEnvironment env)
@@ -67,5 +66,8 @@ namespace SelfDevelopmentApp
                     pattern: "{controller=Home}/{action=Index}/{id?}");
             });
         }
+
+
+
     }
 }

@@ -1,0 +1,188 @@
+﻿@model IEnumerable<SelfDevelopmentApp.Models.Article>
+@using System.IO;
+@using System.Text;
+@using Microsoft.AspNetCore.Http;
+@{
+    Layout = "_blog";
+}
+
+@{
+    var ModleSize = ViewBag.NumOfItems;
+    var topics = ViewBag.Topics;
+    int pageNum = ViewBag.pageNum;
+    //CookieOptions cookieOptions = new CookieOptions();
+    //HttpContext.Response.Cookies.Append(
+    //         "name", "value", cookieOptions);
+}
+
+ ======= Breadcrumbs =======
+<section id="breadcrumbs" class="breadcrumbs">
+
+    <div class="container">
+
+        <ol>
+            <li><a asp-area="" asp-controller="Home" asp-action="Index">Home</a></li>
+            <li><a asp-area="" asp-controller="Articles" asp-action="Index">Articles</a></li>
+        </ol>
+        <h2>Articles</h2>
+
+    </div>
+</section><!-- End Breadcrumbs -->
+<!-- ======= Blog Section ======= -->
+<section id="blog" class="blog">
+    <div class="container" data-aos="fade-up">
+
+        <div class="row">
+
+            <div class="col-lg-8 entries" id="articlesList">
+
+                @if (Model == null)
+                {
+                    <article class="entry">
+
+                        <div class="entry-img">
+                            <img src='~/assets/img/search/NoResultFound.jpg' alt="" class="img-fluid">
+                        </div>
+                    </article>
+
+                    <div style="text-align:center">
+
+                        <h2 class="entry-title">
+                            No matched articles found
+                        </h2>
+                    </div>
+
+                }
+
+                else
+                {
+                    @foreach (var item in Model.ToList().Skip((pageNum - 1) * 4).TakeWhile(m => m.Title != null).Take(4))
+                    {
+
+
+                        var base64 = Convert.ToBase64String(item.Image);
+                        var imgsrc = string.Format("data:image/jpg;base64,{0}", base64);
+                        var str = "";
+                        using (MemoryStream stream = new MemoryStream((byte[])item.Text, false))
+                        using (StreamReader reader = new StreamReader(stream, Encoding.Default, true))
+                        {
+                            str += reader.ReadToEnd();
+                        }
+                        string displayedTxt = str.Split('\n')[0];
+
+
+                        <article class="entry">
+
+                            <div class="entry-img">
+                                <img src='@imgsrc' alt="" class="img-fluid">
+                            </div>
+
+                            <h2 class="entry-title">
+                                <a asp-area="" asp-controller="Articles" asp-action="Details" asp-route-id="@item.ID">@item.Title  |  @item.Topic.Name</a>
+                            </h2>
+
+                            <div class="entry-meta">
+                                <ul>
+                                    <li class="d-flex align-items-center"><i class="bi bi-person"></i>@item.Author</li>
+                                </ul>
+                            </div>
+
+                            <div class="entry-content">
+                                <p>
+                                    @displayedTxt
+                                </p>
+                                <div class="read-more">
+                                    <a asp-area="" asp-controller="Articles" asp-action="Details" asp-route-id="@item.ID">Read More</a>
+                                </div>
+                            </div>
+
+                        </article><!-- End blog entry -->
+
+
+                    }
+
+                    <div class="blog-pagination">
+                        <ul class="justify-content-center">
+                            <li>
+                                <form action="" method="post">
+                                    <input type="hidden" name="name" value="1" />
+                                    <button type="submit" style=" color: #fff; background-color: #e43c53; border:none; width: 40px; height:38px">1</button>
+                                </form>
+                            </li>
+                            @if (ModleSize > 4)
+                            {
+                                int numOfPage;
+                                if ((ModleSize - 4) % 4 == 0)
+                                {
+                                    numOfPage = (ModleSize - 4) / 4;
+                                }
+                                else
+                                {
+                                    numOfPage = ((ModleSize - 4) / 4) + 1;
+                                }
+
+                                for (int i = 0; i < numOfPage; i++)
+                                {
+                                    <li>
+                                        <form action="" method="post" >
+                                            <input type="hidden" name="name" value="@(i+2)" />
+                                            <button type="submit" style=" color: #fff; background-color: #e43c53; border:none; width: 40px; height:38px">@(i+2)</button>
+                                        </form>
+                                        @*<a href="#breadcrumbs">@(i+2)</a>*@
+                                    </li>
+                                }
+                            }
+                        </ul>
+                    </div>
+                }
+            </div><!-- End blog entries list -->
+
+            <div class="col-lg-4">
+
+                <div class="sidebar">
+
+                    <h3 class="sidebar-title">Search</h3>
+                    <div class="sidebar-item search-form">
+                        <form action="" method="post">
+                            <input type="text" name="name" required>
+                            <button type="submit"><i class="bi bi-search"></i></button>
+                        </form>
+                    </div><!-- End sidebar search formn-->
+
+                    <h3 class="sidebar-title">Topics</h3>
+                    <div class="sidebar-item categories">
+                        <ul>
+
+                            @foreach (var topic in topics)
+                            {
+                                <li>
+                                    <form action="" method="post">
+                                        <input type="hidden" name="name" value="@topic.Name">
+                                        <button type="submit" style=" background:#e43c53 ; color: #fff; padding: 6px 15px; transition: 0.3s; font-size: 14px; border:1px solid #e43c5c; border-radius:12px ;font-size:12pt; font-family:'Arial Rounded MT'; font-weight:400; ">@topic.Name</button>
+                                    </form>
+                                </li>
+                            }
+
+                        </ul>
+                    </div><!-- End sidebar categories-->
+
+                </div><!-- End sidebar -->
+
+            </div><!-- End blog sidebar -->
+
+        </div>
+
+    </div>
+</section>
+
+<a href="#" class="back-to-top d-flex align-items-center justify-content-center"><i class="bi bi-arrow-up-short"></i></a>
+
+<!-- Vendor JS Files -->
+<script src="~/assets/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+<script src="~/assets/vendor/glightbox/js/glightbox.min.js"></script>
+<script src="~/assets/vendor/isotope-layout/isotope.pkgd.min.js"></script>
+<script src="~/assets/vendor/php-email-form/validate.js"></script>
+<script src="~/assets/vendor/swiper/swiper-bundle.min.js"></script>
+
+<!-- Template Main JS File -->
+<script src="~/assets/js/main.js"></script>

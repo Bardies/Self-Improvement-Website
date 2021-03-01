@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace SelfDevelopmentApp.Services
 {
-    interface ITopicRepository
+    public interface ITopicRepository
     {
         public List<Topic> AllTopics();  /// Index => List All
 
@@ -17,5 +17,7 @@ namespace SelfDevelopmentApp.Services
         public void EditTopic(int id, Topic article);  /// Edit
 
         public void DeleteTopic(int id);   /// Delete
+
+        public Topic GetTopicByName(string name);
     }
 }

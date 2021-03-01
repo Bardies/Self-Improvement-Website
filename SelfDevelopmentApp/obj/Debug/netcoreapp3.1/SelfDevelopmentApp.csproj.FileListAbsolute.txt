@@ -1,0 +1,241 @@
+H:\ITI\PD\ASP_MVC\Project\Project repo\Self-Improvement-Website\SelfDevelopmentApp\bin\Debug\netcoreapp3.1\appsettings.Development.json
+H:\ITI\PD\ASP_MVC\Project\Project repo\Self-Improvement-Website\SelfDevelopmentApp\bin\Debug\netcoreapp3.1\appsettings.json
+H:\ITI\PD\ASP_MVC\Project\Project repo\Self-Improvement-Website\SelfDevelopmentApp\bin\Debug\netcoreapp3.1\SelfDevelopmentApp.exe
+H:\ITI\PD\ASP_MVC\Project\Project repo\Self-Improvement-Website\SelfDevelopmentApp\bin\Debug\netcoreapp3.1\SelfDevelopmentApp.deps.json
+H:\ITI\PD\ASP_MVC\Project\Project repo\Self-Improvement-Website\SelfDevelopmentApp\bin\Debug\netcoreapp3.1\SelfDevelopmentApp.runtimeconfig.json
+H:\ITI\PD\ASP_MVC\Project\Project repo\Self-Improvement-Website\SelfDevelopmentApp\bin\Debug\netcoreapp3.1\SelfDevelopmentApp.runtimeconfig.dev.json
+H:\ITI\PD\ASP_MVC\Project\Project repo\Self-Improvement-Website\SelfDevelopmentApp\bin\Debug\netcoreapp3.1\SelfDevelopmentApp.dll
+H:\ITI\PD\ASP_MVC\Project\Project repo\Self-Improvement-Website\SelfDevelopmentApp\bin\Debug\netcoreapp3.1\SelfDevelopmentApp.pdb
+H:\ITI\PD\ASP_MVC\Project\Project repo\Self-Improvement-Website\SelfDevelopmentApp\bin\Debug\netcoreapp3.1\SelfDevelopmentApp.Views.dll
+H:\ITI\PD\ASP_MVC\Project\Project repo\Self-Improvement-Website\SelfDevelopmentApp\bin\Debug\netcoreapp3.1\SelfDevelopmentApp.Views.pdb
+H:\ITI\PD\ASP_MVC\Project\Project repo\Self-Improvement-Website\SelfDevelopmentApp\bin\Debug\netcoreapp3.1\Humanizer.dll
+H:\ITI\PD\ASP_MVC\Project\Project repo\Self-Improvement-Website\SelfDevelopmentApp\bin\Debug\netcoreapp3.1\MailKit.dll
+H:\ITI\PD\ASP_MVC\Project\Project repo\Self-Improvement-Website\SelfDevelopmentApp\bin\Debug\netcoreapp3.1\Microsoft.Data.SqlClient.dll
+H:\ITI\PD\ASP_MVC\Project\Project repo\Self-Improvement-Website\SelfDevelopmentApp\bin\Debug\netcoreapp3.1\Microsoft.Data.Sqlite.dll
+H:\ITI\PD\ASP_MVC\Project\Project repo\Self-Improvement-Website\SelfDevelopmentApp\bin\Debug\netcoreapp3.1\Microsoft.DotNet.PlatformAbstractions.dll
+H:\ITI\PD\ASP_MVC\Project\Project repo\Self-Improvement-Website\SelfDevelopmentApp\bin\Debug\netcoreapp3.1\Microsoft.EntityFrameworkCore.dll
+H:\ITI\PD\ASP_MVC\Project\Project repo\Self-Improvement-Website\SelfDevelopmentApp\bin\Debug\netcoreapp3.1\Microsoft.EntityFrameworkCore.Abstractions.dll
+H:\ITI\PD\ASP_MVC\Project\Project repo\Self-Improvement-Website\SelfDevelopmentApp\bin\Debug\netcoreapp3.1\Microsoft.EntityFrameworkCore.Design.dll
+H:\ITI\PD\ASP_MVC\Project\Project repo\Self-Improvement-Website\SelfDevelopmentApp\bin\Debug\netcoreapp3.1\Microsoft.EntityFrameworkCore.Relational.dll
+H:\ITI\PD\ASP_MVC\Project\Project repo\Self-Improvement-Website\SelfDevelopmentApp\bin\Debug\netcoreapp3.1\Microsoft.EntityFrameworkCore.Sqlite.dll
+H:\ITI\PD\ASP_MVC\Project\Project repo\Self-Improvement-Website\SelfDevelopmentApp\bin\Debug\netcoreapp3.1\Microsoft.EntityFrameworkCore.SqlServer.dll
+H:\ITI\PD\ASP_MVC\Project\Project repo\Self-Improvement-Website\SelfDevelopmentApp\bin\Debug\netcoreapp3.1\Microsoft.Extensions.Caching.Abstractions.dll
+H:\ITI\PD\ASP_MVC\Project\Project repo\Self-Improvement-Website\SelfDevelopmentApp\bin\Debug\netcoreapp3.1\Microsoft.Extensions.Caching.Memory.dll
+H:\ITI\PD\ASP_MVC\Project\Project repo\Self-Improvement-Website\SelfDevelopmentApp\bin\Debug\netcoreapp3.1\Microsoft.Extensions.Configuration.Abstractions.dll
+H:\ITI\PD\ASP_MVC\Project\Project repo\Self-Improvement-Website\SelfDevelopmentApp\bin\Debug\netcoreapp3.1\Microsoft.Extensions.DependencyInjection.dll
+H:\ITI\PD\ASP_MVC\Project\Project repo\Self-Improvement-Website\SelfDevelopmentApp\bin\Debug\netcoreapp3.1\Microsoft.Extensions.DependencyInjection.Abstractions.dll
+H:\ITI\PD\ASP_MVC\Project\Project repo\Self-Improvement-Website\SelfDevelopmentApp\bin\Debug\netcoreapp3.1\Microsoft.Extensions.DependencyModel.dll
+H:\ITI\PD\ASP_MVC\Project\Project repo\Self-Improvement-Website\SelfDevelopmentApp\bin\Debug\netcoreapp3.1\Microsoft.Extensions.Logging.dll
+H:\ITI\PD\ASP_MVC\Project\Project repo\Self-Improvement-Website\SelfDevelopmentApp\bin\Debug\netcoreapp3.1\Microsoft.Extensions.Logging.Abstractions.dll
+H:\ITI\PD\ASP_MVC\Project\Project repo\Self-Improvement-Website\SelfDevelopmentApp\bin\Debug\netcoreapp3.1\Microsoft.Extensions.Options.dll
+H:\ITI\PD\ASP_MVC\Project\Project repo\Self-Improvement-Website\SelfDevelopmentApp\bin\Debug\netcoreapp3.1\Microsoft.Extensions.Primitives.dll
+H:\ITI\PD\ASP_MVC\Project\Project repo\Self-Improvement-Website\SelfDevelopmentApp\bin\Debug\netcoreapp3.1\Microsoft.Identity.Client.dll
+H:\ITI\PD\ASP_MVC\Project\Project repo\Self-Improvement-Website\SelfDevelopmentApp\bin\Debug\netcoreapp3.1\Microsoft.IdentityModel.JsonWebTokens.dll
+H:\ITI\PD\ASP_MVC\Project\Project repo\Self-Improvement-Website\SelfDevelopmentApp\bin\Debug\netcoreapp3.1\Microsoft.IdentityModel.Logging.dll
+H:\ITI\PD\ASP_MVC\Project\Project repo\Self-Improvement-Website\SelfDevelopmentApp\bin\Debug\netcoreapp3.1\Microsoft.IdentityModel.Protocols.dll
+H:\ITI\PD\ASP_MVC\Project\Project repo\Self-Improvement-Website\SelfDevelopmentApp\bin\Debug\netcoreapp3.1\Microsoft.IdentityModel.Protocols.OpenIdConnect.dll
+H:\ITI\PD\ASP_MVC\Project\Project repo\Self-Improvement-Website\SelfDevelopmentApp\bin\Debug\netcoreapp3.1\Microsoft.IdentityModel.Tokens.dll
+H:\ITI\PD\ASP_MVC\Project\Project repo\Self-Improvement-Website\SelfDevelopmentApp\bin\Debug\netcoreapp3.1\MimeKit.dll
+H:\ITI\PD\ASP_MVC\Project\Project repo\Self-Improvement-Website\SelfDevelopmentApp\bin\Debug\netcoreapp3.1\Newtonsoft.Json.dll
+H:\ITI\PD\ASP_MVC\Project\Project repo\Self-Improvement-Website\SelfDevelopmentApp\bin\Debug\netcoreapp3.1\BouncyCastle.Crypto.dll
+H:\ITI\PD\ASP_MVC\Project\Project repo\Self-Improvement-Website\SelfDevelopmentApp\bin\Debug\netcoreapp3.1\SQLitePCLRaw.batteries_v2.dll
+H:\ITI\PD\ASP_MVC\Project\Project repo\Self-Improvement-Website\SelfDevelopmentApp\bin\Debug\netcoreapp3.1\SQLitePCLRaw.nativelibrary.dll
+H:\ITI\PD\ASP_MVC\Project\Project repo\Self-Improvement-Website\SelfDevelopmentApp\bin\Debug\netcoreapp3.1\SQLitePCLRaw.core.dll
+H:\ITI\PD\ASP_MVC\Project\Project repo\Self-Improvement-Website\SelfDevelopmentApp\bin\Debug\netcoreapp3.1\SQLitePCLRaw.provider.dynamic_cdecl.dll
+H:\ITI\PD\ASP_MVC\Project\Project repo\Self-Improvement-Website\SelfDevelopmentApp\bin\Debug\netcoreapp3.1\System.Collections.Immutable.dll
+H:\ITI\PD\ASP_MVC\Project\Project repo\Self-Improvement-Website\SelfDevelopmentApp\bin\Debug\netcoreapp3.1\System.ComponentModel.Annotations.dll
+H:\ITI\PD\ASP_MVC\Project\Project repo\Self-Improvement-Website\SelfDevelopmentApp\bin\Debug\netcoreapp3.1\System.Configuration.ConfigurationManager.dll
+H:\ITI\PD\ASP_MVC\Project\Project repo\Self-Improvement-Website\SelfDevelopmentApp\bin\Debug\netcoreapp3.1\System.Diagnostics.DiagnosticSource.dll
+H:\ITI\PD\ASP_MVC\Project\Project repo\Self-Improvement-Website\SelfDevelopmentApp\bin\Debug\netcoreapp3.1\System.IdentityModel.Tokens.Jwt.dll
+H:\ITI\PD\ASP_MVC\Project\Project repo\Self-Improvement-Website\SelfDevelopmentApp\bin\Debug\netcoreapp3.1\System.Runtime.Caching.dll
+H:\ITI\PD\ASP_MVC\Project\Project repo\Self-Improvement-Website\SelfDevelopmentApp\bin\Debug\netcoreapp3.1\System.Security.Cryptography.ProtectedData.dll
+H:\ITI\PD\ASP_MVC\Project\Project repo\Self-Improvement-Website\SelfDevelopmentApp\bin\Debug\netcoreapp3.1\System.Text.Encodings.Web.dll
+H:\ITI\PD\ASP_MVC\Project\Project repo\Self-Improvement-Website\SelfDevelopmentApp\bin\Debug\netcoreapp3.1\System.Text.Json.dll
+H:\ITI\PD\ASP_MVC\Project\Project repo\Self-Improvement-Website\SelfDevelopmentApp\bin\Debug\netcoreapp3.1\runtimes\unix\lib\netcoreapp3.1\Microsoft.Data.SqlClient.dll
+H:\ITI\PD\ASP_MVC\Project\Project repo\Self-Improvement-Website\SelfDevelopmentApp\bin\Debug\netcoreapp3.1\runtimes\win\lib\netcoreapp3.1\Microsoft.Data.SqlClient.dll
+H:\ITI\PD\ASP_MVC\Project\Project repo\Self-Improvement-Website\SelfDevelopmentApp\bin\Debug\netcoreapp3.1\runtimes\win-arm\native\Microsoft.Data.SqlClient.SNI.dll
+H:\ITI\PD\ASP_MVC\Project\Project repo\Self-Improvement-Website\SelfDevelopmentApp\bin\Debug\netcoreapp3.1\runtimes\win-arm\native\Microsoft.Data.SqlClient.SNI.pdb
+H:\ITI\PD\ASP_MVC\Project\Project repo\Self-Improvement-Website\SelfDevelopmentApp\bin\Debug\netcoreapp3.1\runtimes\win-arm64\native\Microsoft.Data.SqlClient.SNI.dll
+H:\ITI\PD\ASP_MVC\Project\Project repo\Self-Improvement-Website\SelfDevelopmentApp\bin\Debug\netcoreapp3.1\runtimes\win-arm64\native\Microsoft.Data.SqlClient.SNI.pdb
+H:\ITI\PD\ASP_MVC\Project\Project repo\Self-Improvement-Website\SelfDevelopmentApp\bin\Debug\netcoreapp3.1\runtimes\win-x64\native\Microsoft.Data.SqlClient.SNI.dll
+H:\ITI\PD\ASP_MVC\Project\Project repo\Self-Improvement-Website\SelfDevelopmentApp\bin\Debug\netcoreapp3.1\runtimes\win-x64\native\Microsoft.Data.SqlClient.SNI.pdb
+H:\ITI\PD\ASP_MVC\Project\Project repo\Self-Improvement-Website\SelfDevelopmentApp\bin\Debug\netcoreapp3.1\runtimes\win-x86\native\Microsoft.Data.SqlClient.SNI.dll
+H:\ITI\PD\ASP_MVC\Project\Project repo\Self-Improvement-Website\SelfDevelopmentApp\bin\Debug\netcoreapp3.1\runtimes\win-x86\native\Microsoft.Data.SqlClient.SNI.pdb
+H:\ITI\PD\ASP_MVC\Project\Project repo\Self-Improvement-Website\SelfDevelopmentApp\bin\Debug\netcoreapp3.1\runtimes\alpine-x64\native\libe_sqlite3.so
+H:\ITI\PD\ASP_MVC\Project\Project repo\Self-Improvement-Website\SelfDevelopmentApp\bin\Debug\netcoreapp3.1\runtimes\linux-arm\native\libe_sqlite3.so
+H:\ITI\PD\ASP_MVC\Project\Project repo\Self-Improvement-Website\SelfDevelopmentApp\bin\Debug\netcoreapp3.1\runtimes\linux-arm64\native\libe_sqlite3.so
+H:\ITI\PD\ASP_MVC\Project\Project repo\Self-Improvement-Website\SelfDevelopmentApp\bin\Debug\netcoreapp3.1\runtimes\linux-armel\native\libe_sqlite3.so
+H:\ITI\PD\ASP_MVC\Project\Project repo\Self-Improvement-Website\SelfDevelopmentApp\bin\Debug\netcoreapp3.1\runtimes\linux-mips64\native\libe_sqlite3.so
+H:\ITI\PD\ASP_MVC\Project\Project repo\Self-Improvement-Website\SelfDevelopmentApp\bin\Debug\netcoreapp3.1\runtimes\linux-musl-x64\native\libe_sqlite3.so
+H:\ITI\PD\ASP_MVC\Project\Project repo\Self-Improvement-Website\SelfDevelopmentApp\bin\Debug\netcoreapp3.1\runtimes\linux-x64\native\libe_sqlite3.so
+H:\ITI\PD\ASP_MVC\Project\Project repo\Self-Improvement-Website\SelfDevelopmentApp\bin\Debug\netcoreapp3.1\runtimes\linux-x86\native\libe_sqlite3.so
+H:\ITI\PD\ASP_MVC\Project\Project repo\Self-Improvement-Website\SelfDevelopmentApp\bin\Debug\netcoreapp3.1\runtimes\osx-x64\native\libe_sqlite3.dylib
+H:\ITI\PD\ASP_MVC\Project\Project repo\Self-Improvement-Website\SelfDevelopmentApp\bin\Debug\netcoreapp3.1\runtimes\win-arm\native\e_sqlite3.dll
+H:\ITI\PD\ASP_MVC\Project\Project repo\Self-Improvement-Website\SelfDevelopmentApp\bin\Debug\netcoreapp3.1\runtimes\win-arm64\native\e_sqlite3.dll
+H:\ITI\PD\ASP_MVC\Project\Project repo\Self-Improvement-Website\SelfDevelopmentApp\bin\Debug\netcoreapp3.1\runtimes\win-x64\native\e_sqlite3.dll
+H:\ITI\PD\ASP_MVC\Project\Project repo\Self-Improvement-Website\SelfDevelopmentApp\bin\Debug\netcoreapp3.1\runtimes\win-x86\native\e_sqlite3.dll
+H:\ITI\PD\ASP_MVC\Project\Project repo\Self-Improvement-Website\SelfDevelopmentApp\bin\Debug\netcoreapp3.1\runtimes\win\lib\netstandard2.0\System.Runtime.Caching.dll
+H:\ITI\PD\ASP_MVC\Project\Project repo\Self-Improvement-Website\SelfDevelopmentApp\bin\Debug\netcoreapp3.1\runtimes\win\lib\netstandard2.0\System.Security.Cryptography.ProtectedData.dll
+H:\ITI\PD\ASP_MVC\Project\Project repo\Self-Improvement-Website\SelfDevelopmentApp\obj\Debug\netcoreapp3.1\SelfDevelopmentApp.csproj.ResolveComReference.cache
+H:\ITI\PD\ASP_MVC\Project\Project repo\Self-Improvement-Website\SelfDevelopmentApp\obj\Debug\netcoreapp3.1\SelfDevelopmentApp.AssemblyInfoInputs.cache
+H:\ITI\PD\ASP_MVC\Project\Project repo\Self-Improvement-Website\SelfDevelopmentApp\obj\Debug\netcoreapp3.1\SelfDevelopmentApp.AssemblyInfo.cs
+H:\ITI\PD\ASP_MVC\Project\Project repo\Self-Improvement-Website\SelfDevelopmentApp\obj\Debug\netcoreapp3.1\SelfDevelopmentApp.csproj.CoreCompileInputs.cache
+H:\ITI\PD\ASP_MVC\Project\Project repo\Self-Improvement-Website\SelfDevelopmentApp\obj\Debug\netcoreapp3.1\SelfDevelopmentApp.MvcApplicationPartsAssemblyInfo.cache
+H:\ITI\PD\ASP_MVC\Project\Project repo\Self-Improvement-Website\SelfDevelopmentApp\obj\Debug\netcoreapp3.1\SelfDevelopmentApp.RazorAssemblyInfo.cache
+H:\ITI\PD\ASP_MVC\Project\Project repo\Self-Improvement-Website\SelfDevelopmentApp\obj\Debug\netcoreapp3.1\SelfDevelopmentApp.RazorAssemblyInfo.cs
+H:\ITI\PD\ASP_MVC\Project\Project repo\Self-Improvement-Website\SelfDevelopmentApp\obj\Debug\netcoreapp3.1\staticwebassets\SelfDevelopmentApp.StaticWebAssets.Manifest.cache
+H:\ITI\PD\ASP_MVC\Project\Project repo\Self-Improvement-Website\SelfDevelopmentApp\obj\Debug\netcoreapp3.1\staticwebassets\SelfDevelopmentApp.StaticWebAssets.xml
+H:\ITI\PD\ASP_MVC\Project\Project repo\Self-Improvement-Website\SelfDevelopmentApp\obj\Debug\netcoreapp3.1\scopedcss\bundle\SelfDevelopmentApp.styles.css
+H:\ITI\PD\ASP_MVC\Project\Project repo\Self-Improvement-Website\SelfDevelopmentApp\obj\Debug\netcoreapp3.1\SelfDevelopmentApp.TagHelpers.input.cache
+H:\ITI\PD\ASP_MVC\Project\Project repo\Self-Improvement-Website\SelfDevelopmentApp\obj\Debug\netcoreapp3.1\SelfDevelopmentApp.TagHelpers.output.cache
+H:\ITI\PD\ASP_MVC\Project\Project repo\Self-Improvement-Website\SelfDevelopmentApp\obj\Debug\netcoreapp3.1\SelfDevelopmentApp.RazorCoreGenerate.cache
+H:\ITI\PD\ASP_MVC\Project\Project repo\Self-Improvement-Website\SelfDevelopmentApp\obj\Debug\netcoreapp3.1\Razor\Views\Articles\Create.cshtml.g.cs
+H:\ITI\PD\ASP_MVC\Project\Project repo\Self-Improvement-Website\SelfDevelopmentApp\obj\Debug\netcoreapp3.1\Razor\Views\Articles\Delete.cshtml.g.cs
+H:\ITI\PD\ASP_MVC\Project\Project repo\Self-Improvement-Website\SelfDevelopmentApp\obj\Debug\netcoreapp3.1\Razor\Views\Articles\Details.cshtml.g.cs
+H:\ITI\PD\ASP_MVC\Project\Project repo\Self-Improvement-Website\SelfDevelopmentApp\obj\Debug\netcoreapp3.1\Razor\Views\Articles\Edit.cshtml.g.cs
+H:\ITI\PD\ASP_MVC\Project\Project repo\Self-Improvement-Website\SelfDevelopmentApp\obj\Debug\netcoreapp3.1\Razor\Views\Articles\Index.cshtml.g.cs
+H:\ITI\PD\ASP_MVC\Project\Project repo\Self-Improvement-Website\SelfDevelopmentApp\obj\Debug\netcoreapp3.1\Razor\Views\Home\Blog.cshtml.g.cs
+H:\ITI\PD\ASP_MVC\Project\Project repo\Self-Improvement-Website\SelfDevelopmentApp\obj\Debug\netcoreapp3.1\Razor\Views\Home\BlogSingle.cshtml.g.cs
+H:\ITI\PD\ASP_MVC\Project\Project repo\Self-Improvement-Website\SelfDevelopmentApp\obj\Debug\netcoreapp3.1\Razor\Views\Home\Index.cshtml.g.cs
+H:\ITI\PD\ASP_MVC\Project\Project repo\Self-Improvement-Website\SelfDevelopmentApp\obj\Debug\netcoreapp3.1\Razor\Views\Home\portfolio-details.cshtml.g.cs
+H:\ITI\PD\ASP_MVC\Project\Project repo\Self-Improvement-Website\SelfDevelopmentApp\obj\Debug\netcoreapp3.1\Razor\Views\Home\Privacy.cshtml.g.cs
+H:\ITI\PD\ASP_MVC\Project\Project repo\Self-Improvement-Website\SelfDevelopmentApp\obj\Debug\netcoreapp3.1\Razor\Views\Shared\Error.cshtml.g.cs
+H:\ITI\PD\ASP_MVC\Project\Project repo\Self-Improvement-Website\SelfDevelopmentApp\obj\Debug\netcoreapp3.1\Razor\Views\Shared\_blog.cshtml.g.cs
+H:\ITI\PD\ASP_MVC\Project\Project repo\Self-Improvement-Website\SelfDevelopmentApp\obj\Debug\netcoreapp3.1\Razor\Views\Shared\_index.cshtml.g.cs
+H:\ITI\PD\ASP_MVC\Project\Project repo\Self-Improvement-Website\SelfDevelopmentApp\obj\Debug\netcoreapp3.1\Razor\Views\Shared\_Layout.cshtml.g.cs
+H:\ITI\PD\ASP_MVC\Project\Project repo\Self-Improvement-Website\SelfDevelopmentApp\obj\Debug\netcoreapp3.1\Razor\Views\Shared\_ValidationScriptsPartial.cshtml.g.cs
+H:\ITI\PD\ASP_MVC\Project\Project repo\Self-Improvement-Website\SelfDevelopmentApp\obj\Debug\netcoreapp3.1\Razor\Views\_ViewImports.cshtml.g.cs
+H:\ITI\PD\ASP_MVC\Project\Project repo\Self-Improvement-Website\SelfDevelopmentApp\obj\Debug\netcoreapp3.1\Razor\Views\_ViewStart.cshtml.g.cs
+H:\ITI\PD\ASP_MVC\Project\Project repo\Self-Improvement-Website\SelfDevelopmentApp\obj\Debug\netcoreapp3.1\SelfDevelopmentApp.RazorTargetAssemblyInfo.cache
+H:\ITI\PD\ASP_MVC\Project\Project repo\Self-Improvement-Website\SelfDevelopmentApp\obj\Debug\netcoreapp3.1\SelfDevelopmentApp.RazorTargetAssemblyInfo.cs
+H:\ITI\PD\ASP_MVC\Project\Project repo\Self-Improvement-Website\SelfDevelopmentApp\obj\Debug\netcoreapp3.1\SelfDevelopmentApp.Views.pdb
+H:\ITI\PD\ASP_MVC\Project\Project repo\Self-Improvement-Website\SelfDevelopmentApp\obj\Debug\netcoreapp3.1\SelfDevelopmentApp.csproj.CopyComplete
+H:\ITI\PD\ASP_MVC\Project\Project repo\Self-Improvement-Website\SelfDevelopmentApp\obj\Debug\netcoreapp3.1\SelfDevelopmentApp.dll
+H:\ITI\PD\ASP_MVC\Project\Project repo\Self-Improvement-Website\SelfDevelopmentApp\obj\Debug\netcoreapp3.1\SelfDevelopmentApp.pdb
+H:\ITI\PD\ASP_MVC\Project\Project repo\Self-Improvement-Website\SelfDevelopmentApp\obj\Debug\netcoreapp3.1\SelfDevelopmentApp.genruntimeconfig.cache
+H:\ITI\PD\ASP_MVC\Project\Project repo\Self-Improvement-Website\SelfDevelopmentApp\obj\Debug\netcoreapp3.1\SelfDevelopmentApp.csprojAssemblyReference.cache
+E:\ITI\ASP_MVC\Project\Self-Improvement-Website\SelfDevelopmentApp\obj\Debug\netcoreapp3.1\SelfDevelopmentApp.csproj.ResolveComReference.cache
+E:\ITI\ASP_MVC\Project\Self-Improvement-Website\SelfDevelopmentApp\obj\Debug\netcoreapp3.1\SelfDevelopmentApp.AssemblyInfoInputs.cache
+E:\ITI\ASP_MVC\Project\Self-Improvement-Website\SelfDevelopmentApp\obj\Debug\netcoreapp3.1\SelfDevelopmentApp.AssemblyInfo.cs
+E:\ITI\ASP_MVC\Project\Self-Improvement-Website\SelfDevelopmentApp\obj\Debug\netcoreapp3.1\SelfDevelopmentApp.csproj.CoreCompileInputs.cache
+E:\ITI\ASP_MVC\Project\Self-Improvement-Website\SelfDevelopmentApp\obj\Debug\netcoreapp3.1\SelfDevelopmentApp.MvcApplicationPartsAssemblyInfo.cache
+E:\ITI\ASP_MVC\Project\Self-Improvement-Website\SelfDevelopmentApp\obj\Debug\netcoreapp3.1\SelfDevelopmentApp.RazorAssemblyInfo.cache
+E:\ITI\ASP_MVC\Project\Self-Improvement-Website\SelfDevelopmentApp\obj\Debug\netcoreapp3.1\SelfDevelopmentApp.RazorAssemblyInfo.cs
+E:\ITI\ASP_MVC\Project\Self-Improvement-Website\SelfDevelopmentApp\obj\Debug\netcoreapp3.1\SelfDevelopmentApp.dll
+E:\ITI\ASP_MVC\Project\Self-Improvement-Website\SelfDevelopmentApp\obj\Debug\netcoreapp3.1\SelfDevelopmentApp.pdb
+E:\ITI\ASP_MVC\Project\Self-Improvement-Website\SelfDevelopmentApp\bin\Debug\netcoreapp3.1\appsettings.Development.json
+E:\ITI\ASP_MVC\Project\Self-Improvement-Website\SelfDevelopmentApp\bin\Debug\netcoreapp3.1\appsettings.json
+E:\ITI\ASP_MVC\Project\Self-Improvement-Website\SelfDevelopmentApp\bin\Debug\netcoreapp3.1\SelfDevelopmentApp.exe
+E:\ITI\ASP_MVC\Project\Self-Improvement-Website\SelfDevelopmentApp\bin\Debug\netcoreapp3.1\SelfDevelopmentApp.deps.json
+E:\ITI\ASP_MVC\Project\Self-Improvement-Website\SelfDevelopmentApp\bin\Debug\netcoreapp3.1\SelfDevelopmentApp.runtimeconfig.json
+E:\ITI\ASP_MVC\Project\Self-Improvement-Website\SelfDevelopmentApp\bin\Debug\netcoreapp3.1\SelfDevelopmentApp.runtimeconfig.dev.json
+E:\ITI\ASP_MVC\Project\Self-Improvement-Website\SelfDevelopmentApp\bin\Debug\netcoreapp3.1\SelfDevelopmentApp.dll
+E:\ITI\ASP_MVC\Project\Self-Improvement-Website\SelfDevelopmentApp\bin\Debug\netcoreapp3.1\SelfDevelopmentApp.pdb
+E:\ITI\ASP_MVC\Project\Self-Improvement-Website\SelfDevelopmentApp\bin\Debug\netcoreapp3.1\SelfDevelopmentApp.Views.dll
+E:\ITI\ASP_MVC\Project\Self-Improvement-Website\SelfDevelopmentApp\bin\Debug\netcoreapp3.1\SelfDevelopmentApp.Views.pdb
+E:\ITI\ASP_MVC\Project\Self-Improvement-Website\SelfDevelopmentApp\bin\Debug\netcoreapp3.1\Humanizer.dll
+E:\ITI\ASP_MVC\Project\Self-Improvement-Website\SelfDevelopmentApp\bin\Debug\netcoreapp3.1\MailKit.dll
+E:\ITI\ASP_MVC\Project\Self-Improvement-Website\SelfDevelopmentApp\bin\Debug\netcoreapp3.1\Microsoft.Data.SqlClient.dll
+E:\ITI\ASP_MVC\Project\Self-Improvement-Website\SelfDevelopmentApp\bin\Debug\netcoreapp3.1\Microsoft.Data.Sqlite.dll
+E:\ITI\ASP_MVC\Project\Self-Improvement-Website\SelfDevelopmentApp\bin\Debug\netcoreapp3.1\Microsoft.DotNet.PlatformAbstractions.dll
+E:\ITI\ASP_MVC\Project\Self-Improvement-Website\SelfDevelopmentApp\bin\Debug\netcoreapp3.1\Microsoft.EntityFrameworkCore.dll
+E:\ITI\ASP_MVC\Project\Self-Improvement-Website\SelfDevelopmentApp\bin\Debug\netcoreapp3.1\Microsoft.EntityFrameworkCore.Abstractions.dll
+E:\ITI\ASP_MVC\Project\Self-Improvement-Website\SelfDevelopmentApp\bin\Debug\netcoreapp3.1\Microsoft.EntityFrameworkCore.Design.dll
+E:\ITI\ASP_MVC\Project\Self-Improvement-Website\SelfDevelopmentApp\bin\Debug\netcoreapp3.1\Microsoft.EntityFrameworkCore.Relational.dll
+E:\ITI\ASP_MVC\Project\Self-Improvement-Website\SelfDevelopmentApp\bin\Debug\netcoreapp3.1\Microsoft.EntityFrameworkCore.Sqlite.dll
+E:\ITI\ASP_MVC\Project\Self-Improvement-Website\SelfDevelopmentApp\bin\Debug\netcoreapp3.1\Microsoft.EntityFrameworkCore.SqlServer.dll
+E:\ITI\ASP_MVC\Project\Self-Improvement-Website\SelfDevelopmentApp\bin\Debug\netcoreapp3.1\Microsoft.Extensions.Caching.Abstractions.dll
+E:\ITI\ASP_MVC\Project\Self-Improvement-Website\SelfDevelopmentApp\bin\Debug\netcoreapp3.1\Microsoft.Extensions.Caching.Memory.dll
+E:\ITI\ASP_MVC\Project\Self-Improvement-Website\SelfDevelopmentApp\bin\Debug\netcoreapp3.1\Microsoft.Extensions.Configuration.Abstractions.dll
+E:\ITI\ASP_MVC\Project\Self-Improvement-Website\SelfDevelopmentApp\bin\Debug\netcoreapp3.1\Microsoft.Extensions.DependencyInjection.dll
+E:\ITI\ASP_MVC\Project\Self-Improvement-Website\SelfDevelopmentApp\bin\Debug\netcoreapp3.1\Microsoft.Extensions.DependencyInjection.Abstractions.dll
+E:\ITI\ASP_MVC\Project\Self-Improvement-Website\SelfDevelopmentApp\bin\Debug\netcoreapp3.1\Microsoft.Extensions.DependencyModel.dll
+E:\ITI\ASP_MVC\Project\Self-Improvement-Website\SelfDevelopmentApp\bin\Debug\netcoreapp3.1\Microsoft.Extensions.Logging.dll
+E:\ITI\ASP_MVC\Project\Self-Improvement-Website\SelfDevelopmentApp\bin\Debug\netcoreapp3.1\Microsoft.Extensions.Logging.Abstractions.dll
+E:\ITI\ASP_MVC\Project\Self-Improvement-Website\SelfDevelopmentApp\bin\Debug\netcoreapp3.1\Microsoft.Extensions.Options.dll
+E:\ITI\ASP_MVC\Project\Self-Improvement-Website\SelfDevelopmentApp\bin\Debug\netcoreapp3.1\Microsoft.Extensions.Primitives.dll
+E:\ITI\ASP_MVC\Project\Self-Improvement-Website\SelfDevelopmentApp\bin\Debug\netcoreapp3.1\Microsoft.Identity.Client.dll
+E:\ITI\ASP_MVC\Project\Self-Improvement-Website\SelfDevelopmentApp\bin\Debug\netcoreapp3.1\Microsoft.IdentityModel.JsonWebTokens.dll
+E:\ITI\ASP_MVC\Project\Self-Improvement-Website\SelfDevelopmentApp\bin\Debug\netcoreapp3.1\Microsoft.IdentityModel.Logging.dll
+E:\ITI\ASP_MVC\Project\Self-Improvement-Website\SelfDevelopmentApp\bin\Debug\netcoreapp3.1\Microsoft.IdentityModel.Protocols.dll
+E:\ITI\ASP_MVC\Project\Self-Improvement-Website\SelfDevelopmentApp\bin\Debug\netcoreapp3.1\Microsoft.IdentityModel.Protocols.OpenIdConnect.dll
+E:\ITI\ASP_MVC\Project\Self-Improvement-Website\SelfDevelopmentApp\bin\Debug\netcoreapp3.1\Microsoft.IdentityModel.Tokens.dll
+E:\ITI\ASP_MVC\Project\Self-Improvement-Website\SelfDevelopmentApp\bin\Debug\netcoreapp3.1\MimeKit.dll
+E:\ITI\ASP_MVC\Project\Self-Improvement-Website\SelfDevelopmentApp\bin\Debug\netcoreapp3.1\Newtonsoft.Json.dll
+E:\ITI\ASP_MVC\Project\Self-Improvement-Website\SelfDevelopmentApp\bin\Debug\netcoreapp3.1\BouncyCastle.Crypto.dll
+E:\ITI\ASP_MVC\Project\Self-Improvement-Website\SelfDevelopmentApp\bin\Debug\netcoreapp3.1\SQLitePCLRaw.batteries_v2.dll
+E:\ITI\ASP_MVC\Project\Self-Improvement-Website\SelfDevelopmentApp\bin\Debug\netcoreapp3.1\SQLitePCLRaw.nativelibrary.dll
+E:\ITI\ASP_MVC\Project\Self-Improvement-Website\SelfDevelopmentApp\bin\Debug\netcoreapp3.1\SQLitePCLRaw.core.dll
+E:\ITI\ASP_MVC\Project\Self-Improvement-Website\SelfDevelopmentApp\bin\Debug\netcoreapp3.1\SQLitePCLRaw.provider.dynamic_cdecl.dll
+E:\ITI\ASP_MVC\Project\Self-Improvement-Website\SelfDevelopmentApp\bin\Debug\netcoreapp3.1\System.Collections.Immutable.dll
+E:\ITI\ASP_MVC\Project\Self-Improvement-Website\SelfDevelopmentApp\bin\Debug\netcoreapp3.1\System.ComponentModel.Annotations.dll
+E:\ITI\ASP_MVC\Project\Self-Improvement-Website\SelfDevelopmentApp\bin\Debug\netcoreapp3.1\System.Configuration.ConfigurationManager.dll
+E:\ITI\ASP_MVC\Project\Self-Improvement-Website\SelfDevelopmentApp\bin\Debug\netcoreapp3.1\System.Diagnostics.DiagnosticSource.dll
+E:\ITI\ASP_MVC\Project\Self-Improvement-Website\SelfDevelopmentApp\bin\Debug\netcoreapp3.1\System.IdentityModel.Tokens.Jwt.dll
+E:\ITI\ASP_MVC\Project\Self-Improvement-Website\SelfDevelopmentApp\bin\Debug\netcoreapp3.1\System.Runtime.Caching.dll
+E:\ITI\ASP_MVC\Project\Self-Improvement-Website\SelfDevelopmentApp\bin\Debug\netcoreapp3.1\System.Security.Cryptography.ProtectedData.dll
+E:\ITI\ASP_MVC\Project\Self-Improvement-Website\SelfDevelopmentApp\bin\Debug\netcoreapp3.1\System.Text.Encodings.Web.dll
+E:\ITI\ASP_MVC\Project\Self-Improvement-Website\SelfDevelopmentApp\bin\Debug\netcoreapp3.1\System.Text.Json.dll
+E:\ITI\ASP_MVC\Project\Self-Improvement-Website\SelfDevelopmentApp\bin\Debug\netcoreapp3.1\runtimes\unix\lib\netcoreapp3.1\Microsoft.Data.SqlClient.dll
+E:\ITI\ASP_MVC\Project\Self-Improvement-Website\SelfDevelopmentApp\bin\Debug\netcoreapp3.1\runtimes\win\lib\netcoreapp3.1\Microsoft.Data.SqlClient.dll
+E:\ITI\ASP_MVC\Project\Self-Improvement-Website\SelfDevelopmentApp\bin\Debug\netcoreapp3.1\runtimes\win-arm\native\Microsoft.Data.SqlClient.SNI.dll
+E:\ITI\ASP_MVC\Project\Self-Improvement-Website\SelfDevelopmentApp\bin\Debug\netcoreapp3.1\runtimes\win-arm\native\Microsoft.Data.SqlClient.SNI.pdb
+E:\ITI\ASP_MVC\Project\Self-Improvement-Website\SelfDevelopmentApp\bin\Debug\netcoreapp3.1\runtimes\win-arm64\native\Microsoft.Data.SqlClient.SNI.dll
+E:\ITI\ASP_MVC\Project\Self-Improvement-Website\SelfDevelopmentApp\bin\Debug\netcoreapp3.1\runtimes\win-arm64\native\Microsoft.Data.SqlClient.SNI.pdb
+E:\ITI\ASP_MVC\Project\Self-Improvement-Website\SelfDevelopmentApp\bin\Debug\netcoreapp3.1\runtimes\win-x64\native\Microsoft.Data.SqlClient.SNI.dll
+E:\ITI\ASP_MVC\Project\Self-Improvement-Website\SelfDevelopmentApp\bin\Debug\netcoreapp3.1\runtimes\win-x64\native\Microsoft.Data.SqlClient.SNI.pdb
+E:\ITI\ASP_MVC\Project\Self-Improvement-Website\SelfDevelopmentApp\bin\Debug\netcoreapp3.1\runtimes\win-x86\native\Microsoft.Data.SqlClient.SNI.dll
+E:\ITI\ASP_MVC\Project\Self-Improvement-Website\SelfDevelopmentApp\bin\Debug\netcoreapp3.1\runtimes\win-x86\native\Microsoft.Data.SqlClient.SNI.pdb
+E:\ITI\ASP_MVC\Project\Self-Improvement-Website\SelfDevelopmentApp\bin\Debug\netcoreapp3.1\runtimes\alpine-x64\native\libe_sqlite3.so
+E:\ITI\ASP_MVC\Project\Self-Improvement-Website\SelfDevelopmentApp\bin\Debug\netcoreapp3.1\runtimes\linux-arm\native\libe_sqlite3.so
+E:\ITI\ASP_MVC\Project\Self-Improvement-Website\SelfDevelopmentApp\bin\Debug\netcoreapp3.1\runtimes\linux-arm64\native\libe_sqlite3.so
+E:\ITI\ASP_MVC\Project\Self-Improvement-Website\SelfDevelopmentApp\bin\Debug\netcoreapp3.1\runtimes\linux-armel\native\libe_sqlite3.so
+E:\ITI\ASP_MVC\Project\Self-Improvement-Website\SelfDevelopmentApp\bin\Debug\netcoreapp3.1\runtimes\linux-mips64\native\libe_sqlite3.so
+E:\ITI\ASP_MVC\Project\Self-Improvement-Website\SelfDevelopmentApp\bin\Debug\netcoreapp3.1\runtimes\linux-musl-x64\native\libe_sqlite3.so
+E:\ITI\ASP_MVC\Project\Self-Improvement-Website\SelfDevelopmentApp\bin\Debug\netcoreapp3.1\runtimes\linux-x64\native\libe_sqlite3.so
+E:\ITI\ASP_MVC\Project\Self-Improvement-Website\SelfDevelopmentApp\bin\Debug\netcoreapp3.1\runtimes\linux-x86\native\libe_sqlite3.so
+E:\ITI\ASP_MVC\Project\Self-Improvement-Website\SelfDevelopmentApp\bin\Debug\netcoreapp3.1\runtimes\osx-x64\native\libe_sqlite3.dylib
+E:\ITI\ASP_MVC\Project\Self-Improvement-Website\SelfDevelopmentApp\bin\Debug\netcoreapp3.1\runtimes\win-arm\native\e_sqlite3.dll
+E:\ITI\ASP_MVC\Project\Self-Improvement-Website\SelfDevelopmentApp\bin\Debug\netcoreapp3.1\runtimes\win-arm64\native\e_sqlite3.dll
+E:\ITI\ASP_MVC\Project\Self-Improvement-Website\SelfDevelopmentApp\bin\Debug\netcoreapp3.1\runtimes\win-x64\native\e_sqlite3.dll
+E:\ITI\ASP_MVC\Project\Self-Improvement-Website\SelfDevelopmentApp\bin\Debug\netcoreapp3.1\runtimes\win-x86\native\e_sqlite3.dll
+E:\ITI\ASP_MVC\Project\Self-Improvement-Website\SelfDevelopmentApp\bin\Debug\netcoreapp3.1\runtimes\win\lib\netstandard2.0\System.Runtime.Caching.dll
+E:\ITI\ASP_MVC\Project\Self-Improvement-Website\SelfDevelopmentApp\bin\Debug\netcoreapp3.1\runtimes\win\lib\netstandard2.0\System.Security.Cryptography.ProtectedData.dll
+E:\ITI\ASP_MVC\Project\Self-Improvement-Website\SelfDevelopmentApp\obj\Debug\netcoreapp3.1\staticwebassets\SelfDevelopmentApp.StaticWebAssets.Manifest.cache
+E:\ITI\ASP_MVC\Project\Self-Improvement-Website\SelfDevelopmentApp\obj\Debug\netcoreapp3.1\staticwebassets\SelfDevelopmentApp.StaticWebAssets.xml
+E:\ITI\ASP_MVC\Project\Self-Improvement-Website\SelfDevelopmentApp\obj\Debug\netcoreapp3.1\scopedcss\bundle\SelfDevelopmentApp.styles.css
+E:\ITI\ASP_MVC\Project\Self-Improvement-Website\SelfDevelopmentApp\obj\Debug\netcoreapp3.1\SelfDevelopmentApp.TagHelpers.input.cache
+E:\ITI\ASP_MVC\Project\Self-Improvement-Website\SelfDevelopmentApp\obj\Debug\netcoreapp3.1\SelfDevelopmentApp.TagHelpers.output.cache
+E:\ITI\ASP_MVC\Project\Self-Improvement-Website\SelfDevelopmentApp\obj\Debug\netcoreapp3.1\SelfDevelopmentApp.RazorCoreGenerate.cache
+E:\ITI\ASP_MVC\Project\Self-Improvement-Website\SelfDevelopmentApp\obj\Debug\netcoreapp3.1\Razor\Views\Articles\Create.cshtml.g.cs
+E:\ITI\ASP_MVC\Project\Self-Improvement-Website\SelfDevelopmentApp\obj\Debug\netcoreapp3.1\Razor\Views\Articles\Delete.cshtml.g.cs
+E:\ITI\ASP_MVC\Project\Self-Improvement-Website\SelfDevelopmentApp\obj\Debug\netcoreapp3.1\Razor\Views\Articles\Details.cshtml.g.cs
+E:\ITI\ASP_MVC\Project\Self-Improvement-Website\SelfDevelopmentApp\obj\Debug\netcoreapp3.1\Razor\Views\Articles\Edit.cshtml.g.cs
+E:\ITI\ASP_MVC\Project\Self-Improvement-Website\SelfDevelopmentApp\obj\Debug\netcoreapp3.1\Razor\Views\Articles\Index.cshtml.g.cs
+E:\ITI\ASP_MVC\Project\Self-Improvement-Website\SelfDevelopmentApp\obj\Debug\netcoreapp3.1\Razor\Views\Habits\Create.cshtml.g.cs
+E:\ITI\ASP_MVC\Project\Self-Improvement-Website\SelfDevelopmentApp\obj\Debug\netcoreapp3.1\Razor\Views\Habits\Delete.cshtml.g.cs
+E:\ITI\ASP_MVC\Project\Self-Improvement-Website\SelfDevelopmentApp\obj\Debug\netcoreapp3.1\Razor\Views\Habits\Details.cshtml.g.cs
+E:\ITI\ASP_MVC\Project\Self-Improvement-Website\SelfDevelopmentApp\obj\Debug\netcoreapp3.1\Razor\Views\Habits\Edit.cshtml.g.cs
+E:\ITI\ASP_MVC\Project\Self-Improvement-Website\SelfDevelopmentApp\obj\Debug\netcoreapp3.1\Razor\Views\Habits\Index.cshtml.g.cs
+E:\ITI\ASP_MVC\Project\Self-Improvement-Website\SelfDevelopmentApp\obj\Debug\netcoreapp3.1\Razor\Views\Home\arts.cshtml.g.cs
+E:\ITI\ASP_MVC\Project\Self-Improvement-Website\SelfDevelopmentApp\obj\Debug\netcoreapp3.1\Razor\Views\Home\Blog.cshtml.g.cs
+E:\ITI\ASP_MVC\Project\Self-Improvement-Website\SelfDevelopmentApp\obj\Debug\netcoreapp3.1\Razor\Views\Home\BlogSingle.cshtml.g.cs
+E:\ITI\ASP_MVC\Project\Self-Improvement-Website\SelfDevelopmentApp\obj\Debug\netcoreapp3.1\Razor\Views\Home\Home.cshtml.g.cs
+E:\ITI\ASP_MVC\Project\Self-Improvement-Website\SelfDevelopmentApp\obj\Debug\netcoreapp3.1\Razor\Views\Home\Index - Copy.cshtml.g.cs
+E:\ITI\ASP_MVC\Project\Self-Improvement-Website\SelfDevelopmentApp\obj\Debug\netcoreapp3.1\Razor\Views\Home\Index.cshtml.g.cs
+E:\ITI\ASP_MVC\Project\Self-Improvement-Website\SelfDevelopmentApp\obj\Debug\netcoreapp3.1\Razor\Views\Home\portfolio-details.cshtml.g.cs
+E:\ITI\ASP_MVC\Project\Self-Improvement-Website\SelfDevelopmentApp\obj\Debug\netcoreapp3.1\Razor\Views\Home\Privacy.cshtml.g.cs
+E:\ITI\ASP_MVC\Project\Self-Improvement-Website\SelfDevelopmentApp\obj\Debug\netcoreapp3.1\Razor\Views\Home\TodoList.cshtml.g.cs
+E:\ITI\ASP_MVC\Project\Self-Improvement-Website\SelfDevelopmentApp\obj\Debug\netcoreapp3.1\Razor\Views\Shared\Error.cshtml.g.cs
+E:\ITI\ASP_MVC\Project\Self-Improvement-Website\SelfDevelopmentApp\obj\Debug\netcoreapp3.1\Razor\Views\Shared\_blog.cshtml.g.cs
+E:\ITI\ASP_MVC\Project\Self-Improvement-Website\SelfDevelopmentApp\obj\Debug\netcoreapp3.1\Razor\Views\Shared\_index.cshtml.g.cs
+E:\ITI\ASP_MVC\Project\Self-Improvement-Website\SelfDevelopmentApp\obj\Debug\netcoreapp3.1\Razor\Views\Shared\_Layout.cshtml.g.cs
+E:\ITI\ASP_MVC\Project\Self-Improvement-Website\SelfDevelopmentApp\obj\Debug\netcoreapp3.1\Razor\Views\Shared\_ValidationScriptsPartial.cshtml.g.cs
+E:\ITI\ASP_MVC\Project\Self-Improvement-Website\SelfDevelopmentApp\obj\Debug\netcoreapp3.1\Razor\Views\_ViewImports.cshtml.g.cs
+E:\ITI\ASP_MVC\Project\Self-Improvement-Website\SelfDevelopmentApp\obj\Debug\netcoreapp3.1\Razor\Views\_ViewStart.cshtml.g.cs
+E:\ITI\ASP_MVC\Project\Self-Improvement-Website\SelfDevelopmentApp\obj\Debug\netcoreapp3.1\SelfDevelopmentApp.RazorTargetAssemblyInfo.cache
+E:\ITI\ASP_MVC\Project\Self-Improvement-Website\SelfDevelopmentApp\obj\Debug\netcoreapp3.1\SelfDevelopmentApp.RazorTargetAssemblyInfo.cs
+E:\ITI\ASP_MVC\Project\Self-Improvement-Website\SelfDevelopmentApp\obj\Debug\netcoreapp3.1\SelfDevelopmentApp.Views.pdb
+E:\ITI\ASP_MVC\Project\Self-Improvement-Website\SelfDevelopmentApp\obj\Debug\netcoreapp3.1\SelfDevelopmentApp.csproj.CopyComplete
+E:\ITI\ASP_MVC\Project\Self-Improvement-Website\SelfDevelopmentApp\obj\Debug\netcoreapp3.1\SelfDevelopmentApp.genruntimeconfig.cache
+E:\ITI\ASP_MVC\Project\Self-Improvement-Website\SelfDevelopmentApp\obj\Debug\netcoreapp3.1\SelfDevelopmentApp.csprojAssemblyReference.cache

@@ -14,7 +14,7 @@ namespace SelfDevelopmentApp.Services
 
         public List<Article> GetArticlesByTopic(Topic topic);   /// get articles by topic name
 
-        public Article GetArticleByID(int id);  /// Details
+        public Article GetArticleByID(int? id);  /// Details
 
         public void InsertArticle(Article article);  /// Create
 
