@@ -15,13 +15,14 @@ namespace SelfDevelopmentApp.Controllers
     public class HomeController : Controller
     {
         private readonly ILogger<HomeController> _logger;
-        //private readonly IEmailRepository _emailService;
-        //private readonly IUserRepository _userService;
-        public HomeController(ILogger<HomeController> logger/*, IEmailRepository emailService, IUserRepository user*/)
+        private readonly IEmailRepository _emailService;
+        private readonly IUserRepository _userService;
+
+        public HomeController(ILogger<HomeController> logger, IEmailRepository emailService, IUserRepository user)
         {
             _logger = logger;
-            //_emailService = emailService;
-            //_userService = user;
+            _emailService = emailService;
+            _userService = user;
         }
         //public void f1()
         //{
@@ -66,31 +67,32 @@ namespace SelfDevelopmentApp.Controllers
         //}
         //string emailBody="";
 
-        //public /*async Task<bool>*/void sendEmail()
-        //{
-        //    foreach (var user in _userService.AllUser())
-        //    {
-        //        foreach (var item in user.ToDoList.ListItems)
-        //        {
-        //            if (!item.Done)
-        //            {
-        //                if (item.ReminderTime <= DateTime.Now)
-        //                {
-        //                    emailBody = "It is time of your todo item " + item.Description;
-        //                   _emailService.SendEmailAsync("na1556@fayoum.edu.eg", "This is email subject", emailBody);
-        //                }
+       // private string emailBody;
+        public /*async Task<bool>*/void sendEmail()
+        {
+            string emailBody = "";
+            foreach (var user in _userService.AllUser())
+            {
+                foreach (var item in user.ToDoList.ListItems)
+                {
+                    if (!item.Done)
+                    {
+                        if (item.ReminderTime <= DateTime.Now)
+                        {
+                            emailBody = "It is time of your todo item " + item.Description;
+                           _emailService.SendEmailAsync("na1556@fayoum.edu.eg", "SALAM reminder", emailBody);
+                        }
 
-        //                if (item.DueDate <= DateTime.Now)
-        //                {
-        //                    emailBody = "Oops! it is the due date of your todo item "
-        //                                        + item.Description;
-        //                   _emailService.SendEmailAsync("na1556@fayoum.edu.eg", "This is email subject", emailBody);
-        //                }
-
-        //            }
-        //        }
-        //    }
-        //}
+                        if (item.DueDate <= DateTime.Now)
+                        {
+                            emailBody = "Oops! it is the due date of your todo item "
+                                                + item.Description;
+                            _emailService.SendEmailAsync("na1556@fayoum.edu.eg", "SALAM reminder", emailBody);
+                        }
+                    }
+                }
+            }
+        }
 
 
         //private async void OnTimedEvent(object source, ElapsedEventArgs e)
@@ -99,7 +101,7 @@ namespace SelfDevelopmentApp.Controllers
         //}
 
         //public System.Threading.Timer aTimer = new Timer(sendEmail);// Timer();
-       // public static System.Timers.Timer aTimer = new System.Timers.Timer();// Timer();
+        // public static System.Timers.Timer aTimer = new System.Timers.Timer();// Timer();
 
 
 
@@ -122,7 +124,7 @@ namespace SelfDevelopmentApp.Controllers
         {
             //f1();
 
-             //SetTimer();
+            sendEmail();
 
             return View();
         }
