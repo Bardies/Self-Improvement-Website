@@ -43,8 +43,8 @@
 
 
 <div class="form">
+    <div asp-validation-summary="All" class="text-danger"></div>
 
-   
     <div id="signup">
         <h1>Sign Up</h1>
 
@@ -57,7 +57,7 @@
                         First Name
                     </div>
                     <input asp-for="Fname" class="form-control" placeholder="First name" />
-                    <span asp-validation-for="Fname"></span>
+                    <span asp-validation-for="Fname" class="text-danger"></span>
                 </div>
 
                 <div class="field-wrap">
@@ -86,7 +86,7 @@
             </div>
             <div class="field-wrap">
                 <div>
-                     Confirm Password
+                    Confirm Password
                 </div>
                 <input asp-for="ConfirmPassword" class="form-control" placeholder="Confirm Password" />
                 <span asp-validation-for="ConfirmPassword" class="text-danger"></span>
@@ -99,3 +99,4 @@
     </div>
 </div> <!-- /form -->
 <link href="~/assets/css/loginRegister.css" rel="stylesheet" />
+<script src="~/lib/jquery-validation-unobtrusive/jquery.validate.unobtrusive.min.js"></script>

@@ -6617,19 +6617,19 @@
     ]
   },
   "packageFolders": {
-    "C:\\Users\\User\\.nuget\\packages\\": {}
+    "C:\\Users\\dell\\.nuget\\packages\\": {}
   },
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "F:\\ITI\\ASP.NET\\Project\\Self-Improvement-Website\\SelfDevelopmentApp\\SelfDevelopmentApp.csproj",
+      "projectUniqueName": "D:\\ITI\\Self Development Website\\Self-Improvement-Website\\SelfDevelopmentApp\\SelfDevelopmentApp.csproj",
       "projectName": "SelfDevelopmentApp",
-      "projectPath": "F:\\ITI\\ASP.NET\\Project\\Self-Improvement-Website\\SelfDevelopmentApp\\SelfDevelopmentApp.csproj",
-      "packagesPath": "C:\\Users\\User\\.nuget\\packages\\",
-      "outputPath": "F:\\ITI\\ASP.NET\\Project\\Self-Improvement-Website\\SelfDevelopmentApp\\obj\\",
+      "projectPath": "D:\\ITI\\Self Development Website\\Self-Improvement-Website\\SelfDevelopmentApp\\SelfDevelopmentApp.csproj",
+      "packagesPath": "C:\\Users\\dell\\.nuget\\packages\\",
+      "outputPath": "D:\\ITI\\Self Development Website\\Self-Improvement-Website\\SelfDevelopmentApp\\obj\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
-        "C:\\Users\\User\\AppData\\Roaming\\NuGet\\NuGet.Config",
+        "C:\\Users\\dell\\AppData\\Roaming\\NuGet\\NuGet.Config",
         "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
       ],
       "originalTargetFrameworks": [

@@ -2,7 +2,7 @@
 
 namespace SelfDevelopmentApp.Migrations
 {
-    public partial class habitMigrate : Migration
+    public partial class initMigration : Migration
     {
         protected override void Up(MigrationBuilder migrationBuilder)
         {

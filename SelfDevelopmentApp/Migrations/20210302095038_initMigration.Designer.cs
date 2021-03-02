@@ -10,8 +10,8 @@ using SelfDevelopmentApp.Models;
 namespace SelfDevelopmentApp.Migrations
 {
     [DbContext(typeof(AppDbContext))]
-    [Migration("20210302031231_habitMigrate")]
-    partial class habitMigrate
+    [Migration("20210302095038_initMigration")]
+    partial class initMigration
     {
         protected override void BuildTargetModel(ModelBuilder modelBuilder)
         {
