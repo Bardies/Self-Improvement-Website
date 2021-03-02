@@ -1,4 +1,5 @@
-﻿using Microsoft.AspNetCore.Mvc;
+﻿using Microsoft.AspNetCore.Authorization;
+using Microsoft.AspNetCore.Mvc;
 using Microsoft.Extensions.Logging;
 using SelfDevelopmentApp.Models;
 using SelfDevelopmentApp.Services;
@@ -14,6 +15,7 @@ using System.Timers;
 
 namespace SelfDevelopmentApp.Controllers
 {
+    [Authorize]
     public class HomeController : Controller
     {
         private readonly ILogger<HomeController> _logger;
@@ -85,14 +87,14 @@ namespace SelfDevelopmentApp.Controllers
                         if (item.ReminderTime <= DateTime.Now && item.DueDate > DateTime.Now)
                         {
                             emailBody = "It is time of your todo item " + item.Description;
-                           _emailService.SendEmailAsync("na1556@fayoum.edu.eg", "SALAM reminder", emailBody);
+                           _emailService.SendEmailAsync(user.Email, "SALAM Reminder", emailBody);
                         }
 
                         if (item.DueDate <= DateTime.Now)
                         {
                             emailBody = "Oops! it is the due date of your todo item "
                                                 + item.Description;
-                            _emailService.SendEmailAsync("na1556@fayoum.edu.eg", "SALAM reminder", emailBody);
+                            _emailService.SendEmailAsync(user.Email, "SALAM Task Due-Date", emailBody);
                         }
                     }
                 }

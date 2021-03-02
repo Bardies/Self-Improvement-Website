@@ -19,7 +19,7 @@ namespace SelfDevelopmentApp.Models
         //[Index(IsUnique=true)]
         public string Name { get; set; }
 
-        public ICollection<User> Users { get; set; } = new HashSet<User>();
+        public ICollection<ApplicationUser> Users { get; set; } = new HashSet<ApplicationUser>();
 
         public ICollection<Article> Articles { get; set; } = new HashSet<Article>();
 

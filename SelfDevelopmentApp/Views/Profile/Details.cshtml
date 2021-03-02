@@ -1,0 +1,135 @@
+﻿
+@model SelfDevelopmentApp.Models.ApplicationUser;
+
+
+@{ Layout = "_blog";
+    ViewData["Title"] = "Profile";
+}
+
+
+
+<!-- ======= Blog Single Section ======= -->
+@*<section id="blog" class="blog">
+
+
+    <div class="col-lg-8 entries">
+
+        <profile class="entry entry-single">
+
+
+
+            <h2 class="entry-title">
+
+                user name: @Model.Fname  @Model.Lname
+            </h2>
+
+            <div class="entry-meta">
+
+                Email: @Model.Email
+            </div>
+            @{ if (Model.PhoneNumber != null)
+                {
+                    <div class="entry-meta">
+
+                        Phone : @Model.PhoneNumber
+                    </div>
+                }
+            }
+            @{ if (Model.Height != null)
+                {
+                    <div class="entry-meta">
+
+                        Height : @Model.Height
+                    </div>
+                }
+            }
+            @{ if (Model.Weight != null)
+                {
+                    <div class="entry-meta">
+
+                        Weight : @Model.Weight
+                    </div>
+                }
+            }
+
+
+            <a asp-area="" asp-controller="Profile" asp-action="Edit">Edit</a>
+
+        </profile>
+    </div>*@<!-- End blog entries list -->
+@*</section>*@<!-- End Blog Single Section -->
+
+<link href="//netdna.bootstrapcdn.com/bootstrap/3.0.0/css/bootstrap.min.css" rel="stylesheet" id="bootstrap-css">
+<script src="//netdna.bootstrapcdn.com/bootstrap/3.0.0/js/bootstrap.min.js"></script>
+<script src="//code.jquery.com/jquery-1.11.1.min.js"></script>
+<!------ Include the above in your HEAD tag ---------->
+<br />
+<br />
+<br />
+<br />
+<div class="container">
+    <div class="row">
+        <div class="panel panel-default">
+            <div class="panel-heading">  <h4> @Model.Fname Profile</h4></div>
+            <div class="panel-body">
+                <div class="col-md-4 col-xs-12 col-sm-6 col-lg-4">
+                    @*<img alt="User Pic" src="https://x1.xingassets.com/assets/frontend_minified/img/users/nobody_m.original.jpg" id="profile-image1" class="img-circle img-responsive">*@
+
+
+                </div>
+                <div class="col-md-8 col-xs-12 col-sm-6 col-lg-8">
+                    <div class="container">
+                        <h2>   user name: @Model.Fname  @Model.Lname</h2>
+
+
+
+                    </div>
+                    <hr>
+                    <ul class="container details">
+                        <li><p><span class="glyphicon glyphicon-envelope one" style="width:50px;"></span> Email: @Model.Email</p></li>
+                        @{ if (Model.PhoneNumber != null)
+                            {
+
+                                <li><p><span class="glyphicon glyphicon-phone one" style="width:50px;"></span>  Phone : @Model.PhoneNumber</p></li>
+
+
+                            }
+                        }
+                    </ul>
+                    
+                    <ul class="container details">
+                        @{ if (Model.Weight != null)
+                            { 
+                                <hr>
+
+                                <li><p><span style="width:50px;"></span>  Weight : @Model.Weight</p></li>
+
+
+                            }
+                        }
+                        @{ if (Model.Height != null)
+                            {
+
+                                <li><p><span  style="width:50px;"></span>  Height : @Model.Height</p></li>
+
+
+                            }
+                        }
+                    </ul>
+
+                    @{ if (Model.DOB != null)
+                        {
+                            <hr>
+                            <div class="col-sm-5 col-xs-6 tital ">Date Of Birth:@Model.DOB</div>
+
+
+                        }
+                    }
+                    <hr>
+                    <a asp-area="" asp-controller="Profile" asp-action="Edit">Edit</a>
+
+                </div>
+            </div>
+        </div>
+    </div>
+</div>

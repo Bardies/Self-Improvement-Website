@@ -12,9 +12,9 @@ namespace SelfDevelopmentApp.Models
         [Key]
         public int ID { get; set; }
         [ForeignKey("User")]
-        public int UserID { get; set; }
+        public string UserID { get; set; }
 
-        public virtual User User { get; set; }
+        public virtual ApplicationUser User { get; set; }
 
         public ICollection<ToDoItem> ListItems { get; set; } = new HashSet<ToDoItem>();
     }

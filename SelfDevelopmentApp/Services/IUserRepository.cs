@@ -7,6 +7,6 @@ namespace SelfDevelopmentApp.Services
 {
     public interface IUserRepository
     {
-        public List<Models.User> AllUser();
+        public List<Models.ApplicationUser> AllUser();
     }
 }

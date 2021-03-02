@@ -22,9 +22,9 @@ namespace SelfDevelopmentApp.Models
         [Required]
         public DateTime StartingDate { get; set; }
         [ForeignKey("User")]
-        public int UserID { get; set; }
+        public string UserID { get; set; }
 
-        public User User { get; set; }
+        public ApplicationUser User { get; set; }
 
     }
 }
