@@ -15,9 +15,9 @@ namespace SelfDevelopmentApp.Models
         public int ID { get; set; }
         [Required(ErrorMessage = "You must enter a description.")]
         public string Description { get; set; }
-        public int Longest_Streak { get; set; } = 0;
-        public int Current_Streak { get; set; } = 0;
-        public int Total_Count { get; set; } = 0;
+       
+	public string Color { get; set; }
+ 
         [DataType(DataType.Date)]
         [Required]
         public DateTime StartingDate { get; set; }

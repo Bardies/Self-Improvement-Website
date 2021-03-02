@@ -29,6 +29,8 @@ namespace SelfDevelopmentApp
             services.AddScoped<IArticleRepository, ArticleRepoService>();
             services.AddScoped<ITopicRepository, TopicRepoService>();
             services.AddScoped<IUserRepository, UserRepoService>();
+	    services.AddScoped<IHabitRepository, HabitRepoService>();
+
             services.Configure<EmailConfig>(configuration.GetSection("Email"));
             services.AddTransient<IEmailRepository, EmailRepoService>();
             services.AddDbContext<AppDbContext>((options) =>
