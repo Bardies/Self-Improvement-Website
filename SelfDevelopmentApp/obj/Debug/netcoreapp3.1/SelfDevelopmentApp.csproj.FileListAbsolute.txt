@@ -89,10 +89,7 @@ H:\ITI\PD\ASP_MVC\Project\Project repo\Self-Improvement-Website\SelfDevelopmentA
 H:\ITI\PD\ASP_MVC\Project\Project repo\Self-Improvement-Website\SelfDevelopmentApp\obj\Debug\netcoreapp3.1\SelfDevelopmentApp.TagHelpers.input.cache
 H:\ITI\PD\ASP_MVC\Project\Project repo\Self-Improvement-Website\SelfDevelopmentApp\obj\Debug\netcoreapp3.1\SelfDevelopmentApp.TagHelpers.output.cache
 H:\ITI\PD\ASP_MVC\Project\Project repo\Self-Improvement-Website\SelfDevelopmentApp\obj\Debug\netcoreapp3.1\SelfDevelopmentApp.RazorCoreGenerate.cache
-H:\ITI\PD\ASP_MVC\Project\Project repo\Self-Improvement-Website\SelfDevelopmentApp\obj\Debug\netcoreapp3.1\Razor\Views\Articles\Create.cshtml.g.cs
-H:\ITI\PD\ASP_MVC\Project\Project repo\Self-Improvement-Website\SelfDevelopmentApp\obj\Debug\netcoreapp3.1\Razor\Views\Articles\Delete.cshtml.g.cs
 H:\ITI\PD\ASP_MVC\Project\Project repo\Self-Improvement-Website\SelfDevelopmentApp\obj\Debug\netcoreapp3.1\Razor\Views\Articles\Details.cshtml.g.cs
-H:\ITI\PD\ASP_MVC\Project\Project repo\Self-Improvement-Website\SelfDevelopmentApp\obj\Debug\netcoreapp3.1\Razor\Views\Articles\Edit.cshtml.g.cs
 H:\ITI\PD\ASP_MVC\Project\Project repo\Self-Improvement-Website\SelfDevelopmentApp\obj\Debug\netcoreapp3.1\Razor\Views\Articles\Index.cshtml.g.cs
 H:\ITI\PD\ASP_MVC\Project\Project repo\Self-Improvement-Website\SelfDevelopmentApp\obj\Debug\netcoreapp3.1\Razor\Views\Home\Blog.cshtml.g.cs
 H:\ITI\PD\ASP_MVC\Project\Project repo\Self-Improvement-Website\SelfDevelopmentApp\obj\Debug\netcoreapp3.1\Razor\Views\Home\BlogSingle.cshtml.g.cs
