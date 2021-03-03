@@ -491,15 +491,8 @@ D:\ITI\Self Development Website\Self-Improvement-Website\SelfDevelopmentApp\obj\
 D:\ITI\Self Development Website\Self-Improvement-Website\SelfDevelopmentApp\obj\Debug\netcoreapp3.1\Razor\Views\Habit\Index.cshtml.g.cs
 D:\ITI\Self Development Website\Self-Improvement-Website\SelfDevelopmentApp\obj\Debug\netcoreapp3.1\Razor\Views\Habit\Insert.cshtml.g.cs
 D:\ITI\Self Development Website\Self-Improvement-Website\SelfDevelopmentApp\obj\Debug\netcoreapp3.1\Razor\Views\Habit\ShowTracker.cshtml.g.cs
-D:\ITI\Self Development Website\Self-Improvement-Website\SelfDevelopmentApp\obj\Debug\netcoreapp3.1\Razor\Views\Home\arts.cshtml.g.cs
-D:\ITI\Self Development Website\Self-Improvement-Website\SelfDevelopmentApp\obj\Debug\netcoreapp3.1\Razor\Views\Home\Blog.cshtml.g.cs
-D:\ITI\Self Development Website\Self-Improvement-Website\SelfDevelopmentApp\obj\Debug\netcoreapp3.1\Razor\Views\Home\BlogSingle.cshtml.g.cs
 D:\ITI\Self Development Website\Self-Improvement-Website\SelfDevelopmentApp\obj\Debug\netcoreapp3.1\Razor\Views\Home\Home.cshtml.g.cs
-D:\ITI\Self Development Website\Self-Improvement-Website\SelfDevelopmentApp\obj\Debug\netcoreapp3.1\Razor\Views\Home\Index - Copy.cshtml.g.cs
 D:\ITI\Self Development Website\Self-Improvement-Website\SelfDevelopmentApp\obj\Debug\netcoreapp3.1\Razor\Views\Home\Index.cshtml.g.cs
-D:\ITI\Self Development Website\Self-Improvement-Website\SelfDevelopmentApp\obj\Debug\netcoreapp3.1\Razor\Views\Home\portfolio-details.cshtml.g.cs
-D:\ITI\Self Development Website\Self-Improvement-Website\SelfDevelopmentApp\obj\Debug\netcoreapp3.1\Razor\Views\Home\Privacy.cshtml.g.cs
-D:\ITI\Self Development Website\Self-Improvement-Website\SelfDevelopmentApp\obj\Debug\netcoreapp3.1\Razor\Views\Home\TodoList.cshtml.g.cs
 D:\ITI\Self Development Website\Self-Improvement-Website\SelfDevelopmentApp\obj\Debug\netcoreapp3.1\Razor\Views\Profile\Details.cshtml.g.cs
 D:\ITI\Self Development Website\Self-Improvement-Website\SelfDevelopmentApp\obj\Debug\netcoreapp3.1\Razor\Views\Profile\Edit.cshtml.g.cs
 D:\ITI\Self Development Website\Self-Improvement-Website\SelfDevelopmentApp\obj\Debug\netcoreapp3.1\Razor\Views\Shared\Error.cshtml.g.cs
