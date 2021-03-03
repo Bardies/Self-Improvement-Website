@@ -64,20 +64,21 @@ h1, h2, h3, h4, h5, h6 {
 # Header
 --------------------------------------------------------------*/
 #header {
-  transition: all 0.5s;
-  z-index: 997;
-  /*padding: 20px 0;*/
-  max-width: 100%;
+    transition: all 0.5s;
+    z-index: 997;
+    /*padding: 20px 0;*/
+    padding: 10px 0;
+    max-width: 100%;
 }
 
 #header .logo {
-  font-size: 30px;
-  margin: 0;
-  padding: 0;
-  line-height: 1;
-  font-weight: 600;
-  letter-spacing: 1px;
-  text-transform: uppercase;
+    font-size: 30px;
+    margin: 0;
+    padding: 0;
+    line-height: 1;
+    font-weight: 600;
+    letter-spacing: 1px;
+    text-transform: uppercase;
 }
 
 #header .logo a {
@@ -92,7 +93,6 @@ h1, h2, h3, h4, h5, h6 {
   background: rgba(0, 0, 0, 0.9);
   padding: 12px 0;
 }
-
 /*--------------------------------------------------------------
 # Navigation Menu
 --------------------------------------------------------------*/

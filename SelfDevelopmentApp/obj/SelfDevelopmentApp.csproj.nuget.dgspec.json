@@ -1,20 +1,20 @@
 {
   "format": 1,
   "restore": {
-    "F:\\ITI\\ASP.NET\\Project\\Self-Improvement-Website\\SelfDevelopmentApp\\SelfDevelopmentApp.csproj": {}
+    "E:\\ITI\\ASP_MVC\\Project\\Self-Improvement-Website\\SelfDevelopmentApp\\SelfDevelopmentApp.csproj": {}
   },
   "projects": {
-    "F:\\ITI\\ASP.NET\\Project\\Self-Improvement-Website\\SelfDevelopmentApp\\SelfDevelopmentApp.csproj": {
+    "E:\\ITI\\ASP_MVC\\Project\\Self-Improvement-Website\\SelfDevelopmentApp\\SelfDevelopmentApp.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "F:\\ITI\\ASP.NET\\Project\\Self-Improvement-Website\\SelfDevelopmentApp\\SelfDevelopmentApp.csproj",
+        "projectUniqueName": "E:\\ITI\\ASP_MVC\\Project\\Self-Improvement-Website\\SelfDevelopmentApp\\SelfDevelopmentApp.csproj",
         "projectName": "SelfDevelopmentApp",
-        "projectPath": "F:\\ITI\\ASP.NET\\Project\\Self-Improvement-Website\\SelfDevelopmentApp\\SelfDevelopmentApp.csproj",
-        "packagesPath": "C:\\Users\\User\\.nuget\\packages\\",
-        "outputPath": "F:\\ITI\\ASP.NET\\Project\\Self-Improvement-Website\\SelfDevelopmentApp\\obj\\",
+        "projectPath": "E:\\ITI\\ASP_MVC\\Project\\Self-Improvement-Website\\SelfDevelopmentApp\\SelfDevelopmentApp.csproj",
+        "packagesPath": "C:\\Users\\zeina\\.nuget\\packages\\",
+        "outputPath": "E:\\ITI\\ASP_MVC\\Project\\Self-Improvement-Website\\SelfDevelopmentApp\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
-          "C:\\Users\\User\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Users\\zeina\\AppData\\Roaming\\NuGet\\NuGet.Config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [
@@ -85,7 +85,7 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\5.0.102\\RuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\5.0.101\\RuntimeIdentifierGraph.json"
         }
       }
     }

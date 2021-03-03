@@ -212,11 +212,6 @@ E:\ITI\ASP_MVC\Project\Self-Improvement-Website\SelfDevelopmentApp\obj\Debug\net
 E:\ITI\ASP_MVC\Project\Self-Improvement-Website\SelfDevelopmentApp\obj\Debug\netcoreapp3.1\Razor\Views\Articles\Details.cshtml.g.cs
 E:\ITI\ASP_MVC\Project\Self-Improvement-Website\SelfDevelopmentApp\obj\Debug\netcoreapp3.1\Razor\Views\Articles\Edit.cshtml.g.cs
 E:\ITI\ASP_MVC\Project\Self-Improvement-Website\SelfDevelopmentApp\obj\Debug\netcoreapp3.1\Razor\Views\Articles\Index.cshtml.g.cs
-E:\ITI\ASP_MVC\Project\Self-Improvement-Website\SelfDevelopmentApp\obj\Debug\netcoreapp3.1\Razor\Views\Habits\Create.cshtml.g.cs
-E:\ITI\ASP_MVC\Project\Self-Improvement-Website\SelfDevelopmentApp\obj\Debug\netcoreapp3.1\Razor\Views\Habits\Delete.cshtml.g.cs
-E:\ITI\ASP_MVC\Project\Self-Improvement-Website\SelfDevelopmentApp\obj\Debug\netcoreapp3.1\Razor\Views\Habits\Details.cshtml.g.cs
-E:\ITI\ASP_MVC\Project\Self-Improvement-Website\SelfDevelopmentApp\obj\Debug\netcoreapp3.1\Razor\Views\Habits\Edit.cshtml.g.cs
-E:\ITI\ASP_MVC\Project\Self-Improvement-Website\SelfDevelopmentApp\obj\Debug\netcoreapp3.1\Razor\Views\Habits\Index.cshtml.g.cs
 E:\ITI\ASP_MVC\Project\Self-Improvement-Website\SelfDevelopmentApp\obj\Debug\netcoreapp3.1\Razor\Views\Home\arts.cshtml.g.cs
 E:\ITI\ASP_MVC\Project\Self-Improvement-Website\SelfDevelopmentApp\obj\Debug\netcoreapp3.1\Razor\Views\Home\Blog.cshtml.g.cs
 E:\ITI\ASP_MVC\Project\Self-Improvement-Website\SelfDevelopmentApp\obj\Debug\netcoreapp3.1\Razor\Views\Home\BlogSingle.cshtml.g.cs
@@ -382,3 +377,8 @@ F:\ITI\ASP.NET\Project\Self-Improvement-Website\SelfDevelopmentApp\obj\Debug\net
 F:\ITI\ASP.NET\Project\Self-Improvement-Website\SelfDevelopmentApp\obj\Debug\netcoreapp3.1\SelfDevelopmentApp.Views.pdb
 F:\ITI\ASP.NET\Project\Self-Improvement-Website\SelfDevelopmentApp\obj\Debug\netcoreapp3.1\SelfDevelopmentApp.csproj.CopyComplete
 F:\ITI\ASP.NET\Project\Self-Improvement-Website\SelfDevelopmentApp\obj\Debug\netcoreapp3.1\SelfDevelopmentApp.genruntimeconfig.cache
+E:\ITI\ASP_MVC\Project\Self-Improvement-Website\SelfDevelopmentApp\obj\Debug\netcoreapp3.1\Razor\Views\Habit\Delete.cshtml.g.cs
+E:\ITI\ASP_MVC\Project\Self-Improvement-Website\SelfDevelopmentApp\obj\Debug\netcoreapp3.1\Razor\Views\Habit\Edit.cshtml.g.cs
+E:\ITI\ASP_MVC\Project\Self-Improvement-Website\SelfDevelopmentApp\obj\Debug\netcoreapp3.1\Razor\Views\Habit\Index.cshtml.g.cs
+E:\ITI\ASP_MVC\Project\Self-Improvement-Website\SelfDevelopmentApp\obj\Debug\netcoreapp3.1\Razor\Views\Habit\Insert.cshtml.g.cs
+E:\ITI\ASP_MVC\Project\Self-Improvement-Website\SelfDevelopmentApp\obj\Debug\netcoreapp3.1\Razor\Views\Habit\ShowTracker.cshtml.g.cs
