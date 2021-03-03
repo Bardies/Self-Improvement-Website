@@ -521,3 +521,26 @@ D:\ITI\Self Development Website\Self-Improvement-Website\SelfDevelopmentApp\obj\
 D:\ITI\Self Development Website\Self-Improvement-Website\SelfDevelopmentApp\obj\Debug\netcoreapp3.1\SelfDevelopmentApp.dll
 D:\ITI\Self Development Website\Self-Improvement-Website\SelfDevelopmentApp\obj\Debug\netcoreapp3.1\SelfDevelopmentApp.pdb
 D:\ITI\Self Development Website\Self-Improvement-Website\SelfDevelopmentApp\obj\Debug\netcoreapp3.1\SelfDevelopmentApp.genruntimeconfig.cache
+H:\ITI\PD\ASP_MVC\Project\Project repo\Self-Improvement-Website\SelfDevelopmentApp\bin\Debug\netcoreapp3.1\Microsoft.AspNetCore.Cryptography.Internal.dll
+H:\ITI\PD\ASP_MVC\Project\Project repo\Self-Improvement-Website\SelfDevelopmentApp\bin\Debug\netcoreapp3.1\Microsoft.AspNetCore.Cryptography.KeyDerivation.dll
+H:\ITI\PD\ASP_MVC\Project\Project repo\Self-Improvement-Website\SelfDevelopmentApp\bin\Debug\netcoreapp3.1\Microsoft.AspNetCore.Identity.EntityFrameworkCore.dll
+H:\ITI\PD\ASP_MVC\Project\Project repo\Self-Improvement-Website\SelfDevelopmentApp\bin\Debug\netcoreapp3.1\Microsoft.Extensions.Identity.Core.dll
+H:\ITI\PD\ASP_MVC\Project\Project repo\Self-Improvement-Website\SelfDevelopmentApp\bin\Debug\netcoreapp3.1\Microsoft.Extensions.Identity.Stores.dll
+H:\ITI\PD\ASP_MVC\Project\Project repo\Self-Improvement-Website\SelfDevelopmentApp\obj\Debug\netcoreapp3.1\Razor\Views\Account\Login.cshtml.g.cs
+H:\ITI\PD\ASP_MVC\Project\Project repo\Self-Improvement-Website\SelfDevelopmentApp\obj\Debug\netcoreapp3.1\Razor\Views\Account\Register.cshtml.g.cs
+H:\ITI\PD\ASP_MVC\Project\Project repo\Self-Improvement-Website\SelfDevelopmentApp\obj\Debug\netcoreapp3.1\Razor\Views\Habit\Delete.cshtml.g.cs
+H:\ITI\PD\ASP_MVC\Project\Project repo\Self-Improvement-Website\SelfDevelopmentApp\obj\Debug\netcoreapp3.1\Razor\Views\Habit\Edit.cshtml.g.cs
+H:\ITI\PD\ASP_MVC\Project\Project repo\Self-Improvement-Website\SelfDevelopmentApp\obj\Debug\netcoreapp3.1\Razor\Views\Habit\Index.cshtml.g.cs
+H:\ITI\PD\ASP_MVC\Project\Project repo\Self-Improvement-Website\SelfDevelopmentApp\obj\Debug\netcoreapp3.1\Razor\Views\Habit\Insert.cshtml.g.cs
+H:\ITI\PD\ASP_MVC\Project\Project repo\Self-Improvement-Website\SelfDevelopmentApp\obj\Debug\netcoreapp3.1\Razor\Views\Habit\ShowTracker.cshtml.g.cs
+H:\ITI\PD\ASP_MVC\Project\Project repo\Self-Improvement-Website\SelfDevelopmentApp\obj\Debug\netcoreapp3.1\Razor\Views\Home\arts.cshtml.g.cs
+H:\ITI\PD\ASP_MVC\Project\Project repo\Self-Improvement-Website\SelfDevelopmentApp\obj\Debug\netcoreapp3.1\Razor\Views\Home\Home.cshtml.g.cs
+H:\ITI\PD\ASP_MVC\Project\Project repo\Self-Improvement-Website\SelfDevelopmentApp\obj\Debug\netcoreapp3.1\Razor\Views\Home\Index - Copy.cshtml.g.cs
+H:\ITI\PD\ASP_MVC\Project\Project repo\Self-Improvement-Website\SelfDevelopmentApp\obj\Debug\netcoreapp3.1\Razor\Views\Home\TodoList.cshtml.g.cs
+H:\ITI\PD\ASP_MVC\Project\Project repo\Self-Improvement-Website\SelfDevelopmentApp\obj\Debug\netcoreapp3.1\Razor\Views\Profile\Details.cshtml.g.cs
+H:\ITI\PD\ASP_MVC\Project\Project repo\Self-Improvement-Website\SelfDevelopmentApp\obj\Debug\netcoreapp3.1\Razor\Views\Profile\Edit.cshtml.g.cs
+H:\ITI\PD\ASP_MVC\Project\Project repo\Self-Improvement-Website\SelfDevelopmentApp\obj\Debug\netcoreapp3.1\Razor\Views\ToDoItems\Create.cshtml.g.cs
+H:\ITI\PD\ASP_MVC\Project\Project repo\Self-Improvement-Website\SelfDevelopmentApp\obj\Debug\netcoreapp3.1\Razor\Views\ToDoItems\Delete.cshtml.g.cs
+H:\ITI\PD\ASP_MVC\Project\Project repo\Self-Improvement-Website\SelfDevelopmentApp\obj\Debug\netcoreapp3.1\Razor\Views\ToDoItems\Details.cshtml.g.cs
+H:\ITI\PD\ASP_MVC\Project\Project repo\Self-Improvement-Website\SelfDevelopmentApp\obj\Debug\netcoreapp3.1\Razor\Views\ToDoItems\Edit.cshtml.g.cs
+H:\ITI\PD\ASP_MVC\Project\Project repo\Self-Improvement-Website\SelfDevelopmentApp\obj\Debug\netcoreapp3.1\Razor\Views\ToDoItems\Index.cshtml.g.cs
