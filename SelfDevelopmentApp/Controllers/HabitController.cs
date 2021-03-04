@@ -51,7 +51,7 @@ namespace SelfDevelopmentApp.Controllers
         [HttpPost]
         public IActionResult Insert(Habit habit)
         {
-            habit.UserID = "2b43b15b-535c-4716-8e97-bce4115fe5d5"/*userManager.GetUserId()*/;
+            habit.UserID = userManager.GetUserId(HttpContext.User);
             habit.StartingDate = DateTime.Now;
             habitRepository.Insert(habit);
             return RedirectToAction("Index");
