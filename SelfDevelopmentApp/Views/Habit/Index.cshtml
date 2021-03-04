@@ -1,28 +1,23 @@
-﻿@model IEnumerable<SelfDevelopmentApp.Models.Habit>
+@model IEnumerable<SelfDevelopmentApp.Models.Habit>
 
 @{
-    ViewData["Title"] = "Index";
-    
+    ViewData["Title"] = "Index";  
 }
 
-<div class="section-title" id="IndexHeader">
-    <h1>Habit Tracker</h1>
-</div>
-
-    <div class="text-center">
-        @*<a asp-action="Insert">Create New</a>*@
-        <!-- Button HTML (to Trigger Modal) -->
+<h1>Habit Tracker</h1>
+    <div class="text-center" >
         <p>
             <a  href="#myModal" 
-               class="trigger-btn" data-toggle="modal">Create Habit</a>
+               class="trigger-btn" data-toggle="modal">
+             <i class="fas fa-plus-square"></i> Add Habit</a>
         </p>
             </div>
 
     <!-- Modal HTML -->
-    <div id="myModal" class="modal fade">
+    <div id="myModal" class="modal fade" >
         <div class="modal-dialog modal-login">
             <div class="modal-content">
-                <form action="Insert" method="post">
+                <form asp-action="Insert" method="post">
                     <div class="modal-header">
                         <h4 class="modal-title">New Habit.. New Challenge</h4>
                         <button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
@@ -32,9 +27,9 @@
                             <label>Name</label>
                             <input name="Description" type="text" class="form-control" required="required">
                         </div>
-                        <div class="form-group">
-                            <label>Color</label>
-                            <input name="Color" type="color" class="form-control" required="required">
+                        <div class="form-group colorInput">
+                            <label>Color</label><br />
+                            <input name="Color" type="color" value="#D18585" required="required">
                         </div>
                     </div>
                     <div class="modal-footer">
@@ -44,27 +39,17 @@
             </div>
         </div>
     </div>
-<table class="table">
-    <thead>
+
+
+<table class="table" id="habitsTable">
+    <thead  >
         <tr>
             <th>
                 @Html.DisplayNameFor(model => model.Description)
             </th>
-            @*<th>
-                    @Html.DisplayNameFor(model => model.Longest_Streak)
-                </th>
-                <th>
-                    @Html.DisplayNameFor(model => model.Current_Streak)
-                </th>
-                <th>
-                    @Html.DisplayNameFor(model => model.Total_Count)
-                </th>*@
             <th>
                 @Html.DisplayNameFor(model => model.StartingDate)
             </th>
-            @*<th>
-                    @Html.DisplayNameFor(model => model.User)
-                </th>*@
             <th></th>
         </tr>
     </thead>
@@ -75,26 +60,19 @@
                 <td>
                     @Html.DisplayFor(modelItem => item.Description)
                 </td>
-                @*<td>
-                        @Html.DisplayFor(modelItem => item.Longest_Streak)
-                    </td>
-                    <td>
-                        @Html.DisplayFor(modelItem => item.Current_Streak)
-                    </td>
-                    <td>
-                        @Html.DisplayFor(modelItem => item.Total_Count)
-                    </td>*@
+                
                 <td>
                     @Html.DisplayFor(modelItem => item.StartingDate)
                 </td>
-                @*<td>
-                        @Html.DisplayFor(modelItem => item.User.Email)
-                    </td>*@
-            <td>
-                <a asp-action="ShowTracker" asp-route-id="@item.ID">Show</a> |
-                <a asp-action="Edit" asp-route-id="@item.ID">Edit</a> |
-                <a asp-action="Delete" asp-route-id="@item.ID">Delete</a>
-            </td>
+                
+                <td style="text-align: center;">
+                    <a style="color:forestgreen;" asp-action="ShowTracker" asp-route-id="@item.ID">
+                        <i class="fas fa-calendar-alt"></i> Show</a> |
+                    <a style="color:dodgerblue;" asp-action="Edit" asp-route-id="@item.ID">
+                        <i class="fas fa-edit"></i> Edit</a> |
+                    <a style="color:red;" asp-action="Delete" asp-route-id="@item.ID">
+                        <span class="glyphicon glyphicon-trash"></span> Delete</a>
+                </td>
             </tr>
         }
     </tbody>
