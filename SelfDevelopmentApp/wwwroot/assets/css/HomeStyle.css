@@ -5,10 +5,7 @@
 #hero:before {
     background: rgba(0, 0, 0, 0.3);
 }
-/*---------------------Navbar------------------------*/
-#header{
-    border-bottom:1px solid black;
-}
+
 /*First Section needs margin-top*/
 /*---------------------To do List & Habit Tracker Section------------------------*/
 #trackers {

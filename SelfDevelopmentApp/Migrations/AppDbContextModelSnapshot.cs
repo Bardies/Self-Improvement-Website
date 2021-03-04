@@ -214,8 +214,8 @@ namespace SelfDevelopmentApp.Migrations
                         .HasMaxLength(256)
                         .HasColumnType("nvarchar(256)");
 
-                    b.Property<byte[]>("PPImageData")
-                        .HasColumnType("varbinary(max)");
+                    b.Property<string>("PPImageData")
+                        .HasColumnType("nvarchar(max)");
 
                     b.Property<string>("PasswordHash")
                         .HasColumnType("nvarchar(max)");

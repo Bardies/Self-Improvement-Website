@@ -50,8 +50,15 @@
 
             <nav id="navbar" class="navbar">
                 <ul>
-                    <li><a asp-area="" asp-controller="Home" asp-action="Index">Home</a></li>
-                    
+                    @if (SignInManager.IsSignedIn(User))
+                    {
+                        <li><a asp-area="" asp-controller="Home" asp-action="Home" asp-fragment="hero">Home</a></li>
+                    }
+                    else
+                    {
+                        <li><a asp-area="" asp-controller="Home" asp-action="Index" asp-fragment="hero">Home</a></li>
+                    }
+
                     <li><a asp-area="" asp-controller="Home" asp-action="Index" asp-fragment="services">Services</a></li>
                     <li><a asp-area="" asp-controller="Home" asp-action="Index" asp-fragment="portfolio">Portfolio</a></li>
 
@@ -110,11 +117,15 @@
                     <div class="col-lg-2 col-md-6 footer-links">
                         <h4>Useful Links</h4>
                         <ul>
-                            <li><i class="bx bx-chevron-right"></i> <a href="#">Home</a></li>
-                            <li><i class="bx bx-chevron-right"></i> <a href="#">About us</a></li>
-                            <li><i class="bx bx-chevron-right"></i> <a href="#">Services</a></li>
-                            <li><i class="bx bx-chevron-right"></i> <a href="#">Terms of service</a></li>
-                            <li><i class="bx bx-chevron-right"></i> <a href="#">Privacy policy</a></li>
+                            @if (SignInManager.IsSignedIn(User))
+                            {
+                                <li><i class="bx bx-chevron-right"></i><a asp-area="" asp-controller="Home" asp-action="Home">Home</a></li>
+                            }
+                            else
+                            {
+                                <li><i class="bx bx-chevron-right"></i><a asp-area="" asp-controller="Home" asp-action="Index">Home</a></li>
+                            }
+                            <li><i class="bx bx-chevron-right"></i> <a asp-action="Index" asp-controller="Home" asp-fragment="services">Services</a></li>
                         </ul>
                     </div>
 

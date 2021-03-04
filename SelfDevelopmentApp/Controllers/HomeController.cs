@@ -127,6 +127,7 @@ namespace SelfDevelopmentApp.Controllers
         //    Thread.Sleep(TimeSpan.FromMinutes(1));
         //}
 
+        [AllowAnonymous]
         public IActionResult IndexAsync()
         {
             //f1();
@@ -139,26 +140,7 @@ namespace SelfDevelopmentApp.Controllers
         public IActionResult Home()
         {
             IEnumerable<Article> art_lst = _articleRepo.AllArticles();
-            //art_lst.Reverse();
-            //IEnumerable<IEnumerable<Article>> Tri_Art = Split<Article>(art_lst, 3);
-            /*
-            //ViewBag.art_img = _articleRepo.GetArticleByID(2).Image;
-            //data:Image/png;base64,<%= System.Convert.ToBase64String((byte[])ViewBag.art_img) %>
-            byte[] bytes = _articleRepo.GetArticleByID(2).Image;
-            string strBase64 = Convert.ToBase64String(bytes);
-            //Image1.ImageUrl = "data:Image/png;base64," + strBase64;
-            string url = "data:Image/png;base64," + strBase64;
-            ViewBag.art_img = url;
-            */
-            /*var suggested_articles = "AadaD";
-            string str = Encoding.Default.GetString(suggested_articles.Text);
-            string displayedTxt = str.Split('\n')[0];
-            ViewBag.txt = displayedTxt;
-            //Encoding.Default.GetString(suggested_articles.Text).Split('\n')[0]
-            ViewBag.suggested_articles = suggested_articles;*/
-
-            //ViewBag.suggested_articles = _articleRepo.GetArticlesByTopic();
-
+            art_lst.Reverse();
             return View(art_lst);
         }
 
@@ -189,20 +171,6 @@ namespace SelfDevelopmentApp.Controllers
         }
 
         public IActionResult BlogSingle()
-        {
-            return View();
-        }
-
-        public IActionResult TodoList()
-        {
-            return View();
-        }
-        public IActionResult HabitTracker()
-        {
-            return View();
-        }
-
-        public IActionResult arts()
         {
             return View();
         }

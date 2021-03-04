@@ -1,124 +1,80 @@
-﻿@model SelfDevelopmentApp.Models.ApplicationUser
+﻿@model SelfDevelopmentApp.ViewModel.EditProfileViewModel
 
 @{ ViewData["Title"] = "Edit"; }
 
-<!--<h1>Edit</h1>
-
-<h4>Profile</h4>
-<hr />
-<div class="row">
-    <div class="col-md-4">
-        <form asp-action="Edit">-->
-@*<div asp-validation-summary="ModelOnly" class="text-danger"></div>*@
-@*<input type="hidden" asp-for="Id" />*@
-<!--<div class="form-group">
-                <label asp-for="Fname" class="control-label"></label>
-                <input asp-for="Fname" class="form-control" />
-                <span asp-validation-for="Fname" class="text-danger"></span>
-            </div>
-            <div class="form-group">
-                <label asp-for="Lname" class="control-label"></label>
-                <input asp-for="Lname" class="form-control" />
-                <span asp-validation-for="Lname" class="text-danger"></span>
-            </div>
-            <div class="form-group">
-                <label asp-for="Email" class="control-label"></label>
-                <textarea asp-for="Email" class="form-control"></textarea>
-                <span asp-validation-for="Email" class="text-danger"></span>
-            </div>
-            <div class="form-group">
-                <label asp-for="PhoneNumber" class="control-label"></label>
-                <textarea asp-for="PhoneNumber" class="form-control"></textarea>
-                <span asp-validation-for="PhoneNumber" class="text-danger"></span>
-            </div>
-            <div class="form-group">
-                <label asp-for="Weight" class="control-label"></label>
-                <textarea asp-for="Weight" class="form-control"></textarea>
-                <span asp-validation-for="Weight" class="text-danger"></span>
-            </div>
-            <div class="form-group">
-                <label asp-for="Height" class="control-label"></label>
-                <textarea asp-for="Height" class="form-control"></textarea>
-                <span asp-validation-for="Height" class="text-danger"></span>
-            </div>
-            <div class="form-group">
-                <label asp-for="DOB" class="control-label"></label>
-                <textarea asp-for="DOB" class="form-control"></textarea>
-                <span asp-validation-for="DOB" class="text-danger"></span>
-            </div>
-
-            <div class="form-group">
-                <input type="submit" value="Save" class="btn btn-primary" />
-            </div>
-        </form>
-    </div>
-</div>
-
-<div>
-    <a asp-action="Details">Back to profile</a>
-</div>
 
 @section Scripts {
     @{await Html.RenderPartialAsync("_ValidationScriptsPartial");}
 }-->
 
+<div class="panel panel-default" style="margin:50px">
+    <div class="form">
 
-<div class="form">
+        <div id="editrrof">
+            <h1 style="color:#e43c53">Update Profile!</h1>
 
-    <div id="editrrof">
-        <h1>Update Profile!</h1>
+            <form enctype="multipart/form-data" asp-action="Edit">
 
-        <form asp-action="Edit">
+                <div asp-validation-summary="ModelOnly" class="text-danger"></div>
+                @*<input type="hidden" asp-for="Id" />*@
+                <div class="form-group">
+                    @*<label asp-for="Fname" class="control-label"></label>*@
+                    <div>First Name</div>
+                    <input asp-for="Fname" class="form-control" />
+                    <span asp-validation-for="Fname" class="text-danger"></span>
+                </div>
+                <div class="form-group">
+                    <div>Last Name</div>
+                    @*<label asp-for="Lname" class="control-label"></label>*@
+                    <input asp-for="Lname" class="form-control" />
+                    <span asp-validation-for="Lname" class="text-danger"></span>
+                </div>
 
-            <div asp-validation-summary="ModelOnly" class="text-danger"></div>
-            @*<input type="hidden" asp-for="Id" />*@
-            <div class="form-group">
-                <label asp-for="Fname" class="control-label"></label>
-                <input asp-for="Fname" class="form-control" />
-                <span asp-validation-for="Fname" class="text-danger"></span>
-            </div>
-            <div class="form-group">
-                <label asp-for="Lname" class="control-label"></label>
-                <input asp-for="Lname" class="form-control" />
-                <span asp-validation-for="Lname" class="text-danger"></span>
-            </div>
-            <div class="form-group">
-                <label asp-for="Email" class="control-label"></label>
-                <textarea asp-for="Email" class="form-control"></textarea>
-                <span asp-validation-for="Email" class="text-danger"></span>
-            </div>
-            <div class="form-group">
-                <label asp-for="PhoneNumber" class="control-label"></label>
-                <textarea asp-for="PhoneNumber" class="form-control"></textarea>
-                <span asp-validation-for="PhoneNumber" class="text-danger"></span>
-            </div>
-            <div class="form-group">
-                <label asp-for="Weight" class="control-label"></label>
-                <textarea asp-for="Weight" class="form-control"></textarea>
-                <span asp-validation-for="Weight" class="text-danger"></span>
-            </div>
-            <div class="form-group">
-                <label asp-for="Height" class="control-label"></label>
-                <textarea asp-for="Height" class="form-control"></textarea>
-                <span asp-validation-for="Height" class="text-danger"></span>
-            </div>
-            <div class="form-group">
-                <label asp-for="DOB" class="control-label"></label>
-                <textarea asp-for="DOB" class="form-control"></textarea>
-                <span asp-validation-for="DOB" class="text-danger"></span>
-            </div>
+                <div class="form-group">
+                    <div>Phone Number</div>
+                    <input asp-for="PhoneNumber" class="form-control"></input>
+                    <span asp-validation-for="PhoneNumber" class="text-danger"></span>
+                </div>
+                <div class="form-group">
+                    <div>Wight</div>
+                    <input asp-for="Weight" class="form-control"></input>
+                    <span asp-validation-for="Weight" class="text-danger"></span>
+                </div>
+                <div class="form-group">
+                    <div>Height</div>
+                    <input asp-for="Height" class="form-control"></input>
+                    <span asp-validation-for="Height" class="text-danger"></span>
+                </div>
+                <div class="form-group">
 
-            <div class="form-group">
-                <input type="submit" value="Save" class="btn btn-primary" />
-            </div>
-        </form>
+                    <div>Data Of Birth</div>
+                    <input asp-for="DOB" class="form-control"></input>
+                    <span asp-validation-for="DOB" class="text-danger"></span>
+                </div>
+                <div class="form-group row">
+                    <label asp-for="PPImageData" class="col-sm-2 col-form-label"></label>
+                    <div class="col-sm-10">
+                        <div class="custom-file">
+                            <div class="custom-file-label">Choose File...</div>
+                            <input asp-for="PPImageData" class="form-control custom-file-input">
+
+                        </div>
+                    </div>
+                </div>
+                <br />
+                <br />
+                <div class="form-group">
+                    <input type="submit" style="background-color:#e43c53" value="Save" class="btn btn-primary" />
+                </div>
+
+            </form>
+        </div>
+    </div>
+
+    <div>
+        <a asp-action="Details">Back to profile</a>
     </div>
 </div>
-
-<div>
-    <a asp-action="Details">Back to profile</a>
-</div>
-
 
 
 <link href="~/assets/css/loginRegister.css" rel="stylesheet" />

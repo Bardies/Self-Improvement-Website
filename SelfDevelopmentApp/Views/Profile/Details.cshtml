@@ -4,79 +4,33 @@
 
 @{ Layout = "_blog";
     ViewData["Title"] = "Profile";
+    var photoPath = "~/images/" + (Model.PPImageData ?? "noimage.jpg");
 }
 
 
 
-<!-- ======= Blog Single Section ======= -->
-@*<section id="blog" class="blog">
-
-
-    <div class="col-lg-8 entries">
-
-        <profile class="entry entry-single">
-
-
-
-            <h2 class="entry-title">
-
-                user name: @Model.Fname  @Model.Lname
-            </h2>
-
-            <div class="entry-meta">
-
-                Email: @Model.Email
-            </div>
-            @{ if (Model.PhoneNumber != null)
-                {
-                    <div class="entry-meta">
-
-                        Phone : @Model.PhoneNumber
-                    </div>
-                }
-            }
-            @{ if (Model.Height != null)
-                {
-                    <div class="entry-meta">
-
-                        Height : @Model.Height
-                    </div>
-                }
-            }
-            @{ if (Model.Weight != null)
-                {
-                    <div class="entry-meta">
-
-                        Weight : @Model.Weight
-                    </div>
-                }
-            }
-
-
-            <a asp-area="" asp-controller="Profile" asp-action="Edit">Edit</a>
-
-        </profile>
-    </div>*@<!-- End blog entries list -->
-@*</section>*@<!-- End Blog Single Section -->
 
 <link href="//netdna.bootstrapcdn.com/bootstrap/3.0.0/css/bootstrap.min.css" rel="stylesheet" id="bootstrap-css">
 <script src="//netdna.bootstrapcdn.com/bootstrap/3.0.0/js/bootstrap.min.js"></script>
 <script src="//code.jquery.com/jquery-1.11.1.min.js"></script>
-<!------ Include the above in your HEAD tag ---------->
 <br />
 <br />
 <br />
 <br />
 <div class="container">
     <div class="row">
-        <div class="panel panel-default">
-            <div class="panel-heading">  <h4> @Model.Fname Profile</h4></div>
+        <div class="panel panel-default" style="margin:50px">
+            <div class="panel-heading">
+                <h4 style="color:#e43c53"> @Model.Fname Profile</h4style="color:#e43c53">
+            </div>
             <div class="panel-body">
                 <div class="col-md-4 col-xs-12 col-sm-6 col-lg-4">
-                    @*<img alt="User Pic" src="https://x1.xingassets.com/assets/frontend_minified/img/users/nobody_m.original.jpg" id="profile-image1" class="img-circle img-responsive">*@
-
+                    @*<img alt="User Pic" src="@photoPath"class="img-circle img-responsive">*@
+                    <img class="card-img-top img-circle img-responsive" src="@photoPath" asp-append-version="true" />
 
                 </div>
+
+                @*<img class="card-img-top" src="@photoPath" asp-append-version="true" />*@
                 <div class="col-md-8 col-xs-12 col-sm-6 col-lg-8">
                     <div class="container">
                         <h2>   user name: @Model.Fname  @Model.Lname</h2>
@@ -96,10 +50,10 @@
                             }
                         }
                     </ul>
-                    
+
                     <ul class="container details">
                         @{ if (Model.Weight != null)
-                            { 
+                            {
                                 <hr>
 
                                 <li><p><span style="width:50px;"></span>  Weight : @Model.Weight</p></li>
@@ -110,14 +64,17 @@
                         @{ if (Model.Height != null)
                             {
 
-                                <li><p><span  style="width:50px;"></span>  Height : @Model.Height</p></li>
+                                <li><p><span style="width:50px;"></span>  Height : @Model.Height</p></li>
 
 
                             }
                         }
                     </ul>
 
-                    @{ if (Model.DOB != null)
+
+                    @{DateTime date = new DateTime(1, 1, 1);
+                    }
+                    @{ if (Model.DOB != date)
                         {
                             <hr>
                             <div class="col-sm-5 col-xs-6 tital ">Date Of Birth:@Model.DOB</div>
@@ -126,7 +83,7 @@
                         }
                     }
                     <hr>
-                    <a asp-area="" asp-controller="Profile" asp-action="Edit">Edit</a>
+                    <a asp-area="" asp-controller="Profile" asp-action="Edit"><i class="fas fa-user-edit"></i>Edit</a>
 
                 </div>
             </div>

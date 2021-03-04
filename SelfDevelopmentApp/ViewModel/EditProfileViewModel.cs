@@ -1,19 +1,16 @@
-﻿
-using Microsoft.AspNetCore.Identity;
+﻿using Microsoft.AspNetCore.Http;
+using SelfDevelopmentApp.Models;
 using System;
 using System.Collections.Generic;
 using System.ComponentModel.DataAnnotations;
-using System.ComponentModel.DataAnnotations.Schema;
 using System.Linq;
 using System.Threading.Tasks;
 
-namespace SelfDevelopmentApp.Models
+namespace SelfDevelopmentApp.ViewModel
 {
-    public class ApplicationUser : IdentityUser
+    public class EditProfileViewModel
     {
 
-
-        
         [Required(ErrorMessage = "Please enter first name")]
         [Display(Name = "First Name")]
         [StringLength(100)]
@@ -24,34 +21,24 @@ namespace SelfDevelopmentApp.Models
         [Display(Name = "Last Name")]
         [StringLength(100)]
         public string Lname { get; set; }
+        [Display(Name = "Email")]
+        [DataType(DataType.EmailAddress)]
+        public string Email { get; set; }
 
+        public string PhoneNumber { get; set; }
         public float? Height { get; set; }
 
 
         public float? Weight { get; set; }
 
 
-      
+        [Required]
         [DataType(DataType.Date, ErrorMessage = "Please enter your Data of Birth.")]
         [DisplayFormat(DataFormatString = "{0:yyy-MM-dd}")]
         public DateTime DOB { get; set; }
 
-
-        public string PPImageData { get; set; }
-
-
-        public ICollection<Topic> Topics { get; set; } = new HashSet<Topic>();
-
-
-        public ICollection<Habit> Habits { get; set; } = new HashSet<Habit>();
-
-
-        public virtual ToDoList ToDoList { get; set; }
-
-
-
-
-
+      
+        public IFormFile  PPImageData { get; set; }
 
     }
 }
