@@ -1,7 +1,7 @@
-﻿using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Identity;
 using Microsoft.AspNetCore.Mvc;
 using SelfDevelopmentApp.Models;
+
 using SelfDevelopmentApp.Services;
 using System;
 using System.Collections.Generic;
@@ -10,7 +10,6 @@ using System.Threading.Tasks;
 
 namespace SelfDevelopmentApp.Controllers
 {
-    [Authorize]
     public class HabitController : Controller
     {
         private readonly IHabitRepository habitRepository;
@@ -25,7 +24,8 @@ namespace SelfDevelopmentApp.Controllers
         }
         public IActionResult Index()
         {
-            return View(habitRepository.GetAllHabits());
+            string currentUserID = userManager.GetUserId(HttpContext.User);
+            return View(habitRepository.GetAllHabits(currentUserID));
         }
    
         public IActionResult Edit(int id)
@@ -51,7 +51,7 @@ namespace SelfDevelopmentApp.Controllers
         [HttpPost]
         public IActionResult Insert(Habit habit)
         {
-            habit.UserID = userManager.GetUserId(HttpContext.User);
+            habit.UserID = "2b43b15b-535c-4716-8e97-bce4115fe5d5"/*userManager.GetUserId()*/;
             habit.StartingDate = DateTime.Now;
             habitRepository.Insert(habit);
             return RedirectToAction("Index");
