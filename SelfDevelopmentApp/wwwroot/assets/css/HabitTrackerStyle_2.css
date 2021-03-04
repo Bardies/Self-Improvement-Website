@@ -1,211 +1,230 @@
-﻿body {
-  font-family: Catamaran;
-  text-align: center;
-  min-width: 450px;
-  color: #666; }
+body {
+font-family: Catamaran;
+text-align: center;
+min-width: 450px;
+color: #666; }
 
 @media screen and (max-width: 900px) {
-  #calendar {
-    display: grid;
-    justify-content: center;
-    grid-template: repeat(5, 54px)/repeat(7, 54px); }
-  .dayContainer {
-    position: relative;
-    outline: 1px solid #333;
-    margin-top: 1px;
-    margin-left: 1px;
-    display: grid;
-    grid-template: 50% 50% / 50% 50%; }
-  .square:nth-child(1) {
-    border-bottom: 1px solid #333;
-    border-right: 1px solid #333; }
-  .square:nth-child(2) {
-    border-bottom: 1px solid #333; }
-  .square:nth-child(3) {
-    border-right: 1px solid #333; }
-  .dayContainer .circle {
+#main {
+margin-top: 10%;
+}
+
+#calendar {
+display: grid;
+margin-bottom:5%;
+margin-top:5%;
+justify-content: center;
+grid-template: repeat(5, 54px)/repeat(7, 54px); }
+.dayContainer {
+position: relative;
+    
+outline: 1px solid #333;
+margin-top: 1px;
+margin-left: 1px;
+display: grid;
+grid-template: 50% 50% / 50% 50%; }
+.square:nth-child(1) {
+border-bottom: 1px solid #333;
+border-right: 1px solid #333; }
+.square:nth-child(2) {
+border-bottom: 1px solid #333; }
+.square:nth-child(3) {
+border-right: 1px solid #333; }
+.dayContainer .circle {
     position: absolute;
-    background: white;
+    background: black;
+    color: dimgrey;
+    font: xx-large;
     /*border-radius: 50%;*/
-    border: 1px solid #333;
+    /* border: 1px solid #333;*/
     z-index: 0;
-    width: 20px;
-    height: 20px;
-    top: 15px;
-    left: 15px; }
-  .dayContainer .circle .day {
-    font-size: 10px;
-    text-align: center;
-    line-height: 20px;
-    cursor: default;
-    user-select: none; }
-  #daysLabels {
-    width: 378px;
-    margin: 0 auto;
-    font-size: 10px; }
-  #daysLabels span {
-    width: 54px;
-    display: inline-block; }
-  #month {
-    margin: 0 auto;
-    display: inline; }
-    #month div {
-      display: inline;
-      cursor: pointer; }
-  #monthLabel {
-    margin: 0;
-    cursor: default;
-    text-shadow: 2px 2px 2px #ccc;
+    width: 100%;
+    height: 100%;
+        
+}
+.dayContainer .circle .day {
+    color:dimgrey;
+font-size: 20px;
+width:100%;
+height: 100%;
+text-align: center;
+line-height: 30px;
+cursor: default;
+user-select: none; }
+#daysLabels {
+width: 378px;
+margin: 0px auto;
+font-size: 10px; }
+#daysLabels span {
+width: 54px;
+display: inline-block; }
+#month {
+margin: 0 auto;
+display: inline; }
+#month div {
     display: inline;
-    padding: 0 1em;
-    user-select: none; }
-  #info {
-    width: 378px;
-    margin: 0 auto; }
-  #taskLabels {
-    width: 324px;
-    text-align: left;
-    list-style: none;
-    padding: 0;
-    float: left;
-    margin: 10px 0; }
-  #taskLabels > li {
-    min-width: 230px; }
-  #taskLabels > li input[type="color"] {
-    width: 1.5vw;
-    height: 1.5vw;
-    display: inline-block;
-    margin-right: 1vw;
-    position: relative;
-    top: 0;
-    border: 1px solid #333;
     cursor: pointer; }
-  #taskLabels > li input {
-    border: none;
-    border-bottom: 1px solid #333;
-    padding: 5px;
-    padding-bottom: 0;
-    outline: none;
-    width: 70%;
-    color: #666;
-    font-size: 2vh; }
-    #taskExample .circle {
-        left:0;
-        top:0;
-        width:101%;
-        height:100%;
-    }
-    #taskExample {
-    text-align:center;
-    width: 54px;
-    height: 54px;
-    position: relative;
-    top: 50px;
-    cursor: pointer; }
-  .emptyDay {
-    background: #eee; }
-  #about .mySocial {
-    position: absolute;
-    top: 25px;
-    left: 25px; }
-    #about .mySocial a {
-      display: inline-block;
-      height: 2.5em; }
-    #about .mySocial a i {
-      font-size: 1.5em; }
-      #about .mySocial a i.fa-linkedin {
-        color: #0073B0; }
-      #about .mySocial a i.fa-github {
-        color: #24292E; }
-      #about .mySocial a i.fa-twitter {
-        color: #1DA1F2; }
-  .seanSocial {
-    position: relative;
-    text-align: left;
-    margin-left: 25px;
+#monthLabel {
+margin: 0;
+cursor: default;
+text-shadow: 2px 2px 2px #ccc;
+display: inline;
+padding: 0 1em;
+user-select: none; }
+#info {
+width: 378px;
+margin: 0 auto; }
+#taskLabels {
+width: 324px;
+text-align: left;
+list-style: none;
+padding: 0;
+float: left;
+margin: 10px 0; }
+#taskLabels > li {
+min-width: 230px; }
+#taskLabels > li input[type="color"] {
+width: 1.5vw;
+height: 1.5vw;
+display: inline-block;
+margin-right: 1vw;
+position: relative;
+top: 0;
+border: 1px solid #333;
+cursor: pointer; }
+#taskLabels > li input {
+border: none;
+border-bottom: 1px solid #333;
+padding: 5px;
+padding-bottom: 0;
+outline: none;
+width: 70%;
+color: #666;
+font-size: 2vh; }
+#taskExample .circle {
+    left:0;
+    top:0;
+    width:101%;
+    height:100%;
+}
+#taskExample {
+text-align:center;
+width: 54px;
+height: 54px;
+position: relative;
+top: 50px;
+cursor: pointer; }
+.emptyDay {
+background: #eee; }
+#about .mySocial {
+position: absolute;
+top: 25px;
+left: 25px; }
+#about .mySocial a {
     display: inline-block;
-    width: 100%; }
-    .seanSocial a img {
-      height: 1.5em;
-      border-radius: 50%;
-      position: relative;
-      top: 5px; }
-  .hidden {
-    visibility: hidden; }
-  input::-webkit-color-swatch {
-    border: none; } }
+    height: 2.5em; }
+#about .mySocial a i {
+    font-size: 1.5em; }
+    #about .mySocial a i.fa-linkedin {
+    color: #0073B0; }
+    #about .mySocial a i.fa-github {
+    color: #24292E; }
+    #about .mySocial a i.fa-twitter {
+    color: #1DA1F2; }
+.seanSocial {
+position: relative;
+text-align: left;
+margin-left: 25px;
+display: inline-block;
+width: 100%; }
+.seanSocial a img {
+height: 1.5em;
+border-radius: 50%;
+position: relative;
+top: 5px; }
+.hidden {
+visibility: hidden; }
+input::-webkit-color-swatch {
+border: none; } }
 
 @media screen and (min-width: 900px) {
-  #calendar {
+#calendar {
     display: grid;
     justify-content: center;
-    grid-template: repeat(6, 5vw)/repeat(7, 5vw); }
-  .dayContainer {
+    margin-bottom: 5%;
+    grid-template: repeat(6, 5vw)/repeat(7, 5vw);
+}
+.dayContainer {
     position: relative;
     outline: 1px solid #333;
     margin-top: 1px;
     margin-left: 1px;
     display: grid;
     grid-template: 50% 50% / 50% 50%; }
-  .square:nth-child(1) {
+.square:nth-child(1) {
     border-bottom: 1px solid #333;
     border-right: 1px solid #333; }
-  .square:nth-child(2) {
-    border-bottom: 1px solid #333; }
-  .square:nth-child(3) {
-    border-right: 1px solid #333; }
-    .dayContainer .circle {
-        position: absolute;
-        background: white;
-        /*    border-radius: 50%;
-   border: 1px solid #333;*/
-        z-index: 0;
-        width: 4.98vw;
-        height: 4.98vw;
-        vertical-align: central;
-        padding-top: 2vw;
-        /*    top: 1.75vw;
-    left: 1.75vw;*/
-    }
-  .dayContainer .circle .day {
-    font-size: 0.75vw;
+.square:nth-child(2) {
+border-bottom: 1px solid #333; }
+.square:nth-child(3) {
+border-right: 1px solid #333; }
+.dayContainer .circle {
+    position: absolute;
+    background: white;
+    z-index: 0;
+    width:100%;
+    height:100%;
+    vertical-align: central;
+        
+       
+}
+.dayContainer .circle .day {
+    font-size: 1.5vw;
+    padding-top: 35%;
+    font-weight: bold;
+    vertical-align: central !important;
+    color: black;
     text-align: center;
-    line-height: 1.5vw;
+    line-height: 1.8vw;
+    width: 100%;
+    height: 100%;
     cursor: default;
-    user-select: none; }
-  #daysLabels {
-    width: 35vw;
-    margin: 0 auto;
-    font-size: 0.75vw; }
-  #daysLabels span {
-    width: 5vw;
-    display: inline-block; }
-  #month {
-    margin: 0 auto;
-    display: inline; }
-    #month div {
-      display: inline;
-      cursor: pointer; }
-  #monthLabel {
+    user-select: none;
+}
+#daysLabels {
+width: 35vw;
+font-weight:bold;
+margin: 0 auto;
+font-size: 0.85vw; }
+#daysLabels span {
+width: 5vw;
+display: inline-block; }
+#month {
+margin: 0 auto;
+display: inline; }
+#month div {
+    display: inline;
+    cursor: pointer; }
+#monthLabel {
     margin: 0;
     cursor: default;
     text-shadow: 2px 2px 2px #ccc;
     display: inline;
     padding: 0 1em;
     user-select: none; }
-  #info {
+#info {
     width: 35vw;
     margin: 0 auto; }
-  #taskLabels {
+#taskLabels {
     width: 30vw;
     text-align: left;
     list-style: none;
     padding: 0;
     float: left;
     margin: 10px 0; }
-  #taskLabels > li {
+#taskLabels > li {
     min-width: 230px; }
-  #taskLabels > li input[type="color"] {
+#taskLabels > li input[type="color"] {
     width: 1.5vw;
     height: 1.5vw;
     display: inline-block;
@@ -214,7 +233,7 @@
     top: 0;
     border: 1px solid #333;
     cursor: pointer; }
-  #taskLabels > li input {
+#taskLabels > li input {
     border: none;
     border-bottom: 1px solid #333;
     padding: 5px;
@@ -223,53 +242,90 @@
     width: 70%;
     color: #666;
     font-size: 2vh; }
-  #taskExample {
+#taskExample {
     width: 5vw;
     height: 5vw;
     position: relative;
     top: 50px;
     cursor: pointer; }
-  .emptyDay {
+.emptyDay {
     background: #eee; }
-  #about .mySocial {
+#about .mySocial {
     position: absolute;
     top: 25px;
     left: 25px; }
-    #about .mySocial a {
-      display: inline-block;
-      height: 2.5em; }
-    #about .mySocial a i {
-      font-size: 1.5em; }
-      #about .mySocial a i.fa-linkedin {
-        color: #0073B0; }
-      #about .mySocial a i.fa-github {
-        color: #24292E; }
-      #about .mySocial a i.fa-twitter {
-        color: #1DA1F2; }
-  .seanSocial {
+#about .mySocial a {
+    display: inline-block;
+    height: 2.5em; }
+#about .mySocial a i {
+    font-size: 1.5em; }
+    #about .mySocial a i.fa-linkedin {
+    color: #0073B0; }
+    #about .mySocial a i.fa-github {
+    color: #24292E; }
+    #about .mySocial a i.fa-twitter {
+    color: #1DA1F2; }
+.seanSocial {
     position: relative;
     text-align: left;
     margin-left: 25px;
     display: inline-block;
-    width: 100%; }
-    .seanSocial a img {
-      height: 1.5em;
-      border-radius: 50%;
-      position: relative;
-      top: 5px; }
-  .hidden {
-    visibility: hidden; }
-  input::-webkit-color-swatch {
-    border: none; }
-  body {
-    overflow-x: hidden; } }
-/****************************************/
-#IndexHeader {
-    margin-top: 70px;
-    padding-bottom: 0;
-    border-bottom: solid 1px black;
+    width: 100%; 
+
+}
+.seanSocial a img {
+    height: 1.5em;
+    border-radius: 50%;
+    position: relative;
+    top: 5px; }
+.hidden {
+visibility: hidden;
+
+}
+input::-webkit-color-swatch {
+border: none; }
+body {
+overflow-x: hidden;
+    
+}
+#main {
+    margin-top:10%;
+}
+}
+/*Spinner*/
+.wrap {
+width: 200px;
+margin: auto;
+z-index: 1;
+position: absolute;
+right: 100px;
+top: 40px;
 }
 
-#IndexHeader h1 {
-    width: auto;
+.msg {
+    color: black;
+    text-align: center;
+    font-family: 'Bree Serif', Courier, monospaced;
+    font-size: 2em;
+    font-weight:bold;
+    width: 200px;
+    position: absolute;
+    margin: 95px 0 0 18px;
+    pointer-events: none;
+}
+
+.sticker {
+    width: 300px;
+    height: 300px;
+    position: absolute;
+    background: url(../img/lemon_2_300x300.png) top center no-repeat;
+    animation: spin 10s linear infinite;
+    /*Set our animation play state to paused initially */
+    animation-play-state: paused;
+}
+
+@keyframes spin {
+100% {
+    transform: rotate(1turn);
+}
 }
