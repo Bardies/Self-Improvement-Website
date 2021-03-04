@@ -1,6 +1,7 @@
 ﻿<!DOCTYPE html>
 <html lang="en">
-
+@using Microsoft.AspNetCore.Identity
+@inject SignInManager<ApplicationUser> SignInManager;
 <head>
     <meta charset="utf-8">
     <meta content="width=device-width, initial-scale=1.0" name="viewport">
@@ -41,8 +42,9 @@
 <body>
 
     <!-- ======= Header ======= -->
-    <header id="header" class="fixed-top header-inner-pages">
+    <header id="header" class="fixed-top ">
         <div class="container d-flex align-items-center justify-content-between">
+
 
             <h1 class="logo"><a asp-area="" asp-controller="Home" asp-action="Index">SALAM</a></h1>
 
@@ -52,10 +54,34 @@
                     
                     <li><a asp-area="" asp-controller="Home" asp-action="Index" asp-fragment="services">Services</a></li>
                     <li><a asp-area="" asp-controller="Home" asp-action="Index" asp-fragment="portfolio">Portfolio</a></li>
-                    
+
                     <li><a asp-area="" asp-controller="Home" asp-action="Index" asp-fragment="contact">Contact</a></li>
+                    @if (SignInManager.IsSignedIn(User))
+                    {
+                        <li style="color:white">@User.Identity.Name</li>
+                        <li>
+                            <form method="post" asp-controller="Account" asp-action="Logout">
+                                <button type="submit" style="width:auto;color:white" class="nav-link btn btn-link py-0">
+                                    Logout
+                                </button>
+                            </form>
+                        </li>
+                        <li><a asp-area="" asp-controller="profile" asp-action="Details" asp-fragment="profile">Profile</a></li>
+                    }
+                    else
+                    {
+                        <li>
+                            <a asp-area="" asp-controller="Account" asp-action="Register">Register</a>
+
+                        </li>
+                        <li class="nav-item">
+                            <a asp-area="" asp-controller="Account" asp-action="Login">Login</a>
+                        </li>
+                    }
+
                 </ul>
                 <i class="bi bi-list mobile-nav-toggle"></i>
+
             </nav><!-- .navbar -->
 
         </div>

@@ -10,12 +10,8 @@
     var ModleSize = ViewBag.NumOfItems;
     var topics = ViewBag.Topics;
     int pageNum = ViewBag.pageNum;
-    //CookieOptions cookieOptions = new CookieOptions();
-    //HttpContext.Response.Cookies.Append(
-    //         "name", "value", cookieOptions);
 }
 
- ======= Breadcrumbs =======
 <section id="breadcrumbs" class="breadcrumbs">
 
     <div class="container">
@@ -101,6 +97,8 @@
 
                     }
 
+                    @if (Model != null && Model.ToList().Count > 0)
+                    {
                     <div class="blog-pagination">
                         <ul class="justify-content-center">
                             <li>
@@ -125,16 +123,18 @@
                                 {
                                     <li>
                                         <form action="" method="post" >
-                                            <input type="hidden" name="name" value="@(i+2)" />
-                                            <button type="submit" style=" color: #fff; background-color: #e43c53; border:none; width: 40px; height:38px">@(i+2)</button>
+                                            <input type="hidden" name="name" value="@(i + 2)" />
+                                            <button type="submit" style=" color: #fff; background-color: #e43c53; border:none; width: 40px; height:38px">@(i + 2)</button>
                                         </form>
-                                        @*<a href="#breadcrumbs">@(i+2)</a>*@
                                     </li>
                                 }
                             }
                         </ul>
                     </div>
+
+                    }
                 }
+
             </div><!-- End blog entries list -->
 
             <div class="col-lg-4">
@@ -149,6 +149,8 @@
                         </form>
                     </div><!-- End sidebar search formn-->
 
+                @if (topics != null && topics.Count > 0)
+                {
                     <h3 class="sidebar-title">Topics</h3>
                     <div class="sidebar-item categories">
                         <ul>
@@ -166,6 +168,7 @@
                         </ul>
                     </div><!-- End sidebar categories-->
 
+                }
                 </div><!-- End sidebar -->
 
             </div><!-- End blog sidebar -->
