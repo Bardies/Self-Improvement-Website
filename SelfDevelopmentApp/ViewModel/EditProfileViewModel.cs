@@ -36,8 +36,8 @@ namespace SelfDevelopmentApp.ViewModel
         [DataType(DataType.Date, ErrorMessage = "Please enter your Data of Birth.")]
         [DisplayFormat(DataFormatString = "{0:yyy-MM-dd}")]
         public DateTime DOB { get; set; }
+        [Display(Name = " ")]
 
-      
         public IFormFile  PPImageData { get; set; }
 
     }
