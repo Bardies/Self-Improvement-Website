@@ -1,4 +1,4 @@
-﻿using SelfDevelopmentApp.Models;
+using SelfDevelopmentApp.Models;
 using System;
 using System.Collections.Generic;
 using System.ComponentModel.DataAnnotations;
@@ -17,14 +17,11 @@ namespace SelfDevelopmentApp.Models
         public string Description { get; set; }
        
 	public string Color { get; set; }
- 
         [DataType(DataType.Date)]
         [Required]
         public DateTime StartingDate { get; set; }
         [ForeignKey("User")]
         public string UserID { get; set; }
-
         public ApplicationUser User { get; set; }
-
     }
 }
