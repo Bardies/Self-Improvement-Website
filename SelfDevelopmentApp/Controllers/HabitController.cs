@@ -1,7 +1,8 @@
-﻿using Microsoft.AspNetCore.Authorization;
+using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Identity;
 using Microsoft.AspNetCore.Mvc;
 using SelfDevelopmentApp.Models;
+
 using SelfDevelopmentApp.Services;
 using System;
 using System.Collections.Generic;
@@ -25,7 +26,8 @@ namespace SelfDevelopmentApp.Controllers
         }
         public IActionResult Index()
         {
-            return View(habitRepository.GetAllHabits());
+            string currentUserID = userManager.GetUserId(HttpContext.User);
+            return View(habitRepository.GetAllHabits(currentUserID));
         }
    
         public IActionResult Edit(int id)

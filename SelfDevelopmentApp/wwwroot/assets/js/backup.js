@@ -38,10 +38,10 @@ function checkDelete() {
     }
 }
 function checkHabit() {
-    //get current id and label
-    var habit = document.getElementById("lbl").innerHTML;
-    var id = document.getElementById("id").innerHTML;
-    var color = document.getElementById("color").innerHTML;
+    ////get current id and label
+    //var habit = document.getElementById("lbl").innerHTML;
+    //var id = document.getElementById("id").innerHTML;
+    //var color = document.getElementById("color").innerHTML;
     var existFlag = 0;
     //loop to check id 
     var i = 0;
@@ -89,8 +89,8 @@ var checkLocalStorage = () => {
         let previousData = JSON.parse(window.localStorage.data);
 
         if (getCurrentLocalStorageData() === undefined) {
-            let confirmLoadPrevious =
-                confirm("Do you want to load your previous habits?");
+            let confirmLoadPrevious = true;
+                //confirm("Do you want to load your previous habits?");
 
             let tasks = EXAMPLE_TASKS;
 
@@ -217,7 +217,7 @@ var createCalendarStructure = () => {
 }
 
 var createDateInfo = () => {
-    checkMonthsAvailability();
+    //checkMonthsAvailability();
 
     DAY_NAMES.forEach(day => {
         let dayLabel = document.createElement("span");
@@ -341,7 +341,7 @@ var getTaskStatus = (day, task) => {
 var setTaskStatus = (day, task, status) => {
     let currentData = getCurrentLocalStorageData().data;
     currentData[day][task] = status;
-    console.log(currentData[day][task]);
+    //console.log(currentData[day][task]);
     let thisMonthData = { [selectedMonth]: { tasks: getCurrentLocalStorageData().tasks, data: currentData } };
     let data = { ...JSON.parse(window.localStorage.data), ...thisMonthData };
     localStorage.setItem("data", JSON.stringify(data));
@@ -411,5 +411,8 @@ var rgbToHex = (rgb) => {
 
 document.getElementById("nextMonth").onclick = () => { changeMonth(getNextMonth()) };
 document.getElementById("previousMonth").onclick = () => { changeMonth(getPreviousMonth()) };
-
+//get current id and label
+var habit = document.getElementById("lbl").innerHTML;
+var id = document.getElementById("id").innerHTML;
+var color = document.getElementById("color").innerHTML;
 init();

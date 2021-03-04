@@ -10,8 +10,8 @@ using SelfDevelopmentApp.Models;
 namespace SelfDevelopmentApp.Migrations
 {
     [DbContext(typeof(AppDbContext))]
-    [Migration("20210302001453_init_identity")]
-    partial class init_identity
+    [Migration("20210304022606_inatialProf")]
+    partial class inatialProf
     {
         protected override void BuildTargetModel(ModelBuilder modelBuilder)
         {
@@ -216,8 +216,8 @@ namespace SelfDevelopmentApp.Migrations
                         .HasMaxLength(256)
                         .HasColumnType("nvarchar(256)");
 
-                    b.Property<byte[]>("PPImageData")
-                        .HasColumnType("varbinary(max)");
+                    b.Property<string>("PPImageData")
+                        .HasColumnType("nvarchar(max)");
 
                     b.Property<string>("PasswordHash")
                         .HasColumnType("nvarchar(max)");
@@ -294,21 +294,15 @@ namespace SelfDevelopmentApp.Migrations
                         .HasColumnType("int")
                         .HasAnnotation("SqlServer:ValueGenerationStrategy", SqlServerValueGenerationStrategy.IdentityColumn);
 
-                    b.Property<int>("Current_Streak")
-                        .HasColumnType("int");
+                    b.Property<string>("Color")
+                        .HasColumnType("nvarchar(max)");
 
                     b.Property<string>("Description")
                         .IsRequired()
                         .HasColumnType("nvarchar(max)");
 
-                    b.Property<int>("Longest_Streak")
-                        .HasColumnType("int");
-
                     b.Property<DateTime>("StartingDate")
                         .HasColumnType("datetime2");
-
-                    b.Property<int>("Total_Count")
-                        .HasColumnType("int");
 
                     b.Property<string>("UserID")
                         .HasColumnType("nvarchar(450)");

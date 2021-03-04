@@ -1,4 +1,6 @@
-﻿using SelfDevelopmentApp.Models;
+using Microsoft.AspNetCore.Http;
+using Microsoft.AspNetCore.Identity;
+using SelfDevelopmentApp.Models;
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -9,13 +11,17 @@ namespace SelfDevelopmentApp.Services
     public class HabitRepoService:IHabitRepository
     {
         private readonly AppDbContext context;
-        public HabitRepoService(AppDbContext context)
+        private readonly UserManager<ApplicationUser> userManager;
+
+        public HabitRepoService(AppDbContext context, 
+            UserManager<ApplicationUser> user_Manager)
         {
             this.context = context;
+            userManager = user_Manager;
         }
-        public List<Habit> GetAllHabits() 
+        public List<Habit> GetAllHabits(string user_ID) 
         {
-            return context.Habits.ToList();
+            return context.Habits.Where(habit => habit.UserID == user_ID).ToList();
         }
         public Habit Details(int id)
         {
@@ -25,8 +31,8 @@ namespace SelfDevelopmentApp.Services
         {
             Habit _habit = context.Habits.Find(id);
             _habit.Description = habit.Description;
-           
-            _habit.StartingDate = habit.StartingDate;
+            _habit.Color = habit.Color;
+            
             //We get user from system so we can't edit it.
         }
         public void Delete(int id)

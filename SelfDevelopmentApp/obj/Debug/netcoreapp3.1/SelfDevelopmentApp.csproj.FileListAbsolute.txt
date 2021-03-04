@@ -102,7 +102,6 @@ E:\ITI\ASP_MVC\Project\Self-Improvement-Website\SelfDevelopmentApp\obj\Debug\net
 E:\ITI\ASP_MVC\Project\Self-Improvement-Website\SelfDevelopmentApp\obj\Debug\netcoreapp3.1\Razor\Views\Habit\Delete.cshtml.g.cs
 E:\ITI\ASP_MVC\Project\Self-Improvement-Website\SelfDevelopmentApp\obj\Debug\netcoreapp3.1\Razor\Views\Habit\Edit.cshtml.g.cs
 E:\ITI\ASP_MVC\Project\Self-Improvement-Website\SelfDevelopmentApp\obj\Debug\netcoreapp3.1\Razor\Views\Habit\Index.cshtml.g.cs
-E:\ITI\ASP_MVC\Project\Self-Improvement-Website\SelfDevelopmentApp\obj\Debug\netcoreapp3.1\Razor\Views\Habit\Insert.cshtml.g.cs
 E:\ITI\ASP_MVC\Project\Self-Improvement-Website\SelfDevelopmentApp\obj\Debug\netcoreapp3.1\Razor\Views\Habit\ShowTracker.cshtml.g.cs
 E:\ITI\ASP_MVC\Project\Self-Improvement-Website\SelfDevelopmentApp\obj\Debug\netcoreapp3.1\Razor\Views\Home\Home.cshtml.g.cs
 E:\ITI\ASP_MVC\Project\Self-Improvement-Website\SelfDevelopmentApp\obj\Debug\netcoreapp3.1\Razor\Views\Home\Index.cshtml.g.cs

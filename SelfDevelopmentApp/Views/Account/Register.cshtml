@@ -4,51 +4,12 @@
     ViewBag.Title = "User Registration";
 }
 
-@*<h1>User Registration</h1>
-
-    <div class="row">
-        <div class="col-md-6 ">
-            <form method="post">
-                <div asp-validation-summary="All" class="text-danger"></div>
-                <div class="form-group">
-                    <div class="form-group">
-                        <label asp-for="Fname"></label>
-                        <input asp-for="Fname" class="form-control" />
-                        <span asp-validation-for="Fname" class="text-danger"></span>
-                    </div>
-                    <div class="form-group">
-                        <label asp-for="Lname"></label>
-                        <input asp-for="Lname" class="form-control" />
-                        <span asp-validation-for="Lname" class="text-danger"></span>
-                    </div>
-                    <label asp-for="Email"></label>
-                    <input asp-for="Email" class="form-control" />
-                    <span asp-validation-for="Email" class="text-danger"></span>
-                </div>
-                <div class="form-group">
-                    <label asp-for="Password"></label>
-                    <input asp-for="Password" class="form-control" />
-                    <span asp-validation-for="Password" class="text-danger"></span>
-                </div>
-                <div class="form-group">
-                    <label asp-for="ConfirmPassword"></label>
-                    <input asp-for="ConfirmPassword" class="form-control" />
-                    <span asp-validation-for="ConfirmPassword" class="text-danger"></span>
-                </div>
-
-                <button type="submit" class="btn btn-primary">Register</button>
-            </form>
-        </div>
-    </div>*@
-
-
 <div class="form">
     <div asp-validation-summary="All" class="text-danger"></div>
 
     <div id="signup">
-        <h1>Sign Up</h1>
-
-        <form method="post">
+        <h1 style="color:rgb(12,64,100)">Sign Up</h1>
+        <form method="post"  id="login_form">
 
             <div class="top-row">
                 <div class="field-wrap">
@@ -81,7 +42,7 @@
                 <div>
                     Password
                 </div>
-                <input asp-for="Password" class="form-control" value=" " placeholder="Password" />
+                <input asp-for="Password" class="form-control" value="" placeholder="Password" />
                 <span asp-validation-for="Password" class="text-danger"></span>
             </div>
             <div class="field-wrap">
@@ -91,7 +52,7 @@
                 <input asp-for="ConfirmPassword" class="form-control" placeholder="Confirm Password" />
                 <span asp-validation-for="ConfirmPassword" class="text-danger"></span>
             </div>
-            <button type="submit" class="button button-block">Register</button>
+            <button type="submit" style="background-color: rgb(12,64,100)" class="btn-primary">Register</button>
 
         </form>
 

@@ -1,6 +1,9 @@
-﻿using Microsoft.AspNetCore.Identity;
+﻿using Microsoft.AspNetCore.Hosting;
+using Microsoft.AspNetCore.Identity;
+using Microsoft.AspNetCore.Identity.EntityFrameworkCore;
 using Microsoft.AspNetCore.Mvc;
 using SelfDevelopmentApp.Models;
+using SelfDevelopmentApp.ViewModel;
 using System;
 using System.Collections.Generic;
 using System.IO;
@@ -12,9 +15,12 @@ namespace SelfDevelopmentApp.Controllers
     public class ProfileController : Controller
     {
         private readonly UserManager<ApplicationUser> userManager;
+        private readonly IHostingEnvironment hostingEnvironment;
 
-        public ProfileController(UserManager<ApplicationUser> userManager)
+        public ProfileController(UserManager<ApplicationUser> userManager,
+                              IHostingEnvironment hostingEnvironment)
         {
+            this.hostingEnvironment = hostingEnvironment;
             this.userManager = userManager;
         }
         public IActionResult Details()
@@ -43,82 +49,80 @@ namespace SelfDevelopmentApp.Controllers
             }
             else
             {
-                var user = userManager.FindByIdAsync(userId).Result;
+                ApplicationUser user = userManager.FindByIdAsync(userId).Result;
+                // user.PPImageData = null;
+                EditProfileViewModel e = new EditProfileViewModel();
+                e.PPImageData = null;
+                e.PhoneNumber = user.PhoneNumber;
+                e.Lname = user.Lname;
+                e.Fname = user.Fname;
+                e.DOB = user.DOB;
+                e.Weight = user.Weight;
+                e.Height = user.Height;
+                e.PhoneNumber = user.PhoneNumber;
 
-                //var model = new ApplicationUser
-                //{
-                //    Id = user.Id,
-                //    Fname = user.Fname,
-                //    Lname = user.Lname,
-                //    Email = user.Email,
-                //    PPImageData=user.PPImageData,
-                //    UserName = user.UserName,
-                //    Height = user.Height,
-                //    Weight = user.Weight,
-                //    DOB = user.DOB,
-                //    PhoneNumber = user.PhoneNumber,
-                //    ToDoList = user.ToDoList,
-                //    Topics = user.Topics,
-                //    Habits=user.Habits
 
-                //};
-                return View(user);
+                return View(e);
             }
 
         }
         [HttpPost]
-        public async Task<IActionResult> Edit(ApplicationUser userdetails)
+        public async Task<IActionResult> Edit(EditProfileViewModel userdetails)
         {
-           // string uniqueFileName = UploadedFile(userdetails);
-            var userId = userManager.GetUserId(HttpContext.User);
 
-            var user = userManager.FindByIdAsync(userId).Result;
-            if (user == null)
+            if (ModelState.IsValid)
             {
-
-                return RedirectToAction("Login", "Account");
-            }
-            else
-
-            {
-               
-                user.Fname = userdetails.Fname;
-                user.Lname = userdetails.Lname;
-                user.Email = userdetails.Email;
-                //user.UserName = userdetails.UserName;
-                user.PPImageData = userdetails.PPImageData;
-                user.Height = userdetails.Height;
-                user.Weight = userdetails.Weight;
-                user.DOB = userdetails.DOB;
-                user.PhoneNumber = userdetails.PhoneNumber;
-                user.Topics = userdetails.Topics;
-                user.ToDoList = userdetails.ToDoList;
-                user.Habits = userdetails.Habits;
-
-
-                var result = await userManager.UpdateAsync(user);
-
-                if (result.Succeeded)
+                string uniqueFileName = null;
+                if (userdetails.PPImageData != null)
                 {
-                    return RedirectToAction("Details", "Profile");
 
+                    string uploadsFolder = Path.Combine(hostingEnvironment.WebRootPath, "images");
+
+                    uniqueFileName = Guid.NewGuid().ToString() + "_" + userdetails.PPImageData.FileName;
+                    string filePath = Path.Combine(uploadsFolder, uniqueFileName);
+
+                    userdetails.PPImageData.CopyTo(new FileStream(filePath, FileMode.Create));
+                }
+
+                var userId = userManager.GetUserId(HttpContext.User);
+
+                var user = userManager.FindByIdAsync(userId).Result;
+                if (user == null)
+                {
+
+                    return RedirectToAction("Login", "Account");
                 }
                 else
-                { return View("Details"); }
+
+                {
+
+                    user.Fname = userdetails.Fname;
+                    user.Lname = userdetails.Lname;
+
+                    user.PPImageData = uniqueFileName;
+                    user.Height = userdetails.Height;
+                    user.Weight = userdetails.Weight;
+                    user.DOB = userdetails.DOB;
+                    user.PhoneNumber = userdetails.PhoneNumber;
+
+
+
+                    IdentityResult result = await userManager.UpdateAsync(user);
+
+
+                    if (result.Succeeded)
+                    {
+                        return RedirectToAction("Details", "Profile");
+
+                    }
+                    else
+                    { return View("Details"); }
+                }
+
             }
+            return View();
         }
-        //string fName = "C:\\Users\\zeina\\Pictures\\Pictures\\error404.jpg";
-        //Image = GetPhoto(fName)
-        //public static byte[] GetPhoto(string filePath)
-        //{​​​​​​
-        //    FileStream stream = new FileStream(
-        //        filePath, FileMode.Open, FileAccess.Read);
-        //    BinaryReader reader = new BinaryReader(stream);
-        //    byte[] photo = reader.ReadBytes((int)stream.Length);
-        //    reader.Close();
-        //    stream.Close();
-        //    return photo;
-        //}​​​​​​
+
     }
 
 }

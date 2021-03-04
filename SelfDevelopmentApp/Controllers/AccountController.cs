@@ -9,8 +9,7 @@ using System.Linq;
 using System.Threading.Tasks;
 
 namespace SelfDevelopmentApp.Controllers
-{
-    
+{ 
     public class AccountController : Controller
     {
         private readonly UserManager<ApplicationUser> userManager;
@@ -124,7 +123,7 @@ namespace SelfDevelopmentApp.Controllers
                         return Redirect(ReturnUrl);
                     }
                     else
-                        return RedirectToAction("Index", "Home");
+                        return RedirectToAction("Home", "Home");
                 }
 
                 ModelState.AddModelError(string.Empty, "Invalid Login Attempt");

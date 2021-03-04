@@ -3,7 +3,7 @@ using Microsoft.EntityFrameworkCore.Migrations;
 
 namespace SelfDevelopmentApp.Migrations
 {
-    public partial class init_identity : Migration
+    public partial class inatialProf : Migration
     {
         protected override void Up(MigrationBuilder migrationBuilder)
         {
@@ -31,7 +31,7 @@ namespace SelfDevelopmentApp.Migrations
                     Height = table.Column<float>(type: "real", nullable: true),
                     Weight = table.Column<float>(type: "real", nullable: true),
                     DOB = table.Column<DateTime>(type: "datetime2", nullable: false),
-                    PPImageData = table.Column<byte[]>(type: "varbinary(max)", nullable: true),
+                    PPImageData = table.Column<string>(type: "nvarchar(max)", nullable: true),
                     UserName = table.Column<string>(type: "nvarchar(256)", maxLength: 256, nullable: true),
                     NormalizedUserName = table.Column<string>(type: "nvarchar(256)", maxLength: 256, nullable: true),
                     Email = table.Column<string>(type: "nvarchar(256)", maxLength: 256, nullable: true),
@@ -178,9 +178,7 @@ namespace SelfDevelopmentApp.Migrations
                     ID = table.Column<int>(type: "int", nullable: false)
                         .Annotation("SqlServer:Identity", "1, 1"),
                     Description = table.Column<string>(type: "nvarchar(max)", nullable: false),
-                    Longest_Streak = table.Column<int>(type: "int", nullable: false),
-                    Current_Streak = table.Column<int>(type: "int", nullable: false),
-                    Total_Count = table.Column<int>(type: "int", nullable: false),
+                    Color = table.Column<string>(type: "nvarchar(max)", nullable: true),
                     StartingDate = table.Column<DateTime>(type: "datetime2", nullable: false),
                     UserID = table.Column<string>(type: "nvarchar(450)", nullable: true)
                 },
