@@ -24,13 +24,12 @@ namespace SelfDevelopmentApp
         // This method gets called by the runtime. Use this method to add services to the container.
         public void ConfigureServices(IServiceCollection services)
         {
-
             services.AddScoped<IToDoListRepository, ToDoListRepoService>();
             services.AddScoped<IToDoItemRepository, ToDoItemRepoService>();
             services.AddScoped<IArticleRepository, ArticleRepoService>();
             services.AddScoped<ITopicRepository, TopicRepoService>();
             services.AddScoped<IUserRepository, UserRepoService>();
-	    services.AddScoped<IHabitRepository, HabitRepoService>();
+	        services.AddScoped<IHabitRepository, HabitRepoService>();
 
             services.Configure<EmailConfig>(configuration.GetSection("Email"));
             services.AddTransient<IEmailRepository, EmailRepoService>();

@@ -58,6 +58,7 @@ namespace SelfDevelopmentApp.Services
             int ToDoId = context.ToDoLists.Where(i => i.UserID == id).FirstOrDefault().ID;
             toDo.ToDoListID = ToDoId;
             context.ToDoItems.Add(toDo);
+            
             context.SaveChanges();
         }
 

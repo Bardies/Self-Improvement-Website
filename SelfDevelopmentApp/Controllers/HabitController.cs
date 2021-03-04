@@ -2,7 +2,6 @@
 using Microsoft.AspNetCore.Identity;
 using Microsoft.AspNetCore.Mvc;
 using SelfDevelopmentApp.Models;
-
 using SelfDevelopmentApp.Services;
 using System;
 using System.Collections.Generic;
@@ -52,7 +51,7 @@ namespace SelfDevelopmentApp.Controllers
         [HttpPost]
         public IActionResult Insert(Habit habit)
         {
-            habit.UserID = userManager.GetUserId(HttpContext.User)/*"2b43b15b-535c-4716-8e97-bce4115fe5d5"*/;
+            habit.UserID = userManager.GetUserId(HttpContext.User);
             habit.StartingDate = DateTime.Now;
             habitRepository.Insert(habit);
             return RedirectToAction("Index");

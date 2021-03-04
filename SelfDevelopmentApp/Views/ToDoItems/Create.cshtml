@@ -41,10 +41,7 @@
                         <input asp-for="ReminderTime" class="form-control" />
                         <span asp-validation-for="ReminderTime" class="text-danger"></span>
                     </div>
-                    @*  <div class="form-group">
-                            <label asp-for="ToDoListID" class="control-label"></label>
-                            <select asp-for="ToDoListID" class ="form-control" asp-items="ViewBag.ToDoListID"></select>
-                        </div>*@
+                   
                     <div class="form-group">
                         <input type="submit" style="margin-top:12px" value="Create" class="btn btn-primary" />
                     </div>
@@ -58,7 +55,9 @@
         </div>
     </div>
 </div>
-@section Scripts {
-    @{await Html.RenderPartialAsync("_ValidationScriptsPartial");}
-    <script src="~/lib/jquery-validation-unobtrusive/jquery.validate.unobtrusive.js"></script>
+@section scripts {
+    @{await Html.RenderPartialAsync("_ValidationScriptsPartial"); }
+    <script src="~/lib/jquery-validate/jquery.validate.js"></script>
+    <script src="~/lib/jquery-validation-unobtrusive/jquery.validate.unobtrusive.min.js"></script>
+
 }
