@@ -8,7 +8,7 @@ namespace SelfDevelopmentApp.Services
 {
     public interface IHabitRepository
     {
-        public List<Habit> GetAllHabits();
+        public List<Habit> GetAllHabits(string currentUserID);
         public Habit Details(int id);
         public void Edit(int id, Habit habit);
         public void Delete(int id);
