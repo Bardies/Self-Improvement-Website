@@ -49,6 +49,10 @@ function checkHabit() {
         if (EXAMPLE_TASKS[i].id == id) {
             existFlag = 1;
             habitInx = i;
+            EXAMPLE_TASKS[habitInx] =
+                { color: color, label: habit, id: id };
+            localStorage.setItem("userHabits",
+                JSON.stringify(EXAMPLE_TASKS));
             break;
         }
     }

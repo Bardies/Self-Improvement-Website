@@ -5,15 +5,15 @@
 
 @section Scripts {
     @{await Html.RenderPartialAsync("_ValidationScriptsPartial");}
-}-->
+}
 
-<div class="panel panel-default" style="margin:50px">
+<div class="panel panel-default">
     <div class="form">
 
         <div id="editrrof">
-            <h1 style="color:#e43c53">Update Profile!</h1>
+            <h1 style="color: rgb(12,64,100)">Update Profile!</h1>
 
-            <form enctype="multipart/form-data" asp-action="Edit">
+            <form enctype="multipart/form-data" asp-action="Edit"  id="login_form">
 
                 <div asp-validation-summary="ModelOnly" class="text-danger"></div>
                 @*<input type="hidden" asp-for="Id" />*@
@@ -51,20 +51,20 @@
                     <input asp-for="DOB" class="form-control"></input>
                     <span asp-validation-for="DOB" class="text-danger"></span>
                 </div>
-                <div class="form-group row">
-                    <label asp-for="PPImageData" class="col-sm-2 col-form-label"></label>
-                    <div class="col-sm-10">
-                        <div class="custom-file">
-                            <div class="custom-file-label">Choose File...</div>
-                            <input asp-for="PPImageData" class="form-control custom-file-input">
+                <div class="form-group">
+                    <div class="row">
+                        <div class="col-sm-10">
+                            <div class="custom-file">
+                                <div class="custom-file-label">Upload profile image...</div>
+                                <input asp-for="PPImageData" class="form-control custom-file-input" style="width:350px">
 
+                            </div>
                         </div>
                     </div>
                 </div>
                 <br />
-                <br />
-                <div class="form-group">
-                    <input type="submit" style="background-color:#e43c53" value="Save" class="btn btn-primary" />
+                <div class="form-group" style="text-align:center;">
+                    <input type="submit" style="background-color: rgb(12,64,100)" value="Save" class="btn btn-primary" />
                 </div>
 
             </form>

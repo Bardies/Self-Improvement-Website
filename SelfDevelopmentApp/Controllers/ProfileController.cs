@@ -112,7 +112,7 @@ namespace SelfDevelopmentApp.Controllers
 
                     if (result.Succeeded)
                     {
-                        return RedirectToAction("Details", "Profile");
+                        return RedirectToAction("Details");
 
                     }
                     else

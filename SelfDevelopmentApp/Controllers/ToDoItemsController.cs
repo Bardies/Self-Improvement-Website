@@ -157,7 +157,6 @@ namespace SelfDevelopmentApp.Controllers
             return RedirectToAction(nameof(Index));
         }
 
-
         public IActionResult QuickAdd(string desc)
         {
             //According to the id to query the database

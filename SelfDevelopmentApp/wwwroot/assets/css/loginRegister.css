@@ -222,9 +222,13 @@ textarea {
 /****************************/
 #login_form {
     padding: 35px 30px;
-    padding-top:45px;
+    padding-top: 45px;
     border: 3px groove rgb(12,64,100);
-    font-size:larger;
+    font-size: larger;
+    box-sizing: border-box;
+    /*background-color: rgba(12,64,90,0.9);*/
+    border-radius: 20px 70px;
+    /*margin-top: 20px;*/
 }
     #login_form .field-wrap  div{
         text-align: left;
@@ -232,9 +236,10 @@ textarea {
         font-weight:bold;
     }
 
-#login_form button{
+#login_form button, #login_form input[type="submit"] {
     border-radius: 5px;
-    padding:5px 8px;
+    padding: 5px 8px;
+    width:auto;
 }
 
 .form h1 {

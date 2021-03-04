@@ -1,0 +1,53 @@
+According to the new results, people using apps or trackers averaged more than 1,800 extra steps per day.Ivan Gener/Stocksy
+Can a wearable fitness tracker or smartphone app really prod you to exercise more — and stick with it? In a new analysis of 28 studies involving 7,454 people, using these popular digital physical-activity aids was linked to users logging an extra 1,850 steps per day compared with non-users (nearly a mile more).
+
+And the fitness app and tracker users were still moving significantly more 13 weeks later.
+
+The wearable trackers and downloadable apps worked best when they provided feedback on progress, enabled users to set personal goals or reminded users to get active via text messages, according to the study, published December 2020 in the British Journal of Sports Medicine.
+
+“Continuously monitoring your progress and receiving feedback from an app or tracker can lead to significant changes in overall physical activity,” says lead researcher Liliana Laranjo, MD, PhD, a research fellow on the faculty of medicine and health at the University of Sydney’s Westmead Applied Research Centre in Australia.
+
+Analysis Focused on New Technology and Healthy Adults
+Dr. Laranjo and the research team analyzed the results of studies conducted between 2014 and 2019 in women and men ages 18 to 65 who used a variety of smartphone apps (including Moves and Accupedo-Pro) or wearable trackers (including Fitbit, Fitbug, Withings Activité Steel, and Jawbone) — and included a control group who did not use devices.
+
+The studies measured the effectiveness of the devices through participants’ self-reports and from data collected directly from the apps and trackers or from research-grade accelerometers that also tracked participants’ activity levels. Some of the measures included: daily step counts, minutes per week of moderate-to-vigorous physical activity, weekly days exercised, minutes per week of total physical activity, or a measure of oxygen uptake by the body during exercise.
+
+This analysis is one of the first to look at the use of newer trackers and apps by healthy people. It focused on newer technology that tracks activity and gives feedback automatically, in contrast to older devices that had to be connected to a computer to upload exercise data, according to the study. Much of the existing work has also been done in people with chronic medical conditions.
+
+Previous research suggests that the older types of devices led to small to moderate increases in activity levels; the aim of this review was to see if the newer technology made a difference, the study authors note.
+
+The devices and apps were the main tools for motivating and measuring physical activity in the studies, but in most of the trials participants also got support, encouragement, and help with goal setting and problem-solving from other participants or from study leaders via meetings, phone calls, emails, or text messages.
+
+After a mean follow-up period of 13 weeks (length of the trials ranged from 2 to 40 weeks), app and tracker users were more active than control groups, based on daily step counts.
+
+Even Small Changes Can Have Meaningful Impact on Health
+The extra 1,850 daily steps could have significant health benefits including lower risk for fatal heart disease, diabetes, and cancer, says study coauthor Bruno Heleno, MD, PhD, an assistant professor at NOVA Medical School at the Universidade Nova da Lisboa in Portugal. “Equally important, [we know from other data that] exercise seems to improve health-related quality of life, improve sleep, [and] reduce anxiety and depression,” Heleno says.
+
+RELATED: Study Finds A Little Exercise Makes Up for a Full Day of Sitting
+
+Laranjo and Dr. Heleno say their analysis didn’t single out any one device or app as the most effective at keeping users active. But the analysis did suggest that the trackers and apps were most effective at prompting people to exercise more when they had features that let users personalize their goals and exercise plans and that provided support and encouragement via text messages.
+
+Personalization can help users set easy-to-reach goals and then increase activity with more ambitious goals in the future, Laranjo says. Many people get frustrated and give up if the benchmark is too high (like 10,000 steps per day), when in fact just a small increase from someone’s average can be very beneficial, she explains. “Starting low and progressing slowly, while continuously monitoring the progress and receiving feedback from the app or tracker, can lead to significant changes in overall physical activity throughout time.”
+
+The studies included a wide variety of individuals — inactive young adults, overweight men ages 30 to 65, office workers with desk jobs, medical residents, and sedentary postmenopausal women. And while the researchers didn’t specifically analyze the data by further subgroups (for age, baseline activity level, or other), Heleno says they saw no particular differences that stood out. “We do not have any reason to think the results would be qualitatively different between men and women, young adults and middle aged, or sedentary and already active people,” Heleno says.
+
+The takeaway for healthcare practitioners is that they should have more confidence in recommending fitness trackers and apps to their patients who want to become more physically active because this evidence suggests they work, Heleno says.
+
+With Apps and Trackers, Some Type of Feedback and Accountability Tends to Boost Results
+“These findings are important and show promise for using these technologies to improve physical activity,” says Mitesh S. Patel, MD, an associate professor of medicine and healthcare management at the Perelman School of Medicine and the Wharton School at the University of Pennsylvania in Philadelphia, and director of the Penn Medicine Nudge Unit, which studies and promotes healthy behavior change. Dr. Patel was not involved with this study.
+
+“However, it is important to recognize that the increases in physical activity were not due to using the devices alone, but rather using them with a behavior change program,” he says (referring to the goal-setting features and support from study leaders and other participants). Patel adds that the analysis has limitations, because it looked at studies involving young and middle-aged adults (not older adults) and most tracked the effects of trackers and apps for two to three months, but not longer term.
+
+Patel’s team within the Nudge Unit published a study in February 2020 in the journal JAMA Network Open that compared smartphone apps to wearable trackers in people newly discharged from the hospital. Patel and others found that app users were more likely than tracker users to still be tracking their activity six months later.
+
+“For those interested in using these devices, smartphone apps that track activity are often free and easy to use,” he says. “I’d suggest using one of these first and then deciding if the extra features and tracking available on a wearable will provide additional useful information.”
+
+And whatever app or tracker you choose, Patel says it may work best if you also have accountability and support from a structured program, such as a workplace wellness program or with a supportive friend or family member.
+
+Fitness researcher Michelle Segar, PhD, MPH, director of the Sport, Health, and Activity Research and Policy Center at the University of Michigan in Ann Arbor, and author of No Sweat: How the Simple Science of Motivation Can Bring You a Lifetime of Fitness, suggests consumers new to activity tracking use the findings of this study to inform their choices and look for apps and trackers that let you personalize your goals and get feedback on your progress toward those goals.
+
+RELATED: The Best Apps for Weight Loss: Diet Plan Tools, Fitness Trackers, and More
+
+To best cultivate lasting motivation — that goes beyond the initial excitement over starting something new and continues to motivate you when the novelty wears off — people need to become very clear about their "why" for wanting to make a change, such as feeling happier, having more energy, or feeling more mentally sharp after exercise, says Dr. Segar, who was not involved in the Australian study. Some fitness apps and trackers have features that can help users find and keep tapping into this meaningful motivation, she says.
+
+And she adds, find what motivates you. Just because trackers and apps helped a lot of people in these studies doesn’t mean they worked for everyone, Segar says. “Just like other in-vogue exercise tools, they are not right for everyone.”

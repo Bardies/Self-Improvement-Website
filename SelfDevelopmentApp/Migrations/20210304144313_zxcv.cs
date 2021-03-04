@@ -3,7 +3,7 @@ using Microsoft.EntityFrameworkCore.Migrations;
 
 namespace SelfDevelopmentApp.Migrations
 {
-    public partial class inatialProf : Migration
+    public partial class zxcv : Migration
     {
         protected override void Up(MigrationBuilder migrationBuilder)
         {

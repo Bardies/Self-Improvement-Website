@@ -1,0 +1,24 @@
+Here, New Food offers an overview of the comprehensive Thermo Fisher sponsored webinar, in which microbiology expert, François Bourdichon, shared his wisdom on the best ways to protect against Salmonella and Cronobacter.
+
+With a water activity below 0.85, low-moisture foods are often considered as low-risk products regarding microbial contaminations. However, Enterobacteriaceae are well known for being able to survive in dry conditions in food products as well as in the production environment for long periods of time. Over the last few years, several foodborne disease outbreaks have been reported, with Salmonella detected in various low-moisture foods and Cronobacter in powdered infant formula. This webinar provides an overview of the lessons learned from recent contamination crises, with a focus on risk analysis to develop best practices for monitoring dry food processing.
+
+Salmonella and Cronobacter: two pathogens able to survive in challenging conditions
+Although pathogens can’t grow in low-moisture foods, they can survive for months, if not years! The survival capability of several Enterobacteriaceae species in powdered infant formula has been demonstrated to be over two and a 
+half years.
+
+Over the past two decades, Salmonella has also been associated with several outbreaks caused by the consumption of various low-moisture foods, such as almonds, Turkish pine nuts, peanuts, peanut butter, chocolate, tea, infant formula, cereals, red and black peppers, tahini paste, and organic sprouted chia powder, to name a few. Many sporadic cases or small outbreaks have also been reported in literature on infant formula contaminations with Cronobacter.
+
+The control of these two foodborne pathogens in low-moisture foods and dry food production environments remains a significant challenge.
+
+Good hygiene practices in dry production environments
+Salmonella and Cronobacter are both able to adapt to drying processes and survive in dry food processing environments and low-moisture foods. The same strain can be present at the origin of multiple foodborne outbreaks at different times.
+
+Proper monitoring based on risk assessment, with relevant sampling plans, hygiene quality controls, and pathogen testing is a necessity. Guidance documents are, of course, available for good hygiene practices in low-moisture food facilities.
+
+However, improvements can be made based on the lessons learnt from recent foodborne outbreaks.
+
+Sampling plans should integrate the types of samples and the food contact surfaces at critical processing steps. Indications for deviations in the processing environment should lead the sampling and testing investigation.
+
+Pathogen testing and dry pooling according to validated workflows together with the enumeration of quality indicators, pathogen testing is run on environmental samples, ingredients and food products. The current practice for low-moisture food is to increase the sample size, combined with an appropriate sampling plan and dry pooling.
+
+While technical guidelines for pooling and compositing procedures for qualitative tests are described in the ISO 6887-1:2017 standard, pathogen detection on pooled samples and large test portions should be ensured with properly validated methods, using internationally recognised standards such as the ISO 16140-2:2016 and the Appendix J of the AOAC Guidelines.

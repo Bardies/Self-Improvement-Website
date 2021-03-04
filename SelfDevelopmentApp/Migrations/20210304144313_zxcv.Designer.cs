@@ -10,8 +10,8 @@ using SelfDevelopmentApp.Models;
 namespace SelfDevelopmentApp.Migrations
 {
     [DbContext(typeof(AppDbContext))]
-    [Migration("20210304022606_inatialProf")]
-    partial class inatialProf
+    [Migration("20210304144313_zxcv")]
+    partial class zxcv
     {
         protected override void BuildTargetModel(ModelBuilder modelBuilder)
         {

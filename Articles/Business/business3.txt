@@ -1,0 +1,99 @@
+It is no news that the implementation of the GST (Goods and service tax) will pose some major advantages and a few disadvantages to the services industry.
+
+Many service businesses will face a lot of changes over the years as they try to conform to the introduction of this new taxation system and we can be sure that many of them are happy because of the changes. You can trust that this new taxation system will also affect the people in general and not only business owners.
+
+Even so, the joy is that it is not all bad. We can gladly look forward to the positive and especially the people in the service business sector is keen on how things will turn out.
+
+In this article, we’ll assess the GST impact on service sector – both positively and negatively. We’ll also see what you need to know if you a service provider.
+
+ 
+
+Positive Effects Of GST On Service Sector
+No double taxation: This is one thing that was affecting many service providers. In the previous system of taxation, the works contract was complex, and this took a toll on many people. Here, the transfer of goods is a part of the service contract. This means that every invoice has the value of the goods used as well as the services supplied. These two attract a tax rate of 70% each bringing the total to 140% which is very high. With the implementation of GST, these two are considered to be one and thus taxed as ‘supply of service.’
+
+ 
+
+More Clarity For Software Industry: For companies like ProfitBooks, that sell online software, its was not clear whether to apply VAT or Service Tax on the product. In GST regime, there is a clear distinction between products and services which will remove the confusion for service industry.
+
+ 
+
+Repairs and maintenance: The service providers that provide repair and maintenance services to companies will be able to claim both the credit of input and credit of input services as provided by the GST system. The current regime only offers the credit of input services which is a bit limiting. Now that they can claim both of the credit of input and credit of input services, they can offer their repair and maintenance services at lower prices and thereby attracting more clients.
+
+ 
+
+Access to inputs held in stock: The service providers will access CENVAT credit of input that is held in stocks. This is best applicable when a person is moving from one category of taxation to the next like the exemption category to the taxable one.
+
+Check out this simple example – Earlier, service providers used to charge Service Tax to the clients and used to pay VAT on the goods purchased, like computers. it was not possible to take set off VAT against Service Tax. But in GST regime, you pay GST on both sales and purchases and hence its easy to claim input tax credit on that.
+
+ 
+
+Fewer costs to service providers: In the previous system of taxation, the credit of VAT and CST that were paid to the input were billed to the service provider. Luckily, with the GST system, the CENVAT credit of SGST/CGST, as well as the IGST that are to be paid on inputs and capital goods are all taken care of under the GST system.  This is a relief to the service provider.
+
+ 
+
+The cost of inputs is likely to drop: Now that the multiple taxation systems are abolished, the cost of inputs will go down. Inputs taxations like VAT, Excise Duty, and the likes will no longer be an issue to deal with.
+
+ 
+
+It will bring equality in all states: The previous taxation system did not cover Jammu and Kashmir. This presented a disadvantage to other places in India because taxation provisions did not cover these two places. However, GST now covers the whole land bringing all service sectors under the same taxation laws.
+
+ 
+
+Negative Impacts Of GST On Service Sector
+Other than the goods, there are also down sides to this system of taxation. These negatives include:
+
+Lack of a centralized registration: With the previous taxation system, many service providers rejoiced over being able to register all their businesses in different areas from a central place. However, this privilege has been taken away. Now, they have to register their businesses in the respective state and pay the CGST tax.
+
+ 
+
+Taxation for free services: If a business is going to supply services for free, they will still get taxed for it. Every supply that is made without consideration is taxed. This means you have to prepare yourself before you offer any free services.
+
+ 
+
+Increased cost of service to end consumer: Because the rate of taxation will go higher in the GST system, the end consumer will also feel a pinch of extra expenditure. The taxation is between 18% and 20%. Because this rate is high, the cost of service will be higher.
+
+ 
+
+Lack of a centralized system of accounting: Every business in every state has to have their accounting records because there is no centralized registration of businesses. Every business in every state is financially accountable to that state for taxation. This means that the accounts of the business will have to be separate.
+
+ 
+
+Burdensome filling of returns: As a business owner, you will have to file returns for all the businesses in all the different states separately. This is also because of decentralized registration.  This can prove to be burdensome and tiresome as well. You are needed to file as many as 37 returns in just a year.
+
+ 
+
+The burden of public education: The business owner is charged with the responsibility of educating the masses on the benefits of this GST system. Failure of which may lead to unprecedented events.
+
+ 
+
+What You Can Do To Comply With the GST
+As a service provider who is subject to the GST taxation system, it is very important that you ensure your business complies with the provisions of GST. You can do the following to ensure that you comply with the regulations of GST
+
+File your returns under GST: We all know that all businesses need to file their returns. There is no exemption to this. When there has not been much activity with the business, you can file nil returns. Failure to do comply will attract a penalty. You have to give detailed information on all activities of the business.
+
+Vendor ratings: The government has a mechanism in place that rates vendors based on how timely they are with their returns, their payments and so on. People who look forward to working with you will be rating you on the basis of these scores.
+
+Know your SAC: In GST regime, you need to mention ‘Service Accounting Code (SAC)’ for every service you sell. So, its important for you to know the correct SAC of the service you are selling.
+
+Raising invoices: Proper GST compliant invoices have to be raised under the GST system. Invoices issued to the GST showing compliance have specific fields that need to be filled before issuance. The issuance is done via a GST portal and information on both the buyer and seller are captured.
+For example, you need to mention your GSTN, customer’s GSTN, SAC on invoice.
+
+Know the applicable taxes: It is important to know that the GST system is made of two components and that is the CGST and the SGST. The taxes subsumed at the CGST include central excise duty, the special additional duty of customs, service tax, additional excise duty, and additional customs duty.
+
+The SGST component is made by subsuming the Purchase tax, luxury tax, entertainment tax, VAT, Octroi and entry tax, and others.
+
+If you are selling within your state, you need to apply SGST & CGST and if you are selling outside of your state, you must apply IGST.
+
+ 
+
+Use a good GST accounting software: This software will be your best friend as it will help you with filing your returns more easily and in a faster, error free way. This software will alert you to any discrepancies that there may be and you can get to it before any damage is done.
+
+ProfitBooks is one of the popular GST softwares in India. It will help you to create GST invoices, manage inventory and even file GST returns directly from the software.
+
+ 
+
+Final Thoughts
+By subsuming all these to provide the country with a single taxation level, we can say it is a great move that will propel the economy even further. In as much as there will be some challenges, it is a great thing to have a single taxation system for the service providers.
+
+For service industry, GST system has definitely increased the compliance burden. GST implementation is bound to face hiccups during initial days but things will be much smoother once the issues are addressed.
+

@@ -26,7 +26,7 @@
             {<p>No Available Articles Now :((</p> }
             else
             {
-                @foreach (var row in Model.ToArray().Split(3))
+                @foreach (var row in Model.TakeWhile(m => m.Title != null).Take(6).ToArray().Split(3))
                 {
                     <div class="row">
                         @foreach (var article in row)
@@ -52,10 +52,13 @@
                                                 <a href="https://www.ida2at.com/author/ahmed-mahgoub/" class="card-author">@article.Author</a>
                                                 @*<div class="card-date">26/02/2021</div>*@
                                             </div>
+                                            <div class="read-more">
+                                                <a asp-area="" asp-controller="Articles" asp-action="Details" asp-route-id="@article.ID" class="btn btn-outline-success btn-sm">Read More</a>
+                                            </div>
                                             @*<a href="" class="btn btn-outline-success btn-sm">Read More</a>
-                                            <a href="" class="btn btn-outline-danger btn-sm">
-                                                <i class="far fa-heart"></i>
-                                            </a>*@
+        <a href="" class="btn btn-outline-danger btn-sm">
+            <i class="far fa-heart"></i>
+        </a>*@
                                         </div>
                                     </div>
                                 </form>
