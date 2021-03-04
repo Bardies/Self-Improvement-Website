@@ -14,7 +14,7 @@ namespace SelfDevelopmentApp.Models
         [Required(ErrorMessage ="Please enter a description.")]
         public string Description { get; set; }
         [Required(ErrorMessage = "Please choose a priority.")]
-        public Priority Priority { get; set; }
+        public Priority Priority { get; set; } = Priority.Medium;
 
         public bool Done { get; set; } = false;
         [DataType(DataType.Date)]

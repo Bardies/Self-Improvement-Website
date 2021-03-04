@@ -13,8 +13,6 @@ namespace SelfDevelopmentApp.Controllers
     
     public class AccountController : Controller
     {
-      
-
         private readonly UserManager<ApplicationUser> userManager;
         private readonly SignInManager<ApplicationUser> signInManager;
 
@@ -34,29 +32,23 @@ namespace SelfDevelopmentApp.Controllers
         public async Task<IActionResult> Register(RegisterViewModel model)
         {
             if (ModelState.IsValid)
-            {
-                
+            {         
                 var user = new ApplicationUser
                 {
                     UserName = model.Email,
                     Email = model.Email,
                     Fname=model.Fname,
                     Lname=model.Lname
-                    
-
-
                 };
-
-               
+                
                 var result = await userManager.CreateAsync(user, model.Password);
 
                 if (result.Succeeded)
                 {
                     await signInManager.SignInAsync(user, isPersistent: false);
-                    return RedirectToAction("index", "home");
+                    return RedirectToAction("Home", "home");
                 }
 
-               
                 foreach (var error in result.Errors)
                 {
                     ModelState.AddModelError(string.Empty, error.Description);
@@ -119,7 +111,7 @@ namespace SelfDevelopmentApp.Controllers
         }
         [HttpPost]
       //  [AllowAnonymous]
-        public async Task<IActionResult> Login(LoginViewModel user)
+        public async Task<IActionResult> Login(LoginViewModel user, string ReturnUrl)
         {
             if (ModelState.IsValid)
             {
@@ -127,11 +119,15 @@ namespace SelfDevelopmentApp.Controllers
 
                 if (result.Succeeded)
                 {
-                    return RedirectToAction("Index", "Home");
+                    if(!string.IsNullOrEmpty(ReturnUrl))
+                    {
+                        return Redirect(ReturnUrl);
+                    }
+                    else
+                        return RedirectToAction("Index", "Home");
                 }
 
                 ModelState.AddModelError(string.Empty, "Invalid Login Attempt");
-
             }
             return View(user);
         }

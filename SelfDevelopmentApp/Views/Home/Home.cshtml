@@ -1,5 +1,5 @@
 ﻿@model IEnumerable<SelfDevelopmentApp.Models.Article>
-@using SelfDevelopmentApp.Controllers
+@using SelfDevelopmentApp.Utilities
 @{
     ViewData["Title"] = "Home Page";
 }
@@ -12,8 +12,8 @@
             <p>Manage your work and track your habits efficiently</p>
         </div>
         <div class="row content">
-            <a asp-area="" asp-controller="Home" asp-action="TodoList" class="col-lg-6" id="todolist"></a>
-            <a asp-area="" asp-controller="Home" asp-action="HabitTracker" class="col-lg-6" id="hTracker"> </a>
+            <a asp-area="" asp-controller="ToDoItems" asp-action="Index" class="col-lg-6" id="todolist"></a>
+            <a asp-area="" asp-controller="Habit" asp-action="Index" class="col-lg-6" id="hTracker"> </a>
         </div>
     </div>
 </section>
@@ -22,44 +22,49 @@
 <section id="suggested_articles">
     <div class="container">
         <h2>Latest Articles</h2>
-        @foreach (var row in Model.ToArray().Split(3)) {
-    <div class="row">
-        @foreach (var article in row)
-        {
-            
-        <div class="col-lg-4 mb-4 d-flex align-items-stretch">
-            <form asp-controller="Articles" asp-action="Index" style="display:inline-block;">
-                <input type="hidden" name="name" value="@article.Topic.Name">
-                <div class="card">
-                    @{string url = "data:Image/png;base64," + Convert.ToBase64String(article.Image);}
-                    <img src="@Url.Content(url)" alt="" class="card-img-top">
-                    <div class="card-body">
-                        <button type="submit" style=" background:#e43c53 ; color: #fff; padding: 6px 15px; transition: 0.3s; font-size: 14px; border:1px solid #e43c5c; border-radius:12px ;font-size:12pt; font-family:'Arial Rounded MT';">
-                            @article.Topic.Name
-                        </button>
-                        <h5 class="card-title"><strong>@article.Title</strong></h5>
-                        @{ var MaxLength = 150;
-                            var txt = @System.Text.Encoding.Default.GetString(article.Text); //.Split('\n')[0]
-                            if (txt.Length > MaxLength)
-                                txt = txt.Substring(0, MaxLength) + "...";
+        @{ if (Model.Count() == 0)
+            {<p>No Available Articles Now :((</p> }
+            else
+            {
+                @foreach (var row in Model.ToArray().Split(3))
+                {
+                    <div class="row">
+                        @foreach (var article in row)
+                        {
+                            <div class="col-lg-4 mb-4 d-flex align-items-stretch">
+                                <form asp-controller="Articles" asp-action="Index" style="display:inline-block;">
+                                    <input type="hidden" name="name" value="@article.Topic.Name">
+                                    <div class="card">
+                                        @{string url = "data:Image/png;base64," + Convert.ToBase64String(article.Image);}
+                                        <img src="@Url.Content(url)" alt="" class="card-img-top">
+                                        <div class="card-body">
+                                            <button type="submit" style=" background:#e43c53 ; color: #fff; padding: 6px 15px; transition: 0.3s; font-size: 14px; border:1px solid #e43c5c; border-radius:12px ;font-size:12pt; font-family:'Arial Rounded MT';">
+                                                @article.Topic.Name
+                                            </button>
+                                            <h5 class="card-title"><strong>@article.Title</strong></h5>
+                                            @{ var MaxLength = 150;
+                                                var txt = @System.Text.Encoding.Default.GetString(article.Text); //.Split('\n')[0]
+                                                if (txt.Length > MaxLength)
+                                                    txt = txt.Substring(0, MaxLength) + "...";
+                                            }
+                                            <p class="card-text">@txt</p>
+                                            <div class="col-auto ml-auto pr-0">
+                                                <a href="https://www.ida2at.com/author/ahmed-mahgoub/" class="card-author">@article.Author</a>
+                                                @*<div class="card-date">26/02/2021</div>*@
+                                            </div>
+                                            @*<a href="" class="btn btn-outline-success btn-sm">Read More</a>
+                                            <a href="" class="btn btn-outline-danger btn-sm">
+                                                <i class="far fa-heart"></i>
+                                            </a>*@
+                                        </div>
+                                    </div>
+                                </form>
+                            </div>
                         }
-                        <p class="card-text">@txt</p>
-                        <div class="col-auto ml-auto pr-0">
-                            <a href="https://www.ida2at.com/author/ahmed-mahgoub/" class="card-author">@article.Author</a>
-                            @*<div class="card-date">26/02/2021</div>*@
-                        </div>
-                        @*<a href="" class="btn btn-outline-success btn-sm">Read More</a>
-                <a href="" class="btn btn-outline-danger btn-sm">
-                    <i class="far fa-heart"></i>
-                </a>*@
                     </div>
-                </div>
-            </form>
-        </div>
-                
+                }
             }
-</div>
-         }
+        }
     </div>
 </section>
 <!-- End Articles -->

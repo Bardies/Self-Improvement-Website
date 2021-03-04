@@ -54,7 +54,13 @@
 
             <nav id="navbar" class="navbar">
                 <ul>
-                    <li><a asp-area="" asp-controller="Home" asp-action="Index" asp-fragment="hero">Home</a></li>
+                    @if (SignInManager.IsSignedIn(User))
+                    {
+                        <li><a asp-area="" asp-controller="Home" asp-action="Home" asp-fragment="hero">Home</a></li>
+                    }
+                    else{
+                        <li><a asp-area="" asp-controller="Home" asp-action="Index" asp-fragment="hero">Home</a></li>
+                    }
                     <li><a asp-area="" asp-controller="Articles" asp-action="Index">Articles</a></li>
                     <li><a asp-area="" asp-controller="Home" asp-action="Index" asp-fragment="about">About</a></li>
                     <li><a asp-area="" asp-controller="Home" asp-action="Index" asp-fragment="services">Services</a></li>

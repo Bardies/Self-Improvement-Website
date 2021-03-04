@@ -7,7 +7,7 @@
         @*<h3>Welcome to <strong>SALAM</strong></h3>*@
         <h1>Your Place to find SALAM</h1>
         <h2>Manage your tasks and track your daily habits efficiently!</h2>
-        <a href="#about" class="btn-get-started scrollto">Get Started</a>
+        <a asp-area="" asp-controller="Account" asp-action="Register" class="btn-get-started scrollto">Get Started</a>
     </div>
 </section><!-- End Hero -->
 <!-- ======= About Section ======= -->
@@ -51,7 +51,9 @@
         <h2>Our Awesome Services</h2>
         <div class="content row habit_service">
             <div class="col-lg-6 txt">
-                <h4>Habit Tracker</h4>
+                <h4>
+                    <a asp-area="" asp-controller="Habit" asp-action="Index" class="btn-get-started scrollto">Habit Tracker</a>
+                </h4>
                 <p>
                     Did you know that doing somthing for <em>21 days</em> in line, wil create a <span class="highlight">Habit!</span>
                 <p />
@@ -68,18 +70,18 @@
                 <img src="~/assets/img/Home/todo.gif" />
             </div>
             <div class="col-lg-6 txt">
-                <h4>To-do List</h4>
-                <p>
-                    Did you know that doing somthing for <em>21 days</em> in line, wil create a <span class="highlight">Habit!</span>
-                <p />
-                <p>
-                    We are here to encourage you start earning some great new habits!
-                </p>
+                <h4>
+                    <a asp-area="" asp-controller="ToDoItems" asp-action="Index" class="btn-get-started scrollto">To-do List</a>
+                </h4>
+                <p> Free up your mental space <p />
+                <p> Regain clarity and calmness by getting all those tasks out of your head and onto your to-do list! </p>
             </div>
         </div>
         <div class="content row article_service">
             <div class="col-lg-6 txt">
-                <h4>Articles</h4>
+                <h4>
+                    <a asp-area="" asp-controller="Articles" asp-action="Index" class="btn-get-started scrollto">Articles</a>
+                </h4>
                 <p>
                     SALAM also provides you with a collection of great ideas to help you direct your compass in the right way!
                 <p />

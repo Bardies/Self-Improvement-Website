@@ -37,38 +37,38 @@
     </div>*@
 
 <div class="form">
+    <div asp-validation-summary="All" class="text-danger"></div>
+    <div id="login">
+        <h1>Welcome Back!</h1>
 
-        <div id="login">
-            <h1>Welcome Back!</h1>
+        <form method="post">
 
-            <form method="post">
-
-                <div class="field-wrap">
-                    <div>
-                        Email Address
-                    </div>
-                    <input asp-for="Email" class="form-control" value=" " placeholder="Email@mail.com" />
-                    <span asp-validation-for="Email" class="text-danger"></span>
+            <div class="field-wrap">
+                <div>
+                    Email Address
                 </div>
+                <input asp-for="Email" class="form-control" value=" " placeholder="Email@mail.com" />
+                <span asp-validation-for="Email" class="text-danger"></span>
+            </div>
 
-                <div class="field-wrap">
-                    <div>
-                        Password
-                    </div>
-                    <input asp-for="Password" class="form-control" value=" " placeholder="Password" />
-                    <span asp-validation-for="Password" class="text-danger"></span>
-
+            <div class="field-wrap">
+                <div>
+                    Password
                 </div>
+                <input asp-for="Password" class="form-control" value=" " placeholder="Password" />
+                <span asp-validation-for="Password" class="text-danger"></span>
+
+            </div>
 
 
-                <button type="submit" class="btn-primary">Login</button>
+            <button type="submit" class="btn-primary">Login</button>
 
-            </form>
+        </form>
 
-        </div>
+    </div>
 
 
 
-    
+
 </div> <!-- /form -->
 <link href="~/assets/css/loginRegister.css" rel="stylesheet" />

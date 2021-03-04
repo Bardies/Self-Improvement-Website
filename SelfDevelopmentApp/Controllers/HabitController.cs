@@ -1,4 +1,5 @@
-﻿using Microsoft.AspNetCore.Identity;
+﻿using Microsoft.AspNetCore.Authorization;
+using Microsoft.AspNetCore.Identity;
 using Microsoft.AspNetCore.Mvc;
 using SelfDevelopmentApp.Models;
 
@@ -10,6 +11,7 @@ using System.Threading.Tasks;
 
 namespace SelfDevelopmentApp.Controllers
 {
+    [Authorize]
     public class HabitController : Controller
     {
         private readonly IHabitRepository habitRepository;

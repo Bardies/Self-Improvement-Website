@@ -15,17 +15,15 @@ namespace SelfDevelopmentApp.Controllers
 
         private readonly IArticleRepository articleRepository;
         private readonly ITopicRepository topicRepository;
-        //private readonly IHttpContextAccessor httpContextAccessor;
+
+        // a variable to keep track of the articles that will be displayed in the index view
+        // whether to be all articles (if no search or selected topic) or to be articles
+        // related to selected topic from sidebar of searched word 
         static List<Article> selectedArticles;
-        public ArticlesController(IArticleRepository _articleRepository , ITopicRepository _topicRepository/*, IHttpContextAccessor _httpContextAccessor*/)
+        public ArticlesController(IArticleRepository _articleRepository , ITopicRepository _topicRepository)
         {
             articleRepository = _articleRepository;
             topicRepository = _topicRepository;
-            //httpContextAccessor = _httpContextAccessor;
-            //CookieOptions cookieOptions = new CookieOptions();
-            //HttpContext.Response.Cookies.Append(
-            //         "name", "value", cookieOptions);
-
         }
         // GET: ArticlesController
         public ActionResult Index()
@@ -44,12 +42,16 @@ namespace SelfDevelopmentApp.Controllers
         {
             ViewBag.Topics = topicRepository.AllTopics();
             
+            // check if the form is submitted from the paging buttons to get the page number to be viewed
+            // and send to the view page
             if (int.TryParse(collection["name"], out int num))
             {
+                // view selected articels resulted from search of the topic
                 List<Article> articles;
                 if (selectedArticles != null && selectedArticles.Count!=0)
                     articles = selectedArticles;
                
+                // view all articles in db
                 else
                     articles = articleRepository.AllArticles();
                 
@@ -59,6 +61,8 @@ namespace SelfDevelopmentApp.Controllers
             }
             else
             {
+                // compare the parameter of form collection to articles titles and topics names and get
+                // related articles to be viewed
                 ViewBag.pageNum = 1;
                 List<Article> articles = articleRepository.GetArticlesByTitle(collection["name"]);
 
